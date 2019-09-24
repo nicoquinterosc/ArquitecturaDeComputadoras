@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="/home/nicoq/Facu/Arquitectura/TP2_UART/TP2_UART.xpr">
+<Project Version="7" Minor="40" Path="/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="258dd5d7295e4a578af21036764508fc"/>
@@ -18,7 +18,7 @@
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val="digilentinc.com:basys3:part0:1.1"/>
-    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../.Xilinx/Vivado/2019.1/xhub/board_store"/>
+    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../../.Xilinx/Vivado/2019.1/xhub/board_store"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -61,52 +61,66 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/fifo.v">
+      <File Path="$PSRCDIR/sources_1/imports/uart/fifo.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/fifo.v"/>
+          <Attr Name="ImportTime" Val="1569348208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/mod_m_counter.v">
+      <File Path="$PSRCDIR/sources_1/imports/uart/mod_m_counter.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/mod_m_counter.v"/>
+          <Attr Name="ImportTime" Val="1569348208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/uart_rx.v">
+      <File Path="$PSRCDIR/sources_1/imports/uart/uart_rx.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/uart_rx.v"/>
+          <Attr Name="ImportTime" Val="1569348208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/uart_tx.v">
+      <File Path="$PSRCDIR/sources_1/imports/uart/uart_tx.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/uart_tx.v"/>
+          <Attr Name="ImportTime" Val="1569348208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/uart.v">
+      <File Path="$PSRCDIR/sources_1/imports/uart/uart.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/uart.v"/>
+          <Attr Name="ImportTime" Val="1569348208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/flag_buf.v">
+      <File Path="$PSRCDIR/sources_1/imports/uart/flag_buf.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/flag_buf.v"/>
+          <Attr Name="ImportTime" Val="1569348208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/debounce.v">
+      <File Path="$PSRCDIR/sources_1/imports/uart/debounce.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/debounce.v"/>
+          <Attr Name="ImportTime" Val="1569348208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -120,8 +134,10 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/F347UICIXGFMO6E.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/TP2_UART/F347UICIXGFMO6E.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/F347UICIXGFMO6E.xdc"/>
+          <Attr Name="ImportTime" Val="1569350447"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

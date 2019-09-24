@@ -1,62 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1569350453">
-  <File Type="VDS-TIMING-PB" Name="uart_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="uart_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="uart.tcl"/>
+  <File Type="REPORTS-TCL" Name="uart_reports.tcl"/>
+  <File Type="RDS-RDS" Name="uart.vds"/>
   <File Type="RDS-DCP" Name="uart.dcp"/>
   <File Type="RDS-UTIL-PB" Name="uart_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="uart_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="uart_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="uart.vds"/>
-  <File Type="REPORTS-TCL" Name="uart_reports.tcl"/>
-  <File Type="PA-TCL" Name="uart.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/fifo.v">
+    <File Path="$PSRCDIR/sources_1/imports/uart/fifo.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/fifo.v"/>
+        <Attr Name="ImportTime" Val="1569348208"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/mod_m_counter.v">
+    <File Path="$PSRCDIR/sources_1/imports/uart/mod_m_counter.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/mod_m_counter.v"/>
+        <Attr Name="ImportTime" Val="1569348208"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/uart_rx.v">
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_rx.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1569348208"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/uart_tx.v">
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_tx.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1569348208"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/uart.v">
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/uart.v"/>
+        <Attr Name="ImportTime" Val="1569348208"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/flag_buf.v">
+    <File Path="$PSRCDIR/sources_1/imports/uart/flag_buf.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/flag_buf.v"/>
+        <Attr Name="ImportTime" Val="1569348208"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../GitTP2/VerilogExperiments/uart/debounce.v">
+    <File Path="$PSRCDIR/sources_1/imports/uart/debounce.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/debounce.v"/>
+        <Attr Name="ImportTime" Val="1569348208"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -70,8 +81,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/F347UICIXGFMO6E.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/TP2_UART/F347UICIXGFMO6E.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/F347UICIXGFMO6E.xdc"/>
+        <Attr Name="ImportTime" Val="1569350447"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
