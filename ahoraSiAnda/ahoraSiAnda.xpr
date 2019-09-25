@@ -83,8 +83,10 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../Basys3_Master.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/gerac/Basys3_Master.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Basys3_Master.xdc"/>
+          <Attr Name="ImportTime" Val="1569360923"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
