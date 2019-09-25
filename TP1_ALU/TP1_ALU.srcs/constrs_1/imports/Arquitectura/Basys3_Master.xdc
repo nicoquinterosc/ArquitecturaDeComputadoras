@@ -9,6 +9,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports clk]
 create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
 
 ## Switches
+
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets jtck_c]
+
 set_property PACKAGE_PIN V17 [get_ports {sw[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {sw[0]}]
 set_property PACKAGE_PIN V16 [get_ports {sw[1]}]
@@ -110,16 +113,14 @@ set_property IOSTANDARD LVCMOS33 [get_ports {led[15]}]
 ##Buttons
 set_property PACKAGE_PIN U18 [get_ports btnC]
 set_property IOSTANDARD LVCMOS33 [get_ports btnC]
-set_property PACKAGE_PIN T18 [get_ports reset]
-set_property IOSTANDARD LVCMOS33 [get_ports reset]
+set_property PACKAGE_PIN T18 [get_ports btnU]
+set_property IOSTANDARD LVCMOS33 [get_ports btnU]
 set_property PACKAGE_PIN W19 [get_ports btnL]
 set_property IOSTANDARD LVCMOS33 [get_ports btnL]
 set_property PACKAGE_PIN T17 [get_ports btnR]
 set_property IOSTANDARD LVCMOS33 [get_ports btnR]
 #set_property PACKAGE_PIN U17 [get_ports btnD]
 #set_property IOSTANDARD LVCMOS33 [get_ports btnD]
-
-
 
 ##Pmod Header JA
 ##Sch name = JA1
@@ -279,19 +280,19 @@ set_property IOSTANDARD LVCMOS33 [get_ports btnR]
 #set_property PULLUP true [get_ports PS2Data]
 
 
-##Quad SPI Flash
+##operandoAuad SPI Flash
 ##Note that CCLK_0 cannot be placed in 7 series devices. You can access it using the
 ##STARTUPE2 primitive.
-#set_property PACKAGE_PIN D18 [get_ports {QspiDB[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[0]}]
-#set_property PACKAGE_PIN D19 [get_ports {QspiDB[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[1]}]
-#set_property PACKAGE_PIN G18 [get_ports {QspiDB[2]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[2]}]
-#set_property PACKAGE_PIN F18 [get_ports {QspiDB[3]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[3]}]
-#set_property PACKAGE_PIN K19 [get_ports QspiCSn]
-#set_property IOSTANDARD LVCMOS33 [get_ports QspiCSn]
+#set_property PACKAGE_PIN D18 [get_ports {operandoAspiDB[0]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {operandoAspiDB[0]}]
+#set_property PACKAGE_PIN D19 [get_ports {operandoAspiDB[1]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {operandoAspiDB[1]}]
+#set_property PACKAGE_PIN G18 [get_ports {operandoAspiDB[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {operandoAspiDB[2]}]
+#set_property PACKAGE_PIN F18 [get_ports {operandoAspiDB[3]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {operandoAspiDB[3]}]
+#set_property PACKAGE_PIN K19 [get_ports operandoAspiCSn]
+#set_property IOSTANDARD LVCMOS33 [get_ports operandoAspiCSn]
 
 
 #set_property PACKAGE_PIN V17 [get_ports {A[0]}]

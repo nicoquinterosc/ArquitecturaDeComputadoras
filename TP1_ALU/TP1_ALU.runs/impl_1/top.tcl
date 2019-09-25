@@ -76,7 +76,7 @@ set rc [catch {
   set_property ip_output_repo /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.runs/synth_1/top.dcp
-  read_xdc /home/nicoq/Facu/Arquitectura/Basys3_Master.xdc
+  read_xdc /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/constrs_1/imports/Arquitectura/Basys3_Master.xdc
   link_design -top top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

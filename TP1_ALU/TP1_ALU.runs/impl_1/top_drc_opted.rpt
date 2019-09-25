@@ -1,13 +1,13 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Tue Sep 24 18:26:03 2019
+| Date         : Wed Sep 25 18:22:11 2019
 | Host         : quinteros running 64-bit Linux Mint 19 Tara
 | Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 | Design       : top
 | Device       : xc7a35tcpg236-1
 | Speed File   : -1
-| Design State : Fully Placed
+| Design State : Synthesized
 ------------------------------------------------------------------------------------------------
 
 Report DRC

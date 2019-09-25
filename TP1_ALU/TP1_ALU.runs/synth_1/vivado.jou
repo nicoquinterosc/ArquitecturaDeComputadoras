@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Sep 24 18:25:15 2019
-# Process ID: 4588
+# Start of session at: Wed Sep 25 18:21:24 2019
+# Process ID: 7393
 # Current directory: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.runs/synth_1/top.vds

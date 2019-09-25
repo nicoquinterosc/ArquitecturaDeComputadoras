@@ -31,8 +31,8 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/nicoq/Desktop/TP1_ALU2/TP1_ALU.srcs/sources_1/new/alu.v
-  /home/nicoq/Desktop/TP1_ALU2/TP1_ALU.srcs/sources_1/new/top.v
+  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/alu.v
+  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/top.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -42,8 +42,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/nicoq/Facu/Arquitectura/Basys3_Master.xdc
-set_property used_in_implementation false [get_files /home/nicoq/Facu/Arquitectura/Basys3_Master.xdc]
+read_xdc /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/constrs_1/imports/Arquitectura/Basys3_Master.xdc
+set_property used_in_implementation false [get_files /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/constrs_1/imports/Arquitectura/Basys3_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

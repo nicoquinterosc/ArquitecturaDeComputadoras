@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date                      : Tue Sep 24 18:26:05 2019
+| Date                      : Wed Sep 25 18:22:14 2019
 | Host                      : quinteros running 64-bit Linux Mint 19 Tara
 | Command                   : report_io -file top_io_placed.rpt
 | Design                    : top
@@ -214,7 +214,7 @@ Table of Contents
 | T2         |             | High Range | IO_L1N_T0_34                 | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T3         |             | High Range | IO_L2N_T0_34                 | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T17        | btnR        | High Range | IO_L17P_T2_A14_D30_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| T18        | reset       | High Range | IO_L17N_T2_A13_D29_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| T18        | btnU        | High Range | IO_L17N_T2_A13_D29_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T19        |             |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | U1         |             | High Range | IO_L3N_T0_DQS_34             | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U2         |             | High Range | IO_L9N_T1_DQS_34             | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
