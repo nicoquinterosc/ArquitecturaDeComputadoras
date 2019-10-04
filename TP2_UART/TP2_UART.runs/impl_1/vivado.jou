@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Sep 24 15:41:21 2019
-# Process ID: 24380
-# Current directory: /home/nicoq/Facu/Arquitectura/TP2_UART/TP2_UART.runs/impl_1
+# Start of session at: Wed Oct  2 20:22:38 2019
+# Process ID: 21380
+# Current directory: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.runs/impl_1
 # Command line: vivado -log uart.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart.tcl -notrace
-# Log file: /home/nicoq/Facu/Arquitectura/TP2_UART/TP2_UART.runs/impl_1/uart.vdi
-# Journal file: /home/nicoq/Facu/Arquitectura/TP2_UART/TP2_UART.runs/impl_1/vivado.jou
+# Log file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.runs/impl_1/uart.vdi
+# Journal file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source uart.tcl -notrace

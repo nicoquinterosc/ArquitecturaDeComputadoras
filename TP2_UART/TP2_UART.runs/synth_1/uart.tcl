@@ -17,26 +17,27 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/nicoq/Facu/Arquitectura/TP2_UART/TP2_UART.cache/wt [current_project]
-set_property parent.project_path /home/nicoq/Facu/Arquitectura/TP2_UART/TP2_UART.xpr [current_project]
+set_property webtalk.parent_dir /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.cache/wt [current_project]
+set_property parent.project_path /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {/home/nicoq/.Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo /home/nicoq/Facu/Arquitectura/TP2_UART/TP2_UART.cache/ip [current_project]
+set_property ip_output_repo /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/nicoq/Facu/Arquitectura/GitTP2/VerilogExperiments/uart/fifo.v
-  /home/nicoq/Facu/Arquitectura/GitTP2/VerilogExperiments/uart/mod_m_counter.v
-  /home/nicoq/Facu/Arquitectura/GitTP2/VerilogExperiments/uart/uart_rx.v
-  /home/nicoq/Facu/Arquitectura/GitTP2/VerilogExperiments/uart/uart_tx.v
-  /home/nicoq/Facu/Arquitectura/GitTP2/VerilogExperiments/uart/uart.v
+  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/uart/fifo.v
+  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/uart/mod_m_counter.v
+  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/uart/uart_rx.v
+  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/uart/uart_tx.v
+  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/uart/uart.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -46,8 +47,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/nicoq/Facu/Arquitectura/TP2_UART/F347UICIXGFMO6E.xdc
-set_property used_in_implementation false [get_files /home/nicoq/Facu/Arquitectura/TP2_UART/F347UICIXGFMO6E.xdc]
+read_xdc /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/constrs_1/imports/Arquitectura/Basys3_Master.xdc
+set_property used_in_implementation false [get_files /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/constrs_1/imports/Arquitectura/Basys3_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
