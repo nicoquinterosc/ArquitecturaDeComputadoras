@@ -1,0 +1,9 @@
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:07 . Memory (MB): peak = 383.363 ; gain = 0.000 ; free physical = 7851 ; free virtual = 27413
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov  1 14:31:26 2019...
