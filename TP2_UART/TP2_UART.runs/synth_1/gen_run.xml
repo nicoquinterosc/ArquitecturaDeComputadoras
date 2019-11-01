@@ -1,86 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1570058531">
-  <File Type="VDS-TIMING-PB" Name="uart_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="uart_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="uart.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="uart_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="uart_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="uart_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="uart.vds"/>
-  <File Type="REPORTS-TCL" Name="uart_reports.tcl"/>
-  <File Type="PA-TCL" Name="uart.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1572628077">
+  <File Type="VDS-TIMING-PB" Name="top_level_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_level_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="top_level.dcp"/>
+  <File Type="REPORTS-TCL" Name="top_level_reports.tcl"/>
+  <File Type="PA-TCL" Name="top_level.tcl"/>
+  <File Type="RDS-RDS" Name="top_level.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="top_level_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_level_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/uart/fifo.v">
+    <File Path="$PSRCDIR/sources_1/imports/imports/src/clog2.vh">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/fifo.v"/>
-        <Attr Name="ImportTime" Val="1569348208"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_2/project_1.srcs/sources_1/imports/src/clog2.vh"/>
+        <Attr Name="ImportTime" Val="1542663346"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/FIFO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_2/project_1.srcs/sources_1/imports/ArquitecturaDeComputadoras/TP2/src/FIFO.v"/>
+        <Attr Name="ImportTime" Val="1572621344"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/uart/mod_m_counter.v">
+    <File Path="$PSRCDIR/sources_1/imports/imports/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/alu.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/mod_m_counter.v"/>
-        <Attr Name="ImportTime" Val="1569348208"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_2/project_1.srcs/sources_1/imports/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/alu.v"/>
+        <Attr Name="ImportTime" Val="1572621517"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/uart/uart_rx.v">
+    <File Path="$PSRCDIR/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/baudrate_generator.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/uart_rx.v"/>
-        <Attr Name="ImportTime" Val="1569348208"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_2/project_1.srcs/sources_1/imports/ArquitecturaDeComputadoras/TP2/src/baudrate_generator.v"/>
+        <Attr Name="ImportTime" Val="1572621256"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/uart/uart_tx.v">
+    <File Path="$PSRCDIR/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/uart_alu_interface.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/uart_tx.v"/>
-        <Attr Name="ImportTime" Val="1569348208"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_2/project_1.srcs/sources_1/imports/ArquitecturaDeComputadoras/TP2/src/uart_alu_interface.v"/>
+        <Attr Name="ImportTime" Val="1572622614"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/uart/uart.v">
+    <File Path="$PSRCDIR/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/uart_rx.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/uart.v"/>
-        <Attr Name="ImportTime" Val="1569348208"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_2/project_1.srcs/sources_1/imports/ArquitecturaDeComputadoras/TP2/src/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1572625080"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/alu.v">
+    <File Path="$PSRCDIR/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/uart_tx.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/alu.v"/>
-        <Attr Name="ImportTime" Val="1569342530"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_2/project_1.srcs/sources_1/imports/ArquitecturaDeComputadoras/TP2/src/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1572625271"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/uart/debounce.v">
+    <File Path="$PSRCDIR/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/top_level.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/debounce.v"/>
-        <Attr Name="ImportTime" Val="1569348208"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/uart/flag_buf.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../GitTP2/VerilogExperiments/uart/flag_buf.v"/>
-        <Attr Name="ImportTime" Val="1569348208"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_2/project_1.srcs/sources_1/imports/ArquitecturaDeComputadoras/TP2/src/top_level.v"/>
+        <Attr Name="ImportTime" Val="1572625531"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -88,16 +84,16 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="uart"/>
+      <Option Name="TopModule" Val="top_level"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/Arquitectura/Basys3_Master.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/src/Basys3.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
-        <Attr Name="ImportTime" Val="1569351625"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project_2/project_1.srcs/constrs_1/imports/src/Basys3.xdc"/>
+        <Attr Name="ImportTime" Val="1572623070"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -113,7 +109,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

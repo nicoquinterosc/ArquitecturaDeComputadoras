@@ -1,0 +1,480 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  1 14:07:59 2019
+# Process ID: 31529
+# Current directory: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.runs/synth_1
+# Command line: vivado -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+# Log file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.runs/synth_1/top_level.vds
+# Journal file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+Command: synth_design -top top_level -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31556 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1796.871 ; gain = 149.715 ; free physical = 7188 ; free virtual = 26642
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_level' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/top_level.v:3]
+	Parameter B_RATE bound to: 9600 - type: integer 
+	Parameter NB_DATA bound to: 1 - type: integer 
+	Parameter N_DATA bound to: 8 - type: integer 
+	Parameter NB_OPERATION bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/uart_rx.v:3]
+	Parameter NB_DATA bound to: 1 - type: integer 
+	Parameter N_DATA bound to: 8 - type: integer 
+	Parameter LOG2_N_DATA bound to: 4 - type: integer 
+	Parameter M_STOP bound to: 1 - type: integer 
+	Parameter LOG2_M_STOP bound to: 1 - type: integer 
+	Parameter NB_STATE bound to: 2 - type: integer 
+	Parameter ST_0_IDLE bound to: 2'b00 
+	Parameter ST_1_START bound to: 2'b01 
+	Parameter ST_2_DATA bound to: 2'b10 
+	Parameter ST_3_STOP bound to: 2'b11 
+	Parameter MAX_TIMER bound to: 15 - type: integer 
+	Parameter NB_TIMER bound to: 4 - type: integer 
+	Parameter NB_N_DATA_COUNTER bound to: 4 - type: integer 
+	Parameter NB_M_STOP_COUNTER bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (1#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/uart_rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/uart_tx.v:3]
+	Parameter NB_DATA bound to: 8 - type: integer 
+	Parameter N_DATA bound to: 8 - type: integer 
+	Parameter LOG2_N_DATA bound to: 4 - type: integer 
+	Parameter M_STOP bound to: 1 - type: integer 
+	Parameter LOG2_M_STOP bound to: 1 - type: integer 
+	Parameter NB_STATE bound to: 2 - type: integer 
+	Parameter ST_0_IDLE bound to: 2'b00 
+	Parameter ST_1_START bound to: 2'b01 
+	Parameter ST_2_DATA bound to: 2'b10 
+	Parameter ST_3_STOP bound to: 2'b11 
+	Parameter MAX_TIMER bound to: 16 - type: integer 
+	Parameter NB_TIMER bound to: 4 - type: integer 
+	Parameter NB_N_DATA_COUNTER bound to: 4 - type: integer 
+	Parameter NB_M_STOP_COUNTER bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (2#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/uart_tx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_alu_interface' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/uart_alu_interface.v:3]
+	Parameter N_DATA bound to: 8 - type: integer 
+	Parameter PARITY_CHECK bound to: 0 - type: integer 
+	Parameter N_WORD_BUFFER bound to: 4 - type: integer 
+	Parameter NB_OPERATION bound to: 6 - type: integer 
+	Parameter N_STATES bound to: 3 - type: integer 
+	Parameter NB_STATES bound to: 2 - type: integer 
+	Parameter DATA_A bound to: 0 - type: integer 
+	Parameter DATA_B bound to: 1 - type: integer 
+	Parameter DATA_OP bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/FIFO.v:3]
+	Parameter NB_WORD bound to: 8 - type: integer 
+	Parameter N_WORD_BUFFER bound to: 4 - type: integer 
+	Parameter NB_PTR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (3#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/FIFO.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart_alu_interface' (4#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/uart_alu_interface.v:3]
+INFO: [Synth 8-6157] synthesizing module 'baudrate_generator' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/baudrate_generator.v:3]
+	Parameter CLK_FREQ bound to: 100000000.000000 - type: float 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter TICK_RATE bound to: 651.041667 - type: float 
+	Parameter COUNT_NBITS bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'baudrate_generator' (5#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/baudrate_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/alu.v:5]
+	Parameter NB_DATA bound to: 8 - type: integer 
+	Parameter NB_OPERATION bound to: 6 - type: integer 
+	Parameter ADD bound to: 6'b100000 
+	Parameter SUB bound to: 6'b100010 
+	Parameter AND bound to: 6'b100100 
+	Parameter OR bound to: 6'b100101 
+	Parameter XOR bound to: 6'b100110 
+	Parameter SRA bound to: 6'b000011 
+	Parameter SRL bound to: 6'b000010 
+	Parameter NOR bound to: 6'b100111 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (6#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/alu.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (7#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP2/src/top_level.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1851.621 ; gain = 204.465 ; free physical = 7198 ; free virtual = 26652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1860.527 ; gain = 213.371 ; free physical = 7200 ; free virtual = 26654
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1860.527 ; gain = 213.371 ; free physical = 7200 ; free virtual = 26654
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/constrs_1/imports/src/Basys3.xdc]
+Finished Parsing XDC File [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/constrs_1/imports/src/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/constrs_1/imports/src/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2043.152 ; gain = 0.000 ; free physical = 7098 ; free virtual = 26553
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2043.152 ; gain = 0.000 ; free physical = 7098 ; free virtual = 26553
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7179 ; free virtual = 26635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7179 ; free virtual = 26635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7182 ; free virtual = 26637
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_alu_interface'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.srcs/sources_1/imports/imports/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/alu.v:33]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  DATA_A |                              001 |                               00
+                  DATA_B |                              010 |                               01
+                 DATA_OP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_alu_interface'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7163 ; free virtual = 26619
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---RAMs : 
+	               32 Bit         RAMs := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	 256 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+Module FIFO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               32 Bit         RAMs := 1     
+Module uart_alu_interface 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 2     
+	   3 Input      6 Bit        Muxes := 1     
+Module baudrate_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Muxes : 
+	 256 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7146 ; free virtual = 26605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                   | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------------+-----------+----------------------+--------------+
+|top_level   | u_iface/u_FIFO_rx/buffer_reg | Implied   | 4 x 8                | RAM32M x 2   | 
+|top_level   | u_iface/u_FIFO_tx/buffer_reg | Implied   | 4 x 8                | RAM32M x 2   | 
++------------+------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7030 ; free virtual = 26490
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7029 ; free virtual = 26489
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                   | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------------+-----------+----------------------+--------------+
+|top_level   | u_iface/u_FIFO_rx/buffer_reg | Implied   | 4 x 8                | RAM32M x 2   | 
+|top_level   | u_iface/u_FIFO_tx/buffer_reg | Implied   | 4 x 8                | RAM32M x 2   | 
++------------+------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7028 ; free virtual = 26488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7028 ; free virtual = 26488
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7028 ; free virtual = 26488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7028 ; free virtual = 26488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7028 ; free virtual = 26488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7028 ; free virtual = 26488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7028 ; free virtual = 26488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT1   |     7|
+|4     |LUT2   |    18|
+|5     |LUT3   |    45|
+|6     |LUT4   |    14|
+|7     |LUT5   |    25|
+|8     |LUT6   |    50|
+|9     |RAM32M |     4|
+|10    |FDRE   |    88|
+|11    |FDSE   |     6|
+|12    |IBUF   |     3|
+|13    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+-------------------+------+
+|      |Instance      |Module             |Cells |
++------+--------------+-------------------+------+
+|1     |top           |                   |   264|
+|2     |  u_alu       |alu                |     2|
+|3     |  u_br_gen    |baudrate_generator |    23|
+|4     |  u_iface     |uart_alu_interface |   150|
+|5     |    u_FIFO_rx |FIFO               |    25|
+|6     |    u_FIFO_tx |FIFO_0             |    91|
+|7     |  u_uart_rx   |uart_rx            |    42|
+|8     |  u_uart_tx   |uart_tx            |    41|
++------+--------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7028 ; free virtual = 26488
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2043.152 ; gain = 213.371 ; free physical = 7077 ; free virtual = 26537
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2043.152 ; gain = 395.996 ; free physical = 7077 ; free virtual = 26537
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 4 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2043.152 ; gain = 0.000 ; free physical = 7030 ; free virtual = 26490
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2043.152 ; gain = 623.914 ; free physical = 7128 ; free virtual = 26588
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2043.152 ; gain = 0.000 ; free physical = 7128 ; free virtual = 26588
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP2_UART/TP2_UART.runs/synth_1/top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 14:08:26 2019...
