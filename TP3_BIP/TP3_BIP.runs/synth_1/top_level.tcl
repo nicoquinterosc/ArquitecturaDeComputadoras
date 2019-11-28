@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,17 +30,14 @@ set_property board_part_repo_paths {/home/nicoq/.Xilinx/Vivado/2019.1/xhub/board
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/clog2.vh
+read_mem /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/ArquitecturaDeComputadoras/ex3.mem
 read_verilog -library xil_defaultlib {
-  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/baudrate_generator.v
   /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_BIP.v
   /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_control.v
   /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_cpu.v
   /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_data_memory.v
   /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v
   /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v
-  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_uart_interface.v
-  /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/uart_tx.v
   /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/top_level.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being

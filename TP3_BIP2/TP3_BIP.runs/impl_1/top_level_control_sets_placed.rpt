@@ -1,0 +1,96 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Nov 27 16:26:24 2019
+| Host         : quinteros running 64-bit Linux Mint 19 Tara
+| Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
+| Design       : top_level
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    18 |
+|    Minimum number of control sets                        |    18 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    59 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    18 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              36 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              76 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------------------------------------+--------------------------------------+------------------+----------------+
+|   Clock Signal   |                    Enable Signal                   |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++------------------+----------------------------------------------------+--------------------------------------+------------------+----------------+
+|  i_clk_IBUF_BUFG | u_uart_tx/o_data4_out                              | i_btnC_IBUF                          |                1 |              1 |
+|  i_clk_IBUF_BUFG |                                                    | u_bip_uart_interface/led[3]_i_1_n_0  |                1 |              4 |
+|  i_clk_IBUF_BUFG | u_uart_tx/timer0                                   | u_br_gen/SR[0]                       |                1 |              4 |
+|  i_clk_IBUF_BUFG | u_bip_uart_interface/addr_rd0                      | i_btnC_IBUF                          |                1 |              4 |
+|  i_clk_IBUF_BUFG | u_uart_tx/n_data_counter0                          | u_uart_tx/n_data_counter[3]_i_1_n_0  |                1 |              4 |
+|  i_clk_IBUF_BUFG |                                                    |                                      |                3 |              5 |
+|  i_clk_IBUF_BUFG |                                                    | u_bip/u_bip_cpu/u_bip_control/i_btnC |                1 |              5 |
+|  i_clk_IBUF_BUFG | u_bip_uart_interface/timeout_wr_i_1_n_0            | i_btnC_IBUF                          |                1 |              5 |
+|  i_clk_IBUF_BUFG | u_bip_uart_interface/timer_rd0                     | i_btnC_IBUF                          |                2 |              7 |
+| ~i_clk_IBUF_BUFG | u_bip_uart_interface/timer_rd0                     | i_btnC_IBUF                          |                2 |              8 |
+|  i_clk_IBUF_BUFG | u_uart_tx/data[7]_i_1_n_0                          | i_btnC_IBUF                          |                2 |              8 |
+|  i_clk_IBUF_BUFG |                                                    | u_br_gen/counter[9]_i_1_n_0          |                4 |             10 |
+|  i_clk_IBUF_BUFG | u_bip/u_bip_program_memory/data_reg[13]_0[0]       | i_btnC_IBUF                          |                3 |             11 |
+|  i_clk_IBUF_BUFG | u_bip/u_bip_program_memory/data_reg[12]_0[0]       | i_btnC_IBUF                          |                3 |             12 |
+| ~i_clk_IBUF_BUFG | u_bip/u_bip_program_memory/E[0]                    | i_btnC_IBUF                          |                3 |             12 |
+|  i_clk_IBUF_BUFG |                                                    | i_btnC_IBUF                          |                6 |             17 |
+| ~i_clk_IBUF_BUFG | u_bip_uart_interface/ncl_bank_reg_0_15_0_5_i_2_n_0 |                                      |                6 |             48 |
+| ~i_clk_IBUF_BUFG | u_bip/u_bip_program_memory/p_0_in__0               |                                      |               12 |             48 |
++------------------+----------------------------------------------------+--------------------------------------+------------------+----------------+
+
+

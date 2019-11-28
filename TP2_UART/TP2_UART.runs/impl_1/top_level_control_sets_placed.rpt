@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Nov  1 14:08:51 2019
+| Date         : Wed Nov 27 20:38:02 2019
 | Host         : quinteros running 64-bit Linux Mint 19 Tara
 | Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
 | Design       : top_level
@@ -75,22 +75,22 @@ Table of Contents
 +------------------+-------------------------------------------------+----------------------------------------+------------------+----------------+
 |  i_clk_IBUF_BUFG | u_uart_tx/o_data4_out                           | i_btnC_IBUF                            |                1 |              1 |
 | ~i_clk_IBUF_BUFG |                                                 |                                        |                2 |              2 |
-|  i_clk_IBUF_BUFG | u_uart_rx/n_data_counter0                       | u_uart_rx/n_data_counter[3]_i_1__0_n_0 |                1 |              4 |
-|  i_clk_IBUF_BUFG | u_uart_rx/timer0                                | u_uart_rx/timer[3]_i_1_n_0             |                1 |              4 |
 |  i_clk_IBUF_BUFG | u_uart_tx/n_data_counter[3]_i_2__0_n_0          | u_uart_tx/n_data_counter[3]_i_1_n_0    |                1 |              4 |
 |  i_clk_IBUF_BUFG | u_uart_tx/timer0                                | u_iface/u_FIFO_tx/SR[0]                |                2 |              4 |
+|  i_clk_IBUF_BUFG | u_uart_rx/timer0                                | u_uart_rx/timer[3]_i_1_n_0             |                1 |              4 |
+|  i_clk_IBUF_BUFG | u_uart_rx/n_data_counter0                       | u_uart_rx/n_data_counter[3]_i_1__0_n_0 |                1 |              4 |
 |  i_clk_IBUF_BUFG |                                                 |                                        |                3 |              5 |
 |  i_clk_IBUF_BUFG | u_iface/u_FIFO_rx/E[0]                          | i_btnC_IBUF                            |                2 |              6 |
 | ~i_clk_IBUF_BUFG |                                                 | i_btnC_IBUF                            |                2 |              6 |
 |  i_clk_IBUF_BUFG | u_br_gen/brgen_valid_urx                        | i_btnC_IBUF                            |                2 |              7 |
+|  i_clk_IBUF_BUFG | u_uart_tx/data[7]_i_1_n_0                       | i_btnC_IBUF                            |                2 |              8 |
+|  i_clk_IBUF_BUFG | u_uart_rx/o_data0                               | i_btnC_IBUF                            |                1 |              8 |
 |  i_clk_IBUF_BUFG | u_iface/u_FIFO_rx/FSM_onehot_state_reg[0][0]    | i_btnC_IBUF                            |                3 |              8 |
 |  i_clk_IBUF_BUFG | u_iface/u_FIFO_rx/FSM_onehot_state_reg[1][0]    | i_btnC_IBUF                            |                3 |              8 |
-|  i_clk_IBUF_BUFG | u_uart_rx/o_data0                               | i_btnC_IBUF                            |                1 |              8 |
-|  i_clk_IBUF_BUFG | u_uart_tx/data[7]_i_1_n_0                       | i_btnC_IBUF                            |                2 |              8 |
 |  i_clk_IBUF_BUFG |                                                 | i_btnC_IBUF                            |                3 |              9 |
 |  i_clk_IBUF_BUFG |                                                 | u_br_gen/counter[9]_i_1_n_0            |                3 |             10 |
-| ~i_clk_IBUF_BUFG | u_iface/u_FIFO_tx/p_0_in__0                     |                                        |                2 |             16 |
 | ~i_clk_IBUF_BUFG | u_iface/u_FIFO_rx/buffer_reg_0_3_0_5_i_2__0_n_0 |                                        |                2 |             16 |
+| ~i_clk_IBUF_BUFG | u_iface/u_FIFO_tx/p_0_in__0                     |                                        |                2 |             16 |
 +------------------+-------------------------------------------------+----------------------------------------+------------------+----------------+
 
 

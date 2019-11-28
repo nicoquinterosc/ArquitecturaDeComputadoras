@@ -65,7 +65,6 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   set_param chipscope.maxJobs 2
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part_repo_paths {/home/nicoq/.Xilinx/Vivado/2019.1/xhub/board_store} [current_project]

@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1572629584">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1574983721">
   <File Type="VDS-TIMING-PB" Name="top_level_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="top_level_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="top_level.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="top_level_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="top_level_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="top_level.vds"/>
   <File Type="REPORTS-TCL" Name="top_level_reports.tcl"/>
   <File Type="PA-TCL" Name="top_level.tcl"/>
-  <File Type="RDS-RDS" Name="top_level.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="top_level_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="top_level_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/src/clog2.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../TP3/src/clog2.vh"/>
-        <Attr Name="ImportTime" Val="1542663346"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/src/baudrate_generator.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../TP3/src/baudrate_generator.v"/>
-        <Attr Name="ImportTime" Val="1542663346"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/src/bip_BIP.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../TP3/src/bip_BIP.v"/>
@@ -82,24 +65,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/src/bip_uart_interface.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../TP3/src/bip_uart_interface.v"/>
-        <Attr Name="ImportTime" Val="1542663346"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/src/uart_tx.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../TP3/src/uart_tx.v"/>
-        <Attr Name="ImportTime" Val="1542663346"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/src/top_level.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../TP3/src/top_level.v"/>
@@ -109,13 +74,28 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/src/FIFO.v">
+    <File Path="$PSRCDIR/sources_1/new/counter.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../TP3/src/FIFO.v"/>
-        <Attr Name="ImportTime" Val="1542663346"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/clog2.vh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../TP3/src/clog2.vh"/>
+        <Attr Name="ImportTime" Val="1542663346"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ArquitecturaDeComputadoras/ex3.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ex3.mem"/>
+        <Attr Name="ImportTime" Val="1573249057"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>

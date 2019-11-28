@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Nov  1 14:34:16 2019
+| Date         : Thu Nov 28 20:29:57 2019
 | Host         : quinteros running 64-bit Linux Mint 19 Tara
 | Command      : report_methodology -file top_level_methodology_drc_routed.rpt -pb top_level_methodology_drc_routed.pb -rpx top_level_methodology_drc_routed.rpx
 | Design       : top_level
@@ -23,76 +23,16 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 16
-+-----------+----------+-----------------------------------------------------------+------------+
-| Rule      | Severity | Description                                               | Violations |
-+-----------+----------+-----------------------------------------------------------+------------+
-| SYNTH-5   | Warning  | Mapped onto distributed RAM because of timing constraints | 12         |
-| TIMING-18 | Warning  | Missing input or output delay                             | 4          |
-+-----------+----------+-----------------------------------------------------------+------------+
+             Violations found: 31
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay | 20         |
+| TIMING-20 | Warning  | Non-clocked latch             | 11         |
++-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-SYNTH-5#1 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#2 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_10_10 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#3 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_11_11 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#4 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#5 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#6 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#7 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#8 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#9 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#10 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#11 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_8_8 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#12 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance u_bip/u_bip_data_memory/mem_bank_reg_0_255_9_9 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on i_btnC relative to clock(s) sys_clk_pin
@@ -100,17 +40,152 @@ Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An output delay is missing on JA[0] relative to clock(s) sys_clk_pin
+An input delay is missing on i_btnL relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on JA[1] relative to clock(s) sys_clk_pin
+An input delay is missing on i_btnR relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on RsTx relative to clock(s) sys_clk_pin
+An input delay is missing on i_btnU relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on LED[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on LED[10] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on LED[11] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on LED[12] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on LED[13] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on LED[14] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on LED[15] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on LED[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on LED[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on LED[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on LED[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on LED[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on LED[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on LED[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on LED[8] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on LED[9] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[0] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[10] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[1] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[2] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[3] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[4] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[5] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[6] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[7] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[8] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[9] cannot be properly analyzed as its control pin u_bip/u_bip_cpu/u_bip_control/pc_reg_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 

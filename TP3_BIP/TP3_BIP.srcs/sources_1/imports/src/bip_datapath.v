@@ -5,7 +5,7 @@ module bip_datapath
     parameter 									NB_OPCODE = 5,
     parameter 									NB_OPERAND = 11,
     parameter 									N_INSMEM_ADDR = 2048,
-    parameter 									LOG2_N_INSMEM_ADDR = 11,
+    parameter 									NB_INS = 11,
     parameter 									N_DATA_ADDR = 1024, 
     parameter 									LOG2_N_DATA_ADDR = 10,
     parameter                                   NB_SEL_A = 2, 
@@ -58,7 +58,8 @@ module bip_datapath
     begin
         if (i_reset)
             acc <= {NB_DATA{1'b0}};
-        else if (i_wr_acc & i_valid) begin
+        else if (i_wr_acc & i_valid) 
+        begin
             case (i_sel_a)
             2'b00: acc <= i_data_mem;
             2'b01: acc <= extended_signal;

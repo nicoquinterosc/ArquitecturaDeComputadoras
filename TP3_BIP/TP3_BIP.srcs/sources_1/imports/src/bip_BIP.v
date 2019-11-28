@@ -5,7 +5,7 @@ module bip_BIP
     parameter                                   NB_OPCODE = 5,
     parameter                                   NB_OPERAND = 11,
     parameter                                   N_INSMEM_ADDR = 2048,
-    parameter                                   LOG2_N_INSMEM_ADDR = 11,
+    parameter                                   NB_INS = 11,
     parameter                                   N_DATA_ADDR = 1024, 
     parameter                                   LOG2_N_DATA_ADDR = 10,
     parameter                                   NB_SEL_A = 2, 
@@ -16,7 +16,10 @@ module bip_BIP
     // Outputs.
     output wire     [NB_DATA-1:0]               o_acc,
     output wire     [NB_DATA-1:0]               o_instruction,
-    output wire     [LOG2_N_INSMEM_ADDR-1:0]    o_pc,
+    output wire       [NB_OPCODE-1:0]                          show_opcode,
+    output wire     [NB_INS-1:0]    o_pc,
+    output wire                                 o_enable,
+    output wire [NB_INS-1:0] mostrar_pc,
     
     input  wire                                 i_clock,
     input  wire                                 i_valid,
@@ -30,7 +33,7 @@ module bip_BIP
     //==========================================================================
     // INTERNAL SIGNALS.
     //==========================================================================
-    wire [LOG2_N_INSMEM_ADDR-1:0]         addr_instr;
+    wire [NB_INS-1:0]         addr_instr;
     wire [LOG2_N_DATA_ADDR-1:0]           data_instr;
 
     wire                                  rd;
@@ -39,7 +42,7 @@ module bip_BIP
     wire [NB_DATA-1:0]                    data_pc_to_mem;
     wire [NB_DATA-1:0]                    instr;
     wire [NB_DATA-1:0]                    data_mem;
-   reg [LOG2_N_INSMEM_ADDR-1:0]           n_clock;
+   reg [NB_INS-1:0]           n_clock;
 
 
     //==========================================================================
@@ -53,7 +56,7 @@ module bip_BIP
    
    always@(posedge i_clock) begin
       if(i_reset)
-        n_clock <= {LOG2_N_INSMEM_ADDR{1'b0}};
+        n_clock <= {NB_INS{1'b0}};
       else
         if(i_valid)
           n_clock <= n_clock +1'b1;
@@ -65,7 +68,7 @@ module bip_BIP
         .NB_OPCODE                      (NB_OPCODE         ),  
         .NB_OPERAND                     (NB_OPERAND        ),      
         .N_INSMEM_ADDR                  (N_INSMEM_ADDR     ),      
-        .LOG2_N_INSMEM_ADDR             (LOG2_N_INSMEM_ADDR),              
+        .NB_INS             (NB_INS),              
         .N_DATA_ADDR                    (N_DATA_ADDR       ),      
         .LOG2_N_DATA_ADDR               (LOG2_N_DATA_ADDR  ),          
         .NB_SEL_A                       (NB_SEL_A          ),  
@@ -78,7 +81,10 @@ module bip_BIP
         .o_data_instr                   (data_instr),  // To Data mem         
         .o_data                         (data_pc_to_mem), // From ACC to data mem  
         .o_wr_ram                       (wr),       
-        .o_rd_ram                       (rd),                                       
+        .o_rd_ram                       (rd),           
+        .o_enable(o_enable),    
+        .show_opcode(show_opcode),
+        .mostrar_pc(mostrar_pc),
                                     
         .i_instruction                  (instr),           
         .i_data_mem                     (data_mem),                                    
@@ -91,7 +97,7 @@ module bip_BIP
     #(
         .NB_DATA                        (NB_DATA           ),          
         .N_ADDR                         (N_INSMEM_ADDR     ),      
-        .LOG2_N_INSMEM_ADDR             (LOG2_N_INSMEM_ADDR)                  
+        .NB_INS             (NB_INS)                  
     )
     u_bip_program_memory
     (

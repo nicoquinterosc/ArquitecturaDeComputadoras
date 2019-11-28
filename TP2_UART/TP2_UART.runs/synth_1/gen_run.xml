@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1572628077">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1574897824">
   <File Type="VDS-TIMING-PB" Name="top_level_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="top_level_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="top_level.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="top_level_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="top_level_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="top_level.vds"/>
   <File Type="REPORTS-TCL" Name="top_level_reports.tcl"/>
   <File Type="PA-TCL" Name="top_level.tcl"/>
-  <File Type="RDS-RDS" Name="top_level.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="top_level_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="top_level_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/imports/src/clog2.vh">
@@ -109,9 +109,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -5,7 +5,7 @@ module bip_control
     parameter 									NB_OPCODE = 5,
     parameter 									NB_OPERAND = 11,
     parameter 									N_INSMEM_ADDR = 2048,
-    parameter 									LOG2_N_INSMEM_ADDR = 11,
+    parameter 									NB_INS = 11,
     parameter 									N_DATA_ADDR = 1024, 
     parameter 									LOG2_N_DATA_ADDR = 10,
     parameter 									NB_SEL_A = 2
@@ -18,8 +18,11 @@ module bip_control
     output reg 									o_op_code,
     output reg 									o_wr_ram,
     output reg 									o_rd_ram,
-    output wire 	[LOG2_N_INSMEM_ADDR-1:0]    o_addr_instr,
+    output wire 	[NB_INS-1:0]    o_addr_instr,
     output wire 	[LOG2_N_DATA_ADDR-1:0]	    o_data_instr,
+    output wire        [NB_INS-1:0]                         mostrar_pc,
+    output reg                                  o_enable,
+    output wire     [NB_OPCODE-1:0]             show_opcode,
     // Inputs.
     input  wire 	[NB_DATA-1:0]				i_instruction,
     input  wire 								i_clock,
@@ -45,26 +48,41 @@ module bip_control
     //==========================================================================
     // INTERNAL SIGNALS.
     //==========================================================================
-    reg 			[LOG2_N_INSMEM_ADDR-1:0]			pc ; //Program Counter Register
-    reg 										        wr_pc ; //Add 1 to PC
-
+    reg 			[NB_INS-1:0]			pc ; //Program Counter Register
+    reg 								    wr_pc ; //Add 1 to PC
+    reg [NB_OPCODE-1:0] opcode;
+    reg [NB_INS-1:0] pc_reg;
     //==========================================================================
     // ALGORITHM.
     //==========================================================================
     assign o_addr_instr = pc ;
-
     assign o_data_instr = i_instruction[NB_OPERAND-1:0] ; //LOG2_N_DATA_ADDR
+    assign show_opcode = opcode;
 
     // PC refresh
-    always @ (posedge i_clock)
+    always @ (negedge i_clock)
     begin
     	if (i_reset) 
     	begin
-    		pc <= 1'b1 ; //{N_INSMEM_ADDR{1'b0}};
+    		pc <= 1'b0 ; //{N_INSMEM_ADDR{1'b0}};
     	end
-    	else if (i_valid && wr_pc)
-    		pc <= pc + 1'b1 ;
+//    	else if (i_valid && wr_pc)
+    	else if (wr_pc)
+            begin
+            pc <= pc + 1'b1 ;
+            opcode <= i_instruction[NB_DATA-1-:NB_OPCODE];
+            end
     end
+    
+//    always @ (negedge i_clock)
+//    begin
+//        if(o_enable)
+//        begin
+//            pc_reg<=pc;
+//        end
+//    end
+ 
+    assign mostrar_pc = pc_reg;
 
     always @(*) begin
     	case(i_instruction[NB_DATA-1-:NB_OPCODE])
@@ -77,6 +95,8 @@ module bip_control
                 o_op_code = 1'b0 ;
                 o_wr_ram = 1'b0 ;
                 o_rd_ram = 1'b0 ;
+                o_enable = 1'b1;
+                pc_reg = pc;
     		end
     		STORE_VARIABLE :
     		begin
@@ -87,6 +107,7 @@ module bip_control
                 o_op_code = 1'b0 ;
                 o_wr_ram = 1'b1 ;
                 o_rd_ram = 1'b0 ;
+                o_enable = 1'b0;
     		end
     		LOAD_VARIABLE :
     		begin
@@ -97,6 +118,7 @@ module bip_control
                 o_op_code = 1'b0 ;
                 o_wr_ram = 1'b0 ;
                 o_rd_ram = 1'b1 ;
+                o_enable = 1'b0;
     		end
     		LOAD_IMMEDIATE : 
     		begin
@@ -107,6 +129,7 @@ module bip_control
                 o_op_code = 1'b0 ;
                 o_wr_ram = 1'b0 ;
                 o_rd_ram = 1'b0 ;
+                o_enable = 1'b0;
     		end
     		ADD_VARIABLE : 
     		begin
@@ -117,6 +140,7 @@ module bip_control
                 o_op_code = 1'b1 ;
                 o_wr_ram = 1'b0 ;
                 o_rd_ram = 1'b1 ;
+                o_enable = 1'b0;
     		end
     		ADD_IMMEDIATE :
     		begin
@@ -127,6 +151,7 @@ module bip_control
                 o_op_code = 1'b1 ;
                 o_wr_ram = 1'b0 ;
                 o_rd_ram = 1'b0 ;
+                o_enable = 1'b0;
     		end
     		SUBSTRACT_VARIABLE :
     		begin
@@ -137,6 +162,7 @@ module bip_control
                 o_op_code = 1'b0 ;
                 o_wr_ram = 1'b0 ;
                 o_rd_ram = 1'b1 ;
+                o_enable = 1'b0;
     		end
     		SUBSTRACT_IMMEDIATE :
     		begin
@@ -147,6 +173,7 @@ module bip_control
                 o_op_code = 1'b0 ;
                 o_wr_ram = 1'b0 ;
                 o_rd_ram = 1'b0 ;
+                o_enable = 1'b0;
     		end
     		default :
     		begin
@@ -157,6 +184,7 @@ module bip_control
                 o_op_code = 1'b0 ;
                 o_wr_ram = 1'b0 ;
                 o_rd_ram = 1'b0 ;
+                o_enable = 1'b0;
     		end
     	endcase // i_instruction[NB_DATA-1-:NB_OPERAND]
     end

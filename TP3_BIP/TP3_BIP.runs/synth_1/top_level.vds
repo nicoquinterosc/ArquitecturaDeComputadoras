@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Nov  1 14:33:06 2019
-# Process ID: 7159
+# Start of session at: Thu Nov 28 20:28:42 2019
+# Process ID: 20597
 # Current directory: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1
 # Command line: vivado -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
 # Log file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1/top_level.vds
@@ -16,57 +16,20 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7178 
+INFO: Helper process launched with PID 20615 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1796.902 ; gain = 151.715 ; free physical = 7320 ; free virtual = 26882
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1796.898 ; gain = 152.715 ; free physical = 10755 ; free virtual = 28724
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_level' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/top_level.v:3]
-	Parameter B_RATE bound to: 9600 - type: integer 
-	Parameter NB_DATA bound to: 1 - type: integer 
-	Parameter N_DATA bound to: 8 - type: integer 
-	Parameter NB_OPERATION bound to: 6 - type: integer 
 	Parameter NB_DATABIP bound to: 16 - type: integer 
-	Parameter LOG2_N_INSMEM_ADDR bound to: 11 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/uart_tx.v:3]
-	Parameter NB_DATA bound to: 8 - type: integer 
-	Parameter N_DATA bound to: 8 - type: integer 
-	Parameter LOG2_N_DATA bound to: 4 - type: integer 
-	Parameter PARITY_CHECK bound to: 0 - type: integer 
-	Parameter EVEN_ODD_PARITY bound to: 1 - type: integer 
-	Parameter M_STOP bound to: 1 - type: integer 
-	Parameter LOG2_M_STOP bound to: 1 - type: integer 
-	Parameter NB_STATE bound to: 2 - type: integer 
-	Parameter ST_0_IDLE bound to: 2'b00 
-	Parameter ST_1_START bound to: 2'b01 
-	Parameter ST_2_DATA bound to: 2'b10 
-	Parameter ST_3_STOP bound to: 2'b11 
-	Parameter MAX_TIMER bound to: 16 - type: integer 
-	Parameter NB_TIMER bound to: 4 - type: integer 
-	Parameter NB_N_DATA_COUNTER bound to: 4 - type: integer 
-	Parameter NB_M_STOP_COUNTER bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (1#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/uart_tx.v:3]
-INFO: [Synth 8-6157] synthesizing module 'baudrate_generator' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/baudrate_generator.v:3]
-	Parameter CLK_FREQ bound to: 100000000.000000 - type: float 
-	Parameter BAUD_RATE bound to: 9600 - type: integer 
-	Parameter TICK_RATE bound to: 651.041667 - type: float 
-	Parameter COUNT_NBITS bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'baudrate_generator' (2#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/baudrate_generator.v:3]
-INFO: [Synth 8-6157] synthesizing module 'bip_uart_interface' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_uart_interface.v:1]
-	Parameter NB_DATA bound to: 16 - type: integer 
-	Parameter NB_DATATX bound to: 16 - type: integer 
-	Parameter N_ADDR bound to: 16 - type: integer 
-	Parameter LOG2_N_INSMEM_ADDR bound to: 11 - type: integer 
-	Parameter N_WORD_BUFFER bound to: 30 - type: integer 
-	Parameter NB_TIMER bound to: 4 - type: integer 
-	Parameter MAX_INSTR bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bip_uart_interface' (3#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_uart_interface.v:1]
-WARNING: [Synth 8-689] width (8) of port connection 'o_data' does not match port width (16) of module 'bip_uart_interface' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/top_level.v:68]
+	Parameter NB_INS bound to: 11 - type: integer 
+	Parameter NB_OPCODE bound to: 5 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'bip_BIP' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_BIP.v:1]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter NB_OPCODE bound to: 5 - type: integer 
 	Parameter NB_OPERAND bound to: 11 - type: integer 
 	Parameter N_INSMEM_ADDR bound to: 2048 - type: integer 
-	Parameter LOG2_N_INSMEM_ADDR bound to: 11 - type: integer 
+	Parameter NB_INS bound to: 11 - type: integer 
 	Parameter N_DATA_ADDR bound to: 1024 - type: integer 
 	Parameter LOG2_N_DATA_ADDR bound to: 10 - type: integer 
 	Parameter NB_SEL_A bound to: 2 - type: integer 
@@ -77,7 +40,7 @@ INFO: [Synth 8-6157] synthesizing module 'bip_cpu' [/home/nicoq/Facu/Arquitectur
 	Parameter NB_OPCODE bound to: 5 - type: integer 
 	Parameter NB_OPERAND bound to: 11 - type: integer 
 	Parameter N_INSMEM_ADDR bound to: 2048 - type: integer 
-	Parameter LOG2_N_INSMEM_ADDR bound to: 11 - type: integer 
+	Parameter NB_INS bound to: 11 - type: integer 
 	Parameter N_DATA_ADDR bound to: 1024 - type: integer 
 	Parameter LOG2_N_DATA_ADDR bound to: 10 - type: integer 
 	Parameter NB_SEL_A bound to: 2 - type: integer 
@@ -88,7 +51,7 @@ INFO: [Synth 8-6157] synthesizing module 'bip_control' [/home/nicoq/Facu/Arquite
 	Parameter NB_OPCODE bound to: 5 - type: integer 
 	Parameter NB_OPERAND bound to: 11 - type: integer 
 	Parameter N_INSMEM_ADDR bound to: 2048 - type: integer 
-	Parameter LOG2_N_INSMEM_ADDR bound to: 11 - type: integer 
+	Parameter NB_INS bound to: 11 - type: integer 
 	Parameter N_DATA_ADDR bound to: 1024 - type: integer 
 	Parameter LOG2_N_DATA_ADDR bound to: 10 - type: integer 
 	Parameter NB_SEL_A bound to: 2 - type: integer 
@@ -100,24 +63,24 @@ INFO: [Synth 8-6157] synthesizing module 'bip_control' [/home/nicoq/Facu/Arquite
 	Parameter ADD_IMMEDIATE bound to: 11'b00000000101 
 	Parameter SUBSTRACT_VARIABLE bound to: 11'b00000000110 
 	Parameter SUBSTRACT_IMMEDIATE bound to: 11'b00000000111 
-INFO: [Synth 8-6155] done synthesizing module 'bip_control' (4#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bip_control' (1#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_control.v:1]
 INFO: [Synth 8-6157] synthesizing module 'bip_datapath' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:1]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter NB_OPCODE bound to: 5 - type: integer 
 	Parameter NB_OPERAND bound to: 11 - type: integer 
 	Parameter N_INSMEM_ADDR bound to: 2048 - type: integer 
-	Parameter LOG2_N_INSMEM_ADDR bound to: 11 - type: integer 
+	Parameter NB_INS bound to: 11 - type: integer 
 	Parameter N_DATA_ADDR bound to: 1024 - type: integer 
 	Parameter LOG2_N_DATA_ADDR bound to: 10 - type: integer 
 	Parameter NB_SEL_A bound to: 2 - type: integer 
 	Parameter NB_DATA_S_EXT bound to: 10 - type: integer 
 	Parameter NB_EXTENSION_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bip_datapath' (5#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'bip_cpu' (6#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_cpu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bip_datapath' (2#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bip_cpu' (3#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_cpu.v:1]
 INFO: [Synth 8-6157] synthesizing module 'bip_program_memory' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:1]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter N_ADDR bound to: 2048 - type: integer 
-	Parameter LOG2_N_INSMEM_ADDR bound to: 11 - type: integer 
+	Parameter NB_INS bound to: 11 - type: integer 
 WARNING: [Synth 8-3848] Net mem_bank[2047] in module/entity bip_program_memory does not have driver. [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:26]
 WARNING: [Synth 8-3848] Net mem_bank[2046] in module/entity bip_program_memory does not have driver. [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:26]
 WARNING: [Synth 8-3848] Net mem_bank[2045] in module/entity bip_program_memory does not have driver. [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:26]
@@ -219,17 +182,19 @@ WARNING: [Synth 8-3848] Net mem_bank[1950] in module/entity bip_program_memory d
 WARNING: [Synth 8-3848] Net mem_bank[1949] in module/entity bip_program_memory does not have driver. [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:26]
 WARNING: [Synth 8-3848] Net mem_bank[1948] in module/entity bip_program_memory does not have driver. [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:26]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'bip_program_memory' (7#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bip_program_memory' (4#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:1]
 INFO: [Synth 8-6157] synthesizing module 'bip_data_memory' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_data_memory.v:1]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter N_ADDR bound to: 1024 - type: integer 
 	Parameter LOG2_N_DATA_ADDR bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bip_data_memory' (8#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_data_memory.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'bip_BIP' (9#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_BIP.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'top_level' (10#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/top_level.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bip_data_memory' (5#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_data_memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bip_BIP' (6#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_BIP.v:1]
+WARNING: [Synth 8-7023] instance 'u_bip' of module 'bip_BIP' has 9 connections declared, but only 8 given [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/top_level.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (7#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/top_level.v:3]
 WARNING: [Synth 8-3331] design bip_control has unconnected port i_instruction[10]
+WARNING: [Synth 8-3331] design bip_control has unconnected port i_valid
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1852.652 ; gain = 207.465 ; free physical = 7333 ; free virtual = 26896
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1852.648 ; gain = 208.465 ; free physical = 10768 ; free virtual = 28739
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -242,10 +207,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1867.496 ; gain = 222.309 ; free physical = 7333 ; free virtual = 26895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1867.523 ; gain = 223.340 ; free physical = 10767 ; free virtual = 28738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1867.496 ; gain = 222.309 ; free physical = 7333 ; free virtual = 26895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1867.523 ; gain = 223.340 ; free physical = 10767 ; free virtual = 28738
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -257,31 +222,32 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.965 ; gain = 0.000 ; free physical = 7199 ; free virtual = 26762
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1993.023 ; gain = 0.000 ; free physical = 10618 ; free virtual = 28605
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.965 ; gain = 0.000 ; free physical = 7199 ; free virtual = 26762
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1993.023 ; gain = 0.000 ; free physical = 10618 ; free virtual = 28605
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7316 ; free virtual = 26879
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10725 ; free virtual = 28713
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7316 ; free virtual = 26879
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10728 ; free virtual = 28715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7316 ; free virtual = 26879
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10727 ; free virtual = 28715
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5587] ROM size for "o_sel_a" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:62]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_reg_reg' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_control.v:85]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7301 ; free virtual = 26865
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10711 ; free virtual = 28700
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -296,33 +262,21 @@ Detailed RTL Component Info :
 +---Adders : 
 	   3 Input     16 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 2     
-	   2 Input     10 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 5     
-	   2 Input      1 Bit       Adders := 1     
 +---Registers : 
 	               16 Bit    Registers := 4     
 	               11 Bit    Registers := 2     
-	               10 Bit    Registers := 1     
-	                8 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 4     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
 +---RAMs : 
 	              16K Bit         RAMs := 1     
-	              256 Bit         RAMs := 3     
 +---Muxes : 
-	   4 Input     16 Bit        Muxes := 2     
-	   2 Input     16 Bit        Muxes := 3     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 3     
-	   5 Input      2 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
 	   8 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 8     
-	   2 Input      1 Bit        Muxes := 11    
-	   8 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -330,56 +284,26 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module uart_tx 
+Module top_level 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 2     
-	   2 Input      1 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 1     
-	                4 Bit    Registers := 2     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   5 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 4     
-Module baudrate_generator 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     10 Bit       Adders := 1     
-+---Registers : 
-	               10 Bit    Registers := 1     
-Module bip_uart_interface 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 3     
 +---Registers : 
 	               16 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
-+---RAMs : 
-	              256 Bit         RAMs := 3     
+	                5 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input     16 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
 Module bip_control 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     11 Bit       Adders := 1     
 +---Registers : 
 	               11 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      2 Bit        Muxes := 1     
 	   8 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
-	   8 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 7     
+	   8 Input      1 Bit        Muxes := 7     
 Module bip_datapath 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -425,45 +349,42 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[10]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[6]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[7]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[8]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[9]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[15]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[14]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[4]'
 INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[4]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[5]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_program_memory /\data_reg[5] )
+INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[5]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[6]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[7]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[8]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[9]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[15]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_program_memory /\data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_datapath/acc_reg[15] )
+INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_cpu/u_bip_control/opcode_reg[3]' (FDE_1) to 'u_bip/u_bip_cpu/u_bip_control/opcode_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_cpu/u_bip_control/opcode_reg[4] )
+INFO: [Synth 8-3886] merging instance 'opcode_reg[3]' (FDE) to 'opcode_reg[4]'
+INFO: [Synth 8-3886] merging instance 'led_reg[11]' (FDE) to 'led_reg[12]'
+INFO: [Synth 8-3886] merging instance 'led_reg[12]' (FDE) to 'led_reg[13]'
+INFO: [Synth 8-3886] merging instance 'led_reg[13]' (FDE) to 'led_reg[14]'
+INFO: [Synth 8-3886] merging instance 'led_reg[14]' (FDE) to 'led_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\opcode_reg[4] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7281 ; free virtual = 26851
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10695 ; free virtual = 28692
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Block RAM: Preliminary Mapping  Report (see note below)
-+------------+--------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name | RTL Object                           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------+--------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|top_level   | u_bip/u_bip_data_memory/mem_bank_reg | 1 K x 16(READ_FIRST)   | W |   | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-+------------+--------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
-Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
-
-Distributed RAM: Preliminary Mapping  Report (see note below)
-+------------+-----------------------------------+-----------+----------------------+--------------+
-|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives   | 
-+------------+-----------------------------------+-----------+----------------------+--------------+
-|top_level   | u_bip_uart_interface/ncl_bank_reg | Implied   | 16 x 11              | RAM32M x 3   | 
-|top_level   | u_bip_uart_interface/ins_bank_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-|top_level   | u_bip_uart_interface/acc_bank_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-+------------+-----------------------------------+-----------+----------------------+--------------+
-
-Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-INFO: [Synth 8-6837] The timing for the instance i_0/u_bip/u_bip_data_memory/mem_bank_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -474,31 +395,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7165 ; free virtual = 26736
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10572 ; free virtual = 28576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5584] The signal "top_level/u_bip/u_bip_data_memory/mem_bank_reg" is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
-INFO: [Synth 8-5584] The signal "top_level/u_bip/u_bip_data_memory/mem_bank_reg" is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7162 ; free virtual = 26733
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Distributed RAM: Final Mapping  Report
-+------------+-----------------------------------+-----------+----------------------+--------------+
-|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives   | 
-+------------+-----------------------------------+-----------+----------------------+--------------+
-|top_level   | u_bip_uart_interface/ncl_bank_reg | Implied   | 16 x 11              | RAM32M x 3   | 
-|top_level   | u_bip_uart_interface/ins_bank_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-|top_level   | u_bip_uart_interface/acc_bank_reg | Implied   | 16 x 16              | RAM32M x 3   | 
-+------------+-----------------------------------+-----------+----------------------+--------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10570 ; free virtual = 28574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -509,12 +412,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'u_bip_uart_interface/addr_rd_reg_rep[0]' (FDRE) to 'u_bip_uart_interface/addr_rd_reg[0]'
-INFO: [Synth 8-3886] merging instance 'u_bip_uart_interface/addr_rd_reg_rep[1]' (FDRE) to 'u_bip_uart_interface/addr_rd_reg[1]'
-INFO: [Synth 8-3886] merging instance 'u_bip_uart_interface/addr_rd_reg_rep[2]' (FDRE) to 'u_bip_uart_interface/addr_rd_reg[2]'
-INFO: [Synth 8-3886] merging instance 'u_bip_uart_interface/addr_rd_reg_rep[3]' (FDRE) to 'u_bip_uart_interface/addr_rd_reg[3]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7162 ; free virtual = 26732
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10570 ; free virtual = 28574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -538,7 +437,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7162 ; free virtual = 26732
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10571 ; free virtual = 28575
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -551,7 +450,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7162 ; free virtual = 26732
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10571 ; free virtual = 28575
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -563,25 +462,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7162 ; free virtual = 26732
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10571 ; free virtual = 28575
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7162 ; free virtual = 26732
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10571 ; free virtual = 28575
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7162 ; free virtual = 26732
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10571 ; free virtual = 28575
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7162 ; free virtual = 26732
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10571 ; free virtual = 28575
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -594,64 +493,55 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+----------+------+
-|      |Cell      |Count |
-+------+----------+------+
-|1     |BUFG      |     1|
-|2     |CARRY4    |     3|
-|3     |LUT1      |    10|
-|4     |LUT2      |    16|
-|5     |LUT3      |    26|
-|6     |LUT4      |    20|
-|7     |LUT5      |    37|
-|8     |LUT6      |    31|
-|9     |RAM256X1S |    12|
-|10    |RAM32M    |     6|
-|11    |FDRE      |   103|
-|12    |FDSE      |     6|
-|13    |IBUF      |     3|
-|14    |OBUF      |     3|
-+------+----------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     5|
+|4     |LUT3 |    12|
+|5     |LUT4 |     3|
+|6     |LUT5 |     6|
+|7     |LUT6 |     3|
+|8     |FDRE |    25|
+|9     |LD   |    11|
+|10    |IBUF |     5|
+|11    |OBUF |    16|
++------+-----+------+
 
 Report Instance Areas: 
 +------+-------------------------+-------------------+------+
 |      |Instance                 |Module             |Cells |
 +------+-------------------------+-------------------+------+
-|1     |top                      |                   |   277|
-|2     |  u_bip                  |bip_BIP            |   131|
-|3     |    u_bip_data_memory    |bip_data_memory    |    24|
-|4     |    u_bip_cpu            |bip_cpu            |    48|
-|5     |      u_bip_control      |bip_control        |    33|
-|6     |      u_bip_datapath     |bip_datapath       |    15|
-|7     |    u_bip_program_memory |bip_program_memory |    36|
-|8     |  u_bip_uart_interface   |bip_uart_interface |    63|
-|9     |  u_br_gen               |baudrate_generator |    27|
-|10    |  u_uart_tx              |uart_tx            |    48|
+|1     |top                      |                   |    88|
+|2     |  u_bip                  |bip_BIP            |    52|
+|3     |    u_bip_cpu            |bip_cpu            |    46|
+|4     |      u_bip_control      |bip_control        |    46|
+|5     |    u_bip_program_memory |bip_program_memory |     6|
 +------+-------------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7162 ; free virtual = 26732
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10571 ; free virtual = 28575
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1999.965 ; gain = 222.309 ; free physical = 7214 ; free virtual = 26785
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1999.965 ; gain = 354.777 ; free physical = 7214 ; free virtual = 26785
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1993.023 ; gain = 223.340 ; free physical = 10622 ; free virtual = 28626
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1993.023 ; gain = 348.840 ; free physical = 10622 ; free virtual = 28626
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 18 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2034.895 ; gain = 0.000 ; free physical = 7164 ; free virtual = 26735
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.852 ; gain = 0.000 ; free physical = 10574 ; free virtual = 28579
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 18 instances were transformed.
-  RAM256X1S => RAM256X1S (inverted pins: WCLK) (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 12 instances
-  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  A total of 11 instances were transformed.
+  LD => LDCE: 11 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+62 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2034.895 ; gain = 615.656 ; free physical = 7262 ; free virtual = 26832
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2034.895 ; gain = 0.000 ; free physical = 7262 ; free virtual = 26832
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2026.852 ; gain = 607.617 ; free physical = 10673 ; free virtual = 28678
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2026.852 ; gain = 0.000 ; free physical = 10673 ; free virtual = 28678
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1/top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 14:33:38 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 20:29:17 2019...

@@ -5,7 +5,7 @@ module bip_cpu
     parameter                                   NB_OPCODE = 5,
     parameter                                   NB_OPERAND = 11,
     parameter                                   N_INSMEM_ADDR = 2048,
-    parameter                                   LOG2_N_INSMEM_ADDR = 11,
+    parameter                                   NB_INS = 11,
     parameter                                   N_DATA_ADDR = 1024, 
     parameter                                   LOG2_N_DATA_ADDR = 10,
     parameter                                   NB_SEL_A = 2, 
@@ -14,11 +14,13 @@ module bip_cpu
 )
 (
     // Outputs.
-    output wire     [LOG2_N_INSMEM_ADDR-1:0]    o_addr_instr,
+    output wire     [NB_INS-1:0]    o_addr_instr,
     output wire     [NB_DATA_S_EXT-1:0]         o_data_instr,
     output wire     [NB_DATA-1:0]               o_data,
     output wire                                 o_wr_ram,
     output wire                                 o_rd_ram,
+    output wire                                 o_enable,
+    output wire     [NB_OPCODE-1:0]                          show_opcode,
 
     // Inputs.
     input  wire     [NB_DATA-1:0]               i_instruction, 
@@ -26,7 +28,9 @@ module bip_cpu
 
     input  wire                                 i_clock,
     input  wire                                 i_valid,
-    input  wire                                 i_reset                             
+    input  wire                                 i_reset,
+    
+    output wire [NB_INS-1:0]   mostrar_pc                             
 ) ; 
 
     //==========================================================================
@@ -36,7 +40,7 @@ module bip_cpu
     //==========================================================================
     // INTERNAL SIGNALS.
     //==========================================================================
-    wire [LOG2_N_INSMEM_ADDR-1:0]         addr_instr;
+    wire [NB_INS-1:0]         addr_instr;
     wire [NB_DATA_S_EXT-1:0]              data_instr;
     wire                                  rd;
     wire                                  wr;
@@ -65,7 +69,7 @@ module bip_cpu
         .NB_OPCODE              (NB_OPCODE         ),   
         .NB_OPERAND             (NB_OPERAND        ),       
         .N_INSMEM_ADDR          (N_INSMEM_ADDR     ),          
-        .LOG2_N_INSMEM_ADDR     (LOG2_N_INSMEM_ADDR),               
+        .NB_INS     (NB_INS),               
         .N_DATA_ADDR            (N_DATA_ADDR       ),       
         .LOG2_N_DATA_ADDR       (LOG2_N_DATA_ADDR  ),           
         .NB_SEL_A               (NB_SEL_A          )
@@ -80,6 +84,9 @@ module bip_cpu
         .o_rd_ram               (rd),
         .o_addr_instr           (addr_instr),
         .o_data_instr           (data_instr),
+        .o_enable               (o_enable),
+        .show_opcode          (show_opcode),
+        .mostrar_pc(mostrar_pc),
 
         .i_instruction          (i_instruction),
         .i_clock                (i_clock),
@@ -93,7 +100,7 @@ module bip_cpu
         .NB_OPCODE              (NB_OPCODE         ),           
         .NB_OPERAND             (NB_OPERAND        ),           
         .N_INSMEM_ADDR          (N_INSMEM_ADDR     ),               
-        .LOG2_N_INSMEM_ADDR     (LOG2_N_INSMEM_ADDR),                   
+        .NB_INS     (NB_INS),                   
         .N_DATA_ADDR            (N_DATA_ADDR       ),               
         .LOG2_N_DATA_ADDR       (LOG2_N_DATA_ADDR  ),                   
         .NB_SEL_A               (NB_SEL_A          ),           

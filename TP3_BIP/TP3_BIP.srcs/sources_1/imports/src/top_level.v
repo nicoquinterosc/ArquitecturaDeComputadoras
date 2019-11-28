@@ -2,87 +2,81 @@
 
 module top_level
   #(
-    parameter B_RATE = 9600,
-    parameter NB_DATA = 1,
-    parameter N_DATA = 8,
-    parameter NB_OPERATION = 6,
     parameter                                   NB_DATABIP = 16,
-    parameter                                   LOG2_N_INSMEM_ADDR = 11
+    parameter                                   NB_INS = 11,
+    parameter                                   NB_OPCODE = 5
     )
    (
-    //TODO: reemplazar por pines del contraint
-    output      RsTx,
-    output [1:0] JA,
-    // output [1:0]        o_led,
-    
-    input       RsRx,
     input       i_clk,
-    input       i_btnC
+    input       i_btnC,
+    input       i_btnL,
+    input       i_btnR,
+    input       i_btnU,    
+    output [15:0] LED
     );
 
-   wire    i_data;
-   wire    o_data;
-   wire    i_rst;
-   
-   // Wires
-   wire [N_DATA-1:0]       iface_data_tx;
-   wire                    iface_start_tx;
-   wire                    iface_valid_bip;
+    wire        i_rst;
+    wire     valid;
+    wire    show_acc;
+    wire    show_pc;
+    wire    show_op;
+    wire    enable;
+    reg [15:0] led;
+    reg [NB_OPCODE-1:0] opcode;
+    wire   [NB_OPCODE-1:0] show_opcode;
+    
+   wire [NB_DATABIP-1:0]   acc;
+   wire [NB_DATABIP-1:0]   ins;
+   wire [NB_INS-1:0] pc;
+   wire [NB_INS-1:0] mostrar_pc;
 
-   wire                    tx_done_iface;
-
-   wire                    brgen_valid_tx;
-
-   wire [NB_DATABIP-1:0]   bip_acc_iface;
-   wire [NB_DATABIP-1:0]   bip_instruction_iface;
-   wire [LOG2_N_INSMEM_ADDR-1:0] bip_nclock_iface;
-
-   wire [N_DATA-1:0]       alu_data_iface;
-
-   assign JA[1] = RsRx;
-   assign i_data = RsRx;
-   assign RsTx = o_data;
-   assign JA[0] = o_data;
    assign i_rst = i_btnC;
+   assign show_acc = i_btnL;
+   assign show_pc = i_btnR;
+   assign show_op = i_btnU;
 
-   uart_tx
-     u_uart_tx(
-               .o_data(o_data),
-               .o_tx_done(tx_done_iface),
-               .i_data(iface_data_tx),
-               .i_tx_start(iface_start_tx),
-               .i_valid(brgen_valid_tx),
-               .i_reset(i_rst),
-               .i_clock(i_clk)
-               );
-   
-   baudrate_generator#(.BAUD_RATE(B_RATE))
-     u_br_gen(
-              .o_tick(brgen_valid_tx),
-              .i_clk(i_clk),
-              .i_rst(i_rst)
-              );
-
-   bip_uart_interface
-     u_bip_uart_interface(
-              .o_data(iface_data_tx),
-              .o_tx_start(iface_start_tx),
-              .o_valid(iface_valid_bip),
-              .i_tx_done(tx_done_iface),
-              .i_clock(i_clk),
-              .i_reset(i_rst),
-              .i_acc(bip_acc_iface),
-              .i_instruction(bip_instruction_iface),
-              .i_nclock(bip_nclock_iface)
-              );
+    always @(posedge i_clk)
+    begin
+        if(show_acc)
+        begin
+            led <= acc;
+        end
+        if(show_pc)
+        begin 
+            led <= mostrar_pc;
+        end
+        if(show_op)
+        begin
+            led[NB_OPCODE-1:0] <= opcode;
+        end
+    end
+    
+    always @(posedge i_clk)
+    begin
+        if(enable==1)
+        opcode <= show_opcode;
+    end
+    
+    assign LED = led;
+    
+//   counter 
+//        u_counter(
+//            .o_valid(valid),
+//            .i_clk(i_clk),
+//            .i_rst(i_rst),
+//            .i_enable(enable)
+//   );
 
    bip_BIP
-      u_bip(
-                .o_acc(bip_acc_iface),
-                .o_instruction(bip_instruction_iface),
-                .o_pc(bip_nclock_iface),
-                .i_clock(i_clk),
-                .i_valid(iface_valid_bip),
-                .i_reset(i_rst)
+        u_bip(
+            .o_acc(acc),
+            .o_instruction(ins),
+            .o_pc(pc),
+//            .o_enable(enable),
+            .i_clock(i_clk),
+            .i_valid(valid),
+            .i_reset(i_rst),
+            .show_opcode(show_opcode),
+            .mostrar_pc(mostrar_pc)
             );
 endmodule
