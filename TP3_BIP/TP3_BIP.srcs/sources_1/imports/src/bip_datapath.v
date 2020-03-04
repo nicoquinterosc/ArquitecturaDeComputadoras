@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module bip_datapath
 #(
     // Parameters.
@@ -68,7 +70,5 @@ module bip_datapath
             endcase
         end
     end
-
-
 
 endmodule

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc rfile:../../../TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc rfile:../../../TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports i_clk]
 set_property src_info {type:XDC file:1 line:47 export:INPUT save:INPUT read:READ} [current_design]

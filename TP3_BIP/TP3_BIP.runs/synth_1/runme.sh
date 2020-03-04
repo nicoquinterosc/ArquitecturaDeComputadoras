@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1'
+HD_PWD='/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/impl_1'
+HD_PWD='/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido/TP3_BIP.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -37,7 +37,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log top_level.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_level.tcl -notrace
 
 

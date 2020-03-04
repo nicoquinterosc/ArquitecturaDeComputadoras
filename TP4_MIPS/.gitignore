@@ -1,0 +1,16 @@
+*.csv
+*.mpf
+*.qpf
+*.qsf
+*.v.bak
+*.wlf
+*.cr.mti
+.DS_Store
+
+configs/
+db/
+incremental_db/
+output_files/
+simulation/
+work/
+instructions/ready_instructions.txt

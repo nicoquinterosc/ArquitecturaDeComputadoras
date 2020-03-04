@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module bip_cpu
 #(
     // Parameters.
@@ -30,7 +32,7 @@ module bip_cpu
     input  wire                                 i_valid,
     input  wire                                 i_reset,
     
-    output wire [NB_INS-1:0]   mostrar_pc                             
+    output wire     [NB_INS-1:0]                mostrar_pc                             
 ) ; 
 
     //==========================================================================
@@ -40,7 +42,7 @@ module bip_cpu
     //==========================================================================
     // INTERNAL SIGNALS.
     //==========================================================================
-    wire [NB_INS-1:0]         addr_instr;
+    wire [NB_INS-1:0]                     addr_instr;
     wire [NB_DATA_S_EXT-1:0]              data_instr;
     wire                                  rd;
     wire                                  wr;
@@ -85,12 +87,12 @@ module bip_cpu
         .o_addr_instr           (addr_instr),
         .o_data_instr           (data_instr),
         .o_enable               (o_enable),
-        .show_opcode          (show_opcode),
-        .mostrar_pc(mostrar_pc),
+        .show_opcode            (show_opcode),
+        .mostrar_pc             (mostrar_pc),
 
         .i_instruction          (i_instruction),
         .i_clock                (i_clock),
-        .i_valid                (i_valid),
+//        .i_valid                (i_valid),
         .i_reset                (i_reset) 
     );
 

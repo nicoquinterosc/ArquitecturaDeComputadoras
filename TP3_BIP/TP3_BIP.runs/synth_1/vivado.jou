@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Nov 28 20:28:42 2019
-# Process ID: 20597
-# Current directory: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1
+# Start of session at: Tue Dec  3 13:58:41 2019
+# Process ID: 1317
+# Current directory: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.runs/synth_1
 # Command line: vivado -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
-# Log file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1/top_level.vds
-# Journal file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1/vivado.jou
+# Log file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.runs/synth_1/top_level.vds
+# Journal file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top_level.tcl -notrace

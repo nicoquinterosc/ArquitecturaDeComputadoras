@@ -1,5 +1,7 @@
+`timescale 1ns / 1ps
+
 module bip_BIP
-#(
+    #(
     // Parameters.
     parameter                                   NB_DATA = 16,
     parameter                                   NB_OPCODE = 5,
@@ -11,20 +13,20 @@ module bip_BIP
     parameter                                   NB_SEL_A = 2, 
     parameter                                   NB_DATA_S_EXT = 10,
     parameter                                   NB_EXTENSION_SIZE = 6
-)
-(
+    )
+    (
     // Outputs.
-    output wire     [NB_DATA-1:0]               o_acc,
-    output wire     [NB_DATA-1:0]               o_instruction,
-    output wire       [NB_OPCODE-1:0]                          show_opcode,
+    output wire     [NB_DATA-1:0]   o_acc,
+    output wire     [NB_DATA-1:0]   o_instruction,
+    output wire     [NB_OPCODE-1:0] show_opcode,
     output wire     [NB_INS-1:0]    o_pc,
-    output wire                                 o_enable,
-    output wire [NB_INS-1:0] mostrar_pc,
-    
-    input  wire                                 i_clock,
-    input  wire                                 i_valid,
-    input  wire                                 i_reset                             
-) ; 
+    output wire                     o_enable,
+    output wire     [NB_INS-1:0]    mostrar_pc,
+    // Inputs
+    input  wire                     i_clock,
+    input  wire                     i_valid,
+    input  wire                     i_reset                             
+    ); 
 
     //==========================================================================
     // LOCAL PARAMETERS.
@@ -33,16 +35,16 @@ module bip_BIP
     //==========================================================================
     // INTERNAL SIGNALS.
     //==========================================================================
-    wire [NB_INS-1:0]         addr_instr;
-    wire [LOG2_N_DATA_ADDR-1:0]           data_instr;
+    wire    [NB_INS-1:0]            addr_instr;
+    wire    [LOG2_N_DATA_ADDR-1:0]  data_instr;
 
-    wire                                  rd;
-    wire                                  wr;
+    wire                            rd;
+    wire                            wr;
 
-    wire [NB_DATA-1:0]                    data_pc_to_mem;
-    wire [NB_DATA-1:0]                    instr;
-    wire [NB_DATA-1:0]                    data_mem;
-   reg [NB_INS-1:0]           n_clock;
+    wire    [NB_DATA-1:0]           data_pc_to_mem;
+    wire    [NB_DATA-1:0]           instr;
+    wire    [NB_DATA-1:0]           data_mem;
+    reg     [NB_INS-1:0]            n_clock;
 
 
     //==========================================================================
@@ -50,17 +52,18 @@ module bip_BIP
     //==========================================================================
 
 
-   assign o_pc = n_clock;
-   assign o_instruction = instr ;
-   assign o_acc = data_pc_to_mem;
+    assign o_pc = n_clock;
+    assign o_instruction = instr ;
+    assign o_acc = data_pc_to_mem;
    
-   always@(posedge i_clock) begin
-      if(i_reset)
-        n_clock <= {NB_INS{1'b0}};
-      else
+    always@(posedge i_clock) 
+    begin
+        if(i_reset)
+            n_clock <= {NB_INS{1'b0}};
+        else
         if(i_valid)
-          n_clock <= n_clock +1'b1;
-   end
+            n_clock <= n_clock +1'b1;
+    end
 
     bip_cpu
     #(              

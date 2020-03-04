@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu Nov 28 20:29:17 2019
+| Date         : Tue Dec  3 13:59:07 2019
 | Host         : quinteros running 64-bit Linux Mint 19 Tara
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -27,18 +27,20 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+-------------------------+------+-------+-----------+-------+
-|        Site Type        | Used | Fixed | Available | Util% |
-+-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   21 |     0 |     20800 |  0.10 |
-|   LUT as Logic          |   21 |     0 |     20800 |  0.10 |
-|   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |   36 |     0 |     41600 |  0.09 |
-|   Register as Flip Flop |   25 |     0 |     41600 |  0.06 |
-|   Register as Latch     |   11 |     0 |     41600 |  0.03 |
-| F7 Muxes                |    0 |     0 |     16300 |  0.00 |
-| F8 Muxes                |    0 |     0 |      8150 |  0.00 |
-+-------------------------+------+-------+-----------+-------+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Fixed | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| Slice LUTs*                |  134 |     0 |     20800 |  0.64 |
+|   LUT as Logic             |   70 |     0 |     20800 |  0.34 |
+|   LUT as Memory            |   64 |     0 |      9600 |  0.67 |
+|     LUT as Distributed RAM |   64 |     0 |           |       |
+|     LUT as Shift Register  |    0 |     0 |           |       |
+| Slice Registers            |   73 |     0 |     41600 |  0.18 |
+|   Register as Flip Flop    |   73 |     0 |     41600 |  0.18 |
+|   Register as Latch        |    0 |     0 |     41600 |  0.00 |
+| F7 Muxes                   |   32 |     0 |     16300 |  0.20 |
+| F8 Muxes                   |   16 |     0 |      8150 |  0.20 |
++----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -55,9 +57,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 11    |          Yes |           - |        Reset |
+| 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 25    |          Yes |       Reset |            - |
+| 73    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,16 +151,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   25 |        Flop & Latch |
+| FDRE     |   73 |        Flop & Latch |
+| RAMS64E  |   64 |  Distributed Memory |
+| LUT5     |   44 |                 LUT |
+| MUXF7    |   32 |               MuxFx |
+| LUT6     |   22 |                 LUT |
 | OBUF     |   16 |                  IO |
-| LUT3     |   12 |                 LUT |
-| LDCE     |   11 |        Flop & Latch |
-| LUT5     |    6 |                 LUT |
-| LUT2     |    5 |                 LUT |
+| MUXF8    |   16 |               MuxFx |
+| LUT4     |    5 |                 LUT |
+| LUT3     |    5 |                 LUT |
 | IBUF     |    5 |                  IO |
-| LUT6     |    3 |                 LUT |
-| LUT4     |    3 |                 LUT |
-| LUT1     |    1 |                 LUT |
+| CARRY4   |    4 |          CarryLogic |
+| LUT2     |    3 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
