@@ -16,7 +16,7 @@ module tb_top_level();
     //==========================================================================
     // INTERNAL SIGNALS.
     //==========================================================================
-   wire out;
+    wire out;
    
     wire                                        reset ;
     reg                                         clock = 1'b0 ;
@@ -25,8 +25,8 @@ module tb_top_level();
     //==========================================================================
     // CONNECTION TO DUT
     //==========================================================================
-   top_level
-     u_top(
+    top_level
+    u_top(
            .RsTx(out),
            .i_clk(clock),
            .i_btnC(reset)
@@ -48,7 +48,5 @@ module tb_top_level();
     end
 
     assign reset = (timer == 10) ;
-    
-
 
 endmodule

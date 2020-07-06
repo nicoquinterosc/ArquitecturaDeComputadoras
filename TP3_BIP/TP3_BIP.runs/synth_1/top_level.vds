@@ -2,12 +2,12 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Dec  3 13:58:41 2019
-# Process ID: 1317
-# Current directory: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.runs/synth_1
+# Start of session at: Thu Jul  2 17:46:02 2020
+# Process ID: 14034
+# Current directory: /home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1
 # Command line: vivado -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
-# Log file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.runs/synth_1/top_level.vds
-# Journal file: /home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.runs/synth_1/vivado.jou
+# Log file: /home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1/top_level.vds
+# Journal file: /home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top_level.tcl -notrace
 Command: synth_design -top top_level -part xc7a35tcpg236-1
@@ -16,17 +16,17 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1338 
+INFO: Helper process launched with PID 14109 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1799.898 ; gain = 153.715 ; free physical = 8148 ; free virtual = 26527
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1764.129 ; gain = 154.688 ; free physical = 121 ; free virtual = 1809
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_level' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/top_level.v:3]
+INFO: [Synth 8-6157] synthesizing module 'top_level' [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/top_level.v:3]
 	Parameter NB_DATABIP bound to: 16 - type: integer 
 	Parameter NB_INS bound to: 11 - type: integer 
 	Parameter NB_OPCODE bound to: 5 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'counter' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/new/counter.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/new/counter.v:3]
-INFO: [Synth 8-6157] synthesizing module 'bip_BIP' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_BIP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counter' [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/new/counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/new/counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bip_BIP' [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_BIP.v:3]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter NB_OPCODE bound to: 5 - type: integer 
 	Parameter NB_OPERAND bound to: 11 - type: integer 
@@ -37,7 +37,7 @@ INFO: [Synth 8-6157] synthesizing module 'bip_BIP' [/home/nicoq/Facu/Arquitectur
 	Parameter NB_SEL_A bound to: 2 - type: integer 
 	Parameter NB_DATA_S_EXT bound to: 10 - type: integer 
 	Parameter NB_EXTENSION_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'bip_cpu' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_cpu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bip_cpu' [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_cpu.v:3]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter NB_OPCODE bound to: 5 - type: integer 
 	Parameter NB_OPERAND bound to: 11 - type: integer 
@@ -48,7 +48,7 @@ INFO: [Synth 8-6157] synthesizing module 'bip_cpu' [/home/nicoq/Facu/Arquitectur
 	Parameter NB_SEL_A bound to: 2 - type: integer 
 	Parameter NB_DATA_S_EXT bound to: 10 - type: integer 
 	Parameter NB_EXTENSION_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'bip_control' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bip_control' [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_control.v:3]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter NB_OPCODE bound to: 5 - type: integer 
 	Parameter NB_OPERAND bound to: 11 - type: integer 
@@ -65,8 +65,8 @@ INFO: [Synth 8-6157] synthesizing module 'bip_control' [/home/nicoq/Facu/Arquite
 	Parameter ADD_IMMEDIATE bound to: 11'b00000000101 
 	Parameter SUBSTRACT_VARIABLE bound to: 11'b00000000110 
 	Parameter SUBSTRACT_IMMEDIATE bound to: 11'b00000000111 
-INFO: [Synth 8-6155] done synthesizing module 'bip_control' (2#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_control.v:3]
-INFO: [Synth 8-6157] synthesizing module 'bip_datapath' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bip_control' (2#1) [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bip_datapath' [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:3]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter NB_OPCODE bound to: 5 - type: integer 
 	Parameter NB_OPERAND bound to: 11 - type: integer 
@@ -77,20 +77,20 @@ INFO: [Synth 8-6157] synthesizing module 'bip_datapath' [/home/nicoq/Facu/Arquit
 	Parameter NB_SEL_A bound to: 2 - type: integer 
 	Parameter NB_DATA_S_EXT bound to: 10 - type: integer 
 	Parameter NB_EXTENSION_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bip_datapath' (3#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'bip_cpu' (4#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_cpu.v:3]
-INFO: [Synth 8-6157] synthesizing module 'bip_program_memory' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bip_datapath' (3#1) [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bip_cpu' (4#1) [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_cpu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bip_program_memory' [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:3]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter N_ADDR bound to: 2048 - type: integer 
 	Parameter NB_INS bound to: 11 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bip_program_memory' (5#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:3]
-INFO: [Synth 8-6157] synthesizing module 'bip_data_memory' [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_data_memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bip_program_memory' (5#1) [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_program_memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bip_data_memory' [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_data_memory.v:3]
 	Parameter NB_DATA bound to: 16 - type: integer 
 	Parameter N_ADDR bound to: 1024 - type: integer 
 	Parameter LOG2_N_DATA_ADDR bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bip_data_memory' (6#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_data_memory.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'bip_BIP' (7#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_BIP.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'top_level' (8#1) [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/top_level.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bip_data_memory' (6#1) [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_data_memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bip_BIP' (7#1) [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_BIP.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (8#1) [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/top_level.v:3]
 WARNING: [Synth 8-3331] design bip_program_memory has unconnected port i_addr[10]
 WARNING: [Synth 8-3331] design bip_program_memory has unconnected port i_addr[9]
 WARNING: [Synth 8-3331] design bip_program_memory has unconnected port i_addr[8]
@@ -100,7 +100,7 @@ WARNING: [Synth 8-3331] design bip_program_memory has unconnected port i_addr[5]
 WARNING: [Synth 8-3331] design bip_program_memory has unconnected port i_addr[4]
 WARNING: [Synth 8-3331] design bip_control has unconnected port i_instruction[10]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1854.648 ; gain = 208.465 ; free physical = 8171 ; free virtual = 26551
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1816.879 ; gain = 207.438 ; free physical = 216 ; free virtual = 1798
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -113,46 +113,46 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1858.617 ; gain = 212.434 ; free physical = 8169 ; free virtual = 26549
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1822.816 ; gain = 213.375 ; free physical = 244 ; free virtual = 1830
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1858.617 ; gain = 212.434 ; free physical = 8169 ; free virtual = 26549
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1822.816 ; gain = 213.375 ; free physical = 244 ; free virtual = 1830
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc]
-Finished Parsing XDC File [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Parsing XDC File [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc]
+Finished Parsing XDC File [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/constrs_1/imports/src/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2028.273 ; gain = 0.000 ; free physical = 8076 ; free virtual = 26455
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1959.488 ; gain = 0.000 ; free physical = 128 ; free virtual = 1738
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2028.273 ; gain = 0.000 ; free physical = 8076 ; free virtual = 26455
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1959.488 ; gain = 0.000 ; free physical = 128 ; free virtual = 1738
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8146 ; free virtual = 26526
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 205 ; free virtual = 1818
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8146 ; free virtual = 26526
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 205 ; free virtual = 1818
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8146 ; free virtual = 26526
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 205 ; free virtual = 1818
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5587] ROM size for "o_sel_a" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:56]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.srcs/sources_1/imports/src/bip_datapath.v:56]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8138 ; free virtual = 26519
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 197 ; free virtual = 1810
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -273,7 +273,7 @@ INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[7]' (
 INFO: [Synth 8-3886] merging instance 'u_bip/u_bip_program_memory/data_reg[8]' (FDE) to 'u_bip/u_bip_program_memory/data_reg[9]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_bip/u_bip_program_memory/data_reg[9] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8126 ; free virtual = 26509
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 184 ; free virtual = 1803
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -301,7 +301,7 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8006 ; free virtual = 26389
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 119 ; free virtual = 1672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -309,7 +309,7 @@ Start Timing Optimization
 INFO: [Synth 8-5584] The signal "top_level/u_bip/u_bip_data_memory/mem_bank_reg" is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
 INFO: [Synth 8-5584] The signal "top_level/u_bip/u_bip_data_memory/mem_bank_reg" is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8005 ; free virtual = 26387
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 149 ; free virtual = 1672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -330,7 +330,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8004 ; free virtual = 26387
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 148 ; free virtual = 1670
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -354,7 +354,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8004 ; free virtual = 26387
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 149 ; free virtual = 1669
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -367,7 +367,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8004 ; free virtual = 26387
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 149 ; free virtual = 1669
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -379,25 +379,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8004 ; free virtual = 26387
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 149 ; free virtual = 1669
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8004 ; free virtual = 26387
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 149 ; free virtual = 1669
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8004 ; free virtual = 26387
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 149 ; free virtual = 1669
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8004 ; free virtual = 26387
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 149 ; free virtual = 1669
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -441,17 +441,17 @@ Report Instance Areas:
 |8     |  u_counter              |counter            |     2|
 +------+-------------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8004 ; free virtual = 26387
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1959.488 ; gain = 350.047 ; free physical = 149 ; free virtual = 1669
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2028.273 ; gain = 212.434 ; free physical = 8056 ; free virtual = 26439
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2028.273 ; gain = 382.090 ; free physical = 8056 ; free virtual = 26439
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1959.488 ; gain = 213.375 ; free physical = 200 ; free virtual = 1720
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1959.496 ; gain = 350.047 ; free physical = 200 ; free virtual = 1720
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 16 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2028.273 ; gain = 0.000 ; free physical = 8005 ; free virtual = 26387
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1959.496 ; gain = 0.000 ; free physical = 148 ; free virtual = 1674
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 16 instances were transformed.
   RAM256X1S => RAM256X1S (inverted pins: WCLK) (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 16 instances
@@ -459,10 +459,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 40 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2028.273 ; gain = 606.039 ; free physical = 8103 ; free virtual = 26486
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2028.273 ; gain = 0.000 ; free physical = 8103 ; free virtual = 26486
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 1959.496 ; gain = 554.125 ; free physical = 242 ; free virtual = 1769
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1959.496 ; gain = 0.000 ; free physical = 242 ; free virtual = 1769
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP3_BIPcorregido2/TP3_BIP.runs/synth_1/top_level.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/gerac/ArquitecturaDeComputadoras/TP3_BIP/TP3_BIP.runs/synth_1/top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 13:59:07 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  2 17:47:14 2020...

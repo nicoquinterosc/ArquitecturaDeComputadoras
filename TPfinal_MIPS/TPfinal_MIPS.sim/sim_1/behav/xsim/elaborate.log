@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto cf33d21fc8394c2b93bb3f3d13f7594f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot eq2_file_tb_behav xil_defaultlib.eq2_file_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'a' on this module [/home/gerac/ArquitecturaDeComputadoras/TPfinal_MIPS/TPfinal_MIPS.srcs/sim_1/new/eq2_file_tb.v:21]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

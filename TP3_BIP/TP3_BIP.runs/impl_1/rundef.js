@@ -12,9 +12,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "/home/nicoq/Xilinx/SDK/2019.1/bin:/home/nicoq/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64;/home/nicoq/Xilinx/Vivado/2019.1/bin;";
+  PathVal = "/tools/Xilinx/SDK/2019.1/bin:/tools/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64;/tools/Xilinx/Vivado/2019.1/bin;";
 } else {
-  PathVal = "/home/nicoq/Xilinx/SDK/2019.1/bin:/home/nicoq/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64;/home/nicoq/Xilinx/Vivado/2019.1/bin;" + PathVal;
+  PathVal = "/tools/Xilinx/SDK/2019.1/bin:/tools/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64;/tools/Xilinx/Vivado/2019.1/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;
@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
          "-log top_level.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_level.tcl -notrace" );
 
