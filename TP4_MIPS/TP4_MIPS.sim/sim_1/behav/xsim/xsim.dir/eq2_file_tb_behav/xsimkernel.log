@@ -1,0 +1,4 @@
+Running: xsim.dir/eq2_file_tb_behav/xsimk -simmode gui -wdb eq2_file_tb_behav.wdb -simrunnum 0 -socket 45831
+Design successfully loaded
+Design Loading Memory Usage: 43864 KB (Peak: 43984 KB)
+Design Loading CPU Usage: 20 ms
