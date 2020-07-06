@@ -1,0 +1,14 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/nicoq/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto e25cc01912a946c0a26cdad418b243aa --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot eq2_file_tb_behav xil_defaultlib.eq2_file_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/new/eq2_sop.v" Line 7. Module eq2_sop doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.eq2_sop
+Compiling module xil_defaultlib.eq2_file_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot eq2_file_tb_behav

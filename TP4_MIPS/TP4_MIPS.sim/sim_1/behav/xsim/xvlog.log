@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/new/eq2_sop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq2_sop
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sim_1/imports/new/eq2_file_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq2_file_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
