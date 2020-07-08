@@ -49,7 +49,7 @@ module tb_bip_BIP ();
     u_bip_BIP
     (
         .o_acc                  (acc),
-        .o_instruction          (instruction),        
+        .o_instruction          (instructi on),        
         .o_pc                   (pc),
         .o_enable(enable),
         .i_clock                (clock),    

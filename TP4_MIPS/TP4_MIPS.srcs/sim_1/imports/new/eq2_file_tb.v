@@ -10,31 +10,69 @@
 
 `timescale 1 ns/10 ps
 
+
 module readmemh_tb();
-
-    localparam  N_BITS = 32, 
-                N_REGS = 32;
-
-    reg [N_BITS-1:0] inst_memory [0:N_REGS-1];
+    
+    //==============================================================
+    // LOCAL PARAMETERS.
+    //==============================================================
+    localparam  NB_BITS = 32;
+    localparam  NB_ADDR = 32;
+    localparam  N_INSMEM_ADDR = 2048;
+    localparam  NB_PC = 32;
+    
+    //==============================================================
+    // INTERNAL SIGNALS.
+    //==============================================================
+    reg clk, reset, enable;
+    // TEMPORAL
+    reg [NB_PC-1:0] temp;
+    wire [NB_BITS-1:0] inst;
+    wire [NB_PC-1:0] pc;
+    reg [NB_BITS-1:0] inst_memory [0:N_INSMEM_ADDR-1];
     integer i, logfile;
+    
+    //==============================================================
+    // CREATION OF MODULES.
+    //==============================================================
+    
+    instruction_memory tbim
+        (.i_clk(clk),
+         .i_reset(reset),
+         .i_inst_addr(pc),
+         .o_inst(inst));
+         
+    program_counter tbpc
+        (.i_clk(clk),
+         .i_reset(reset),
+         .i_pc(temp),
+         .o_inst_addr(pc)
+         );
     
     initial 
     begin
-        $display("Loading instructions.");
-        $readmemb("memfile.mem", inst_memory);
+        clk = 0; 
+        reset = 0; 
+        enable = 0;
+        
+//        $display("Loading instructions.");
+//        $readmemb("memfile.mem", inst_memory);
         
         logfile=$fopen("log.txt","a+");
         
-        for(i=0; i<N_REGS; i=i+1)
+        for(i=0; i<N_INSMEM_ADDR; i=i+1)
         begin
             #1;
-            $display("%b", inst_memory[i]);
-            $fwrite(logfile, "%b,%t\n", inst_memory[i], $time);
+//            $display("%b", inst_memory[i]);
+            $fwrite(logfile, "%b,%t\n", inst, $time);
         end
         
         $fclose(logfile);
     end
-endmodule
+    
+    always 
+    #5 clk = !clk; 
+    endmodule
 
 //module eq2_file_tb;
 //    // signal declaration

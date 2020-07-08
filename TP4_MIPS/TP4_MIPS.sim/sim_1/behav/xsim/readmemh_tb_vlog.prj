@@ -1,5 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../TP4_MIPS.srcs/sources_1/new/inst_mem.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/pc.v" \
 "../../../../TP4_MIPS.srcs/sim_1/imports/new/eq2_file_tb.v" \
 
 # compile glbl module
