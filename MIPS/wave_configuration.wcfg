@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/CSE401/Hazards/MIPS/PIPELINE_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="PIPELINE_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="vbus132" type="vbus" db_ref_id="1">
+      <obj_property name="label">INSTRUCTIONS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#000000</obj_property>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[23,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[22,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[21,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[20,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[19,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[18,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[17,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[16,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[15,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[14,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[13,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[12,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[11,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[10,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[9,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[8,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[7,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[6,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[5,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[4,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[3,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[2,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[1,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mem/MEM[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[0,31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus190" type="vbus" db_ref_id="1">
+      <obj_property name="label">REGISTERS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#000000</obj_property>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[9,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[8,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[7,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[6,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[5,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[4,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[3,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[2,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[1,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/gp_reg/GP_REG[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,31:0]</obj_property>
+         <obj_property name="ObjectShortName">GP_REG[0,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus327" type="vbus" db_ref_id="1">
+      <obj_property name="label">DATA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#000000</obj_property>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[10,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[9,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[8,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[7,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[6,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[5,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[4,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[3,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[2,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[1,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/d_mem/MEM[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM[0,31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group59" type="group">
+      <obj_property name="label">FU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FU/rs" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FU/rt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FU/five_bit_mux_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">five_bit_mux_out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">five_bit_mux_out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FU/ex_mem_wb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ex_mem_wb[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ex_mem_wb[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FU/mem_Write_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_Write_reg[4:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_Write_reg[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FU/mem_wb_wb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_wb_wb[1:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wb_wb[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FU/forward_a_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">forward_a_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_a_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FU/forward_b_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">forward_b_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_b_sel[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group69" type="group">
+      <obj_property name="label">WB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/WRITEBACK/MemtoReg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MemtoReg</obj_property>
+         <obj_property name="ObjectShortName">MemtoReg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/WRITEBACK/ReadData" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/WRITEBACK/ALUResult" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/WRITEBACK/WriteData" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group85" type="group">
+      <obj_property name="label">MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/m_ctlout" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">m_ctlout</obj_property>
+         <obj_property name="ObjectShortName">m_ctlout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/zero" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">zero</obj_property>
+         <obj_property name="ObjectShortName">zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/MemWrite" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MemWrite</obj_property>
+         <obj_property name="ObjectShortName">MemWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/MemRead" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MemRead</obj_property>
+         <obj_property name="ObjectShortName">MemRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/Write_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Write_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Write_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/control_wb_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">control_wb_in[1:0]</obj_property>
+         <obj_property name="ObjectShortName">control_wb_in[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/ALU_result_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ALU_result_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_result_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/Write_reg_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Write_reg_in[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Write_reg_in[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/PCSrc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">PCSrc</obj_property>
+         <obj_property name="ObjectShortName">PCSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/mem_control_wb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_control_wb[1:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_control_wb[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/Read_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Read_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Read_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/mem_ALU_result" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_ALU_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_ALU_result[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/mem_Write_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_Write_reg[4:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_Write_reg[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/MEMORY/Read_data_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Read_data_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Read_data_wire[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group115" type="group">
+      <obj_property name="label">EX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/WB" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">WB[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/M" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">M[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/EX" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">EX[3:0]</obj_property>
+         <obj_property name="ObjectShortName">EX[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/NPC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">NPC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NPC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/rdata1in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rdata1in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata1in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/rdata2in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rdata2in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata2in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/IR" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/instrout_2016" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">instrout_2016[4:0]</obj_property>
+         <obj_property name="ObjectShortName">instrout_2016[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/instrout_1511" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">instrout_1511[4:0]</obj_property>
+         <obj_property name="ObjectShortName">instrout_1511[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/forward_a_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">forward_a_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_a_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/forward_b_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">forward_b_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_b_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/wb_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wb_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wb_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/mem_alu_result" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem_alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_alu_result[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/wb_ctlout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wb_ctlout[1:0]</obj_property>
+         <obj_property name="ObjectShortName">wb_ctlout[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/m_ctlout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">m_ctlout[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_ctlout[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/add_result" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">add_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">add_result[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/zero" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">zero</obj_property>
+         <obj_property name="ObjectShortName">zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/alu_result" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/rdata2out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rdata2out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata2out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/five_bit_muxout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">five_bit_muxout[4:0]</obj_property>
+         <obj_property name="ObjectShortName">five_bit_muxout[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/add_out_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">add_out_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">add_out_wire[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/alu_mux_out_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_mux_out_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_mux_out_wire[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/alu_control_out_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_control_out_wire[2:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_control_out_wire[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/alu_zero_wire" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_zero_wire</obj_property>
+         <obj_property name="ObjectShortName">alu_zero_wire</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/alu_result_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">alu_result_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_result_wire[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/bottom_mux_out_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bottom_mux_out_wire[4:0]</obj_property>
+         <obj_property name="ObjectShortName">bottom_mux_out_wire[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/forward_mux_b_out_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">forward_mux_b_out_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_mux_b_out_wire[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/EXECUTE/forward_mux_a_out_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">forward_mux_a_out_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">forward_mux_a_out_wire[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group138" type="group">
+      <obj_property name="label">D</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/RegWrite" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RegWrite</obj_property>
+         <obj_property name="ObjectShortName">RegWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/IF_ID_Instr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IF_ID_Instr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_Instr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/IF_ID_NPC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IF_ID_NPC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_NPC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/MEM_WB_Writereg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">MEM_WB_Writereg[4:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_Writereg[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/MEM_WB_Writedata" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">MEM_WB_Writedata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_WB_Writedata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/WB" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">WB[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/M" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">M[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/EX" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">EX[3:0]</obj_property>
+         <obj_property name="ObjectShortName">EX[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/NPC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">NPC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NPC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/rdata1out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rdata1out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata1out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/rdata2out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rdata2out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata2out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/IR" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/instrout_2016" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">instrout_2016[4:0]</obj_property>
+         <obj_property name="ObjectShortName">instrout_2016[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/instrout_1511" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">instrout_1511[4:0]</obj_property>
+         <obj_property name="ObjectShortName">instrout_1511[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/instrout_2521" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">instrout_2521[4:0]</obj_property>
+         <obj_property name="ObjectShortName">instrout_2521[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/CTL_WB_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">CTL_WB_wire[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_WB_wire[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/CTL_M_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">CTL_M_wire[2:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_M_wire[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/CTL_EX_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">CTL_EX_wire[3:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_EX_wire[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/REG_A_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">REG_A_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">REG_A_wire[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/REG_B_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">REG_B_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">REG_B_wire[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/DECODE/EXT_OUT_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">EXT_OUT_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EXT_OUT_wire[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group148" type="group">
+      <obj_property name="label">F</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/PCSrc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">PCSrc</obj_property>
+         <obj_property name="ObjectShortName">PCSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/EX_MEM_NPC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">EX_MEM_NPC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_MEM_NPC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/IF_ID_IR" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IF_ID_IR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_IR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/IF_ID_NPC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IF_ID_NPC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_ID_NPC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/pc_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pc_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_wire[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/data_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_wire[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/npc_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">npc_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">npc_wire[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/PIPELINE_tb/pipeline/FETCH/mux_npc_wire" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mux_npc_wire[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mux_npc_wire[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

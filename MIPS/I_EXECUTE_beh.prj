@@ -1,0 +1,8 @@
+verilog work "EX_MEM.v"
+verilog work "BOTTOM_MUX.v"
+verilog work "ALU_MUX.v"
+verilog work "ALU_CONTROL.v"
+verilog work "ALU.v"
+verilog work "ADDER.v"
+verilog work "I_EXECUTE.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
