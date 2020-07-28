@@ -97,26 +97,26 @@ module I_DECODE_tb;
 		#20;
 		$display("Reading data...");
 		RegWrite = 0;
-		IF_ID_instr = 32'b00000000000000010000000000000000;
+		IF_ID_Instr = 32'b00000000000000010000000000000000;
 		
 		#20
-		IF_ID_instr = 32'b00000000010000110000000000000000;
+		IF_ID_Instr = 32'b00000000010000110000000000000000;
 		
 		#20
-		IF_ID_instr = 32'b00000000100001010000000000000000;
+		IF_ID_Instr = 32'b00000000100001010000000000000000;
 		
 		#20
-		IF_ID_instr = 32'b00000000110001110000000000000000;
+		IF_ID_Instr = 32'b00000000110001110000000000000000;
 		
 		#20
-		IF_ID_instr = 32'b00000001000010000000000000000000;
+		IF_ID_Instr = 32'b00000001000010000000000000000000;
 		
       #20 $finish;
 	end
 	
 	initial begin
-		$monitor("INPUTS: IF_ID_instr = %b | IF_ID_NPC = %h | RegWrite = %d | ",
-				   IF_ID_instr, IF_ID_NPC, RegWrite, 
+		$monitor("INPUTS: IF_ID_Instr = %b | IF_ID_NPC = %h | RegWrite = %d | ",
+				   IF_ID_Instr, IF_ID_NPC, RegWrite, 
 					"MEM_WB_Writereg = %d | MEM_WB_Writedata = %h | ", 
 					MEM_WB_Writereg, MEM_WB_Writedata,
 					"OUTPUTS: WB = %b | M = %b | EX = %b | NPC = %h | ",

@@ -1,0 +1,50 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../TP4_MIPS.srcs/sources_1/new/MUX.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/PC.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/INCR.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/IF_ID.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/I_FETCH.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/INSTR_MEM.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/S_EXTEND.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/REG.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/CONTROL.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/ID_EX.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/I_DECODE.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/ALU.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/BOTTOM_MUX.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_CONTROL.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/EX_MEM.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/THREE_ONE_MUX.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_MUX.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/ADDER.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/I_EXECUTE.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/MEM_WB.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/AND_Gate.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/D_MEM.v" \
+"../../../../TP4_MIPS.srcs/sim_1/new/MUX_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/INSTR_MEM_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/PC_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/I_FETCH_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/INCR_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/IF_ID_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/CONTROL_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/S_EXTEND_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/REG_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/ID_EX_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/I_DECODE_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/ALU_CONTROL_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/BOTTOM_MUX_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/ADDER_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/ALU_MUX_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/EX_MEM_tb.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/INSTR_MEM_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/MEM_WB_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/AND_Gate_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/D_MEM_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

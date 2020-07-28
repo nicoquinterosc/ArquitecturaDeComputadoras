@@ -16,10 +16,10 @@
 
 module ALU_MUX_tb;
 	// Declare inputs.
-   reg [31:0] A, B;
+    reg [31:0] A, B;
 	reg sel;
 	
-   // Declare outputs.
+    // Declare outputs.
 	wire [31:0] Y;
 	
 	// Instantiate the MUX module.

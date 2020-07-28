@@ -18,7 +18,6 @@ module PIPELINE_tb;
 	// Inputs
 	reg clk;
 
-
 	// Instantiate the Unit Under Test (UUT)
 	PIPELINE pipeline(.clk(clk));
 

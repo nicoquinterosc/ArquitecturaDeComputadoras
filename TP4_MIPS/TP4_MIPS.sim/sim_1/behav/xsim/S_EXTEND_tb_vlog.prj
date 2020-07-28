@@ -1,28 +1,23 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../TP4_MIPS.srcs/sources_1/new/IF_ID.v" \
-"../../../../TP4_MIPS.srcs/sources_1/new/INCR.v" \
-"../../../../TP4_MIPS.srcs/sources_1/new/INSTR_MEM.v" \
 "../../../../TP4_MIPS.srcs/sources_1/new/MUX.v" \
 "../../../../TP4_MIPS.srcs/sources_1/new/PC.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/INCR.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/IF_ID.v" \
 "../../../../TP4_MIPS.srcs/sources_1/new/I_FETCH.v" \
-"../../../../TP4_MIPS.srcs/sources_1/new/inst_mem.v" \
-"../../../../TP4_MIPS.srcs/sources_1/new/pc.v" \
-"../../../../../MIPS/S_EXTEND.v" \
-"../../../../../MIPS/I_DECODE.v" \
-"../../../../../MIPS/CONTROL.v" \
-"../../../../../MIPS/REG.v" \
-"../../../../../MIPS/ID_EX.v" \
-"../../../../TP4_MIPS.srcs/sim_1/imports/new/eq2_file_tb.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/INSTR_MEM.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/S_EXTEND.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/REG.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/CONTROL.v" \
 "../../../../TP4_MIPS.srcs/sim_1/new/MUX_tb.v" \
-"../../../../TP4_MIPS.srcs/sim_1/new/PC_tb.v" \
-"../../../../TP4_MIPS.srcs/sim_1/new/INSTR_MEM_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/INSTR_MEM_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/PC_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/I_FETCH_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/INCR_tb.v" \
 "../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/IF_ID_tb.v" \
-"../../../../TP4_MIPS.srcs/sim_1/new/I_FETCH_tb.v" \
-"../../../../../MIPS/CONTROL_tb.v" \
-"../../../../../MIPS/REG_tb.v" \
-"../../../../../MIPS/S_EXTEND_tb.v" \
-"../../../../../MIPS/ID_EX_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/CONTROL_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/S_EXTEND_tb.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/REG_tb.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

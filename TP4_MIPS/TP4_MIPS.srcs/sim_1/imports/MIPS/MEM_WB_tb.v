@@ -67,7 +67,7 @@ module MEM_WB_tb;
 		$monitor("INPUTS: control_wb_in = %b\tRead_data_in = %h\tALU_result_in = %h\tWrite_reg_in = %b\t", 
 			control_wb_in, Read_data_in, ALU_result_in, Write_reg_in,
 			"OUTPUTS: mem_control_wb = %b\tRead_data = %h\tmem_ALU_result = %h\tmem_Write_reg = %b",
-			mem_control_wb, Read_data, mem_ALU_result, mem_Write_reg);				
+			mem_control_wb, Read_data, mem_ALU_result, mem_Write_reg);
 		forever begin
 			#10 clk = ~clk;
 		end

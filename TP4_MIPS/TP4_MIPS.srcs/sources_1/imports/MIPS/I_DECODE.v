@@ -18,7 +18,7 @@ module I_DECODE(
 	input         clk, RegWrite,
 	input  [31:0] IF_ID_Instr, IF_ID_NPC, 
 	input  [4:0]  MEM_WB_Writereg,
-   input  [31:0] MEM_WB_Writedata,
+    input  [31:0] MEM_WB_Writedata,
 	output [1:0]  WB,
 	output [2:0]  M,
 	output [3:0]  EX,
@@ -43,7 +43,7 @@ module I_DECODE(
 	wire [31:0] REG_B_wire; 
 	wire [31:0] EXT_OUT_wire;
 	
-	// Instantiate modules		
+	// Instantiate modules
 	// CONTROL
 	CONTROL ctl(.opcode(IF_ID_Instr[31:26]), .WB(CTL_WB_wire), .M(CTL_M_wire), 
 		.EX(CTL_EX_wire));	

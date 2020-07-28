@@ -2,13 +2,13 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jul 24 00:34:58 2020
-# Process ID: 94275
+# Start of session at: Tue Jul 28 18:17:33 2020
+# Process ID: 39381
 # Current directory: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim
-# Command line: wbtcv -mode batch -source /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/MUX_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv -mode batch -source /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/PIPELINE_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
-source /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/MUX_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/MUX_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 24 00:35:03 2020. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Fri Jul 24 00:35:03 2020...
+source /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/PIPELINE_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/PIPELINE_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jul 28 18:17:37 2020. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 28 18:17:37 2020...
