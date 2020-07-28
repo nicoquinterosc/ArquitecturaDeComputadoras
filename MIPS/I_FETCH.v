@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 ////////////////////////////////////////////////////////////////////////////////
-// Company:       California State University San Bernardino
+// Company:       	California State University San Bernardino
 // Engineer:		Bogdan Kravtsov
 //
 // Create Date:   13:47:21 10/03/2016
