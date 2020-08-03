@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.21)  3 AUG 2020 02:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.21)  3 AUG 2020 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,18 +732,116 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 475--476
 []\T1/pcr/m/n/10 and (EX/MEM.RegisterRd = ID/EX.RegisterRt)) ForwardB = 10 
  []
 
+! Misplaced alignment tab character &.
+<argument> \&&
+               not(EX/MEM.RegWrite \&& (EX/MEM.RegisterRd != 0)
+l.483 ...EM.RegWrite \&& (EX/MEM.RegisterRd != 0)}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 483--484
-[]\T1/pcr/m/n/10 and (EX/MEM.RegisterRd = ID/EX.RegisterRs)) ForwardA = 01 
- []
+! Misplaced alignment tab character &.
+<argument> \&& not(EX/MEM.RegWrite \&&
+                                       (EX/MEM.RegisterRd != 0)
+l.483 ...EM.RegWrite \&& (EX/MEM.RegisterRd != 0)}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \&&
+               (EX/MEM.RegisterRd != ID/EX.RegisterRs))
+l.485 ...(EX/MEM.RegisterRd != ID/EX.RegisterRs))}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \&&
+               (MEM/WB.RegisterRd = ID/EX.RegisterRs)) ForwardA = 01
+l.487 ...terRd = ID/EX.RegisterRs)) ForwardA = 01}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> if (MEM/WB.RegWrite \&&
+                                   (MEM/WB.RegisterRd != 0)
+l.489 ...B.RegWrite \&& (MEM/WB.RegisterRd !=  0)}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \&&
+               not(EX/MEM.RegWrite \&& (EX/MEM.RegisterRd != 0)
+l.491 ...M.RegWrite \&& (EX/MEM.RegisterRd !=  0)}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \&& not(EX/MEM.RegWrite \&&
+                                       (EX/MEM.RegisterRd != 0)
+l.491 ...M.RegWrite \&& (EX/MEM.RegisterRd !=  0)}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \&&
+               (EX/MEM.RegisterRd != ID/EX.RegisterRt))
+l.493 ...EX/MEM.RegisterRd !=  ID/EX.RegisterRt))}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \&&
+               (MEM/WB.RegisterRd = ID/EX.RegisterRt)) ForwardB = 01
+l.495 ...terRd = ID/EX.RegisterRt)) ForwardB = 01}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 487--488
-[]\T1/pcr/m/n/10 and (EX/MEM.RegisterRd = ID/EX.RegisterRt)) ForwardB = 01 
- []
-
-
-Overfull \hbox (15.88983pt too wide) in paragraph at lines 491--492
+Overfull \hbox (15.88983pt too wide) in paragraph at lines 499--500
 []\T1/lmr/m/n/10 Estas con-di-cio-nes se-rán im-ple-men-ta-das a tra-vés de dos
  mul-ti-ple-xo-res, \T1/pcr/m/n/10 ForwardA
  []
@@ -752,50 +850,50 @@ Overfull \hbox (15.88983pt too wide) in paragraph at lines 491--492
 <TP4_10.png, id=198, 322.20375pt x 220.57407pt>
 File: TP4_10.png Graphic file (type png)
 <use TP4_10.png>
-Package pdftex.def Info: TP4_10.png  used on input line 529.
+Package pdftex.def Info: TP4_10.png  used on input line 537.
 (pdftex.def)             Requested size: 172.5pt x 118.09514pt.
 <TP4_13.png, id=199, 954.56625pt x 400.49625pt>
 File: TP4_13.png Graphic file (type png)
 <use TP4_13.png>
-Package pdftex.def Info: TP4_13.png  used on input line 557.
+Package pdftex.def Info: TP4_13.png  used on input line 565.
 (pdftex.def)             Requested size: 517.5pt x 217.1203pt.
  [13 <./TP4_10.png (PNG copy)>]
 <TP4_14.png, id=207, 344.78813pt x 367.3725pt>
 File: TP4_14.png Graphic file (type png)
 <use TP4_14.png>
-Package pdftex.def Info: TP4_14.png  used on input line 578.
+Package pdftex.def Info: TP4_14.png  used on input line 586.
 (pdftex.def)             Requested size: 172.5pt x 183.7979pt.
  [14 <./TP4_13.png (PNG copy)>]
 <TP4_15.png, id=213, 511.15968pt x 217.5628pt>
 File: TP4_15.png Graphic file (type png)
 <use TP4_15.png>
-Package pdftex.def Info: TP4_15.png  used on input line 609.
+Package pdftex.def Info: TP4_15.png  used on input line 617.
 (pdftex.def)             Requested size: 310.4979pt x 132.1554pt.
  [15 <./TP4_14.png (PNG copy)>]
 <TP4_16.png, id=220, 265.74281pt x 149.8097pt>
 File: TP4_16.png Graphic file (type png)
 <use TP4_16.png>
-Package pdftex.def Info: TP4_16.png  used on input line 621.
+Package pdftex.def Info: TP4_16.png  used on input line 629.
 (pdftex.def)             Requested size: 172.5pt x 97.24712pt.
  [16 <./TP4_15.png (PNG copy)> <./TP4_16.png (PNG copy)>]
-Overfull \hbox (18.0pt too wide) in paragraph at lines 660--661
+Overfull \hbox (18.0pt too wide) in paragraph at lines 668--669
 []\T1/pcr/m/n/10 qemu-system-arm -machine lm3s811evb -cpu cortex-m3 -kernel
  []
 
 [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 666.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 666.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 674.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 674.
  (./tp4.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 666.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 666.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 674.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 674.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 666.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 674.
  ) 
 Here is how much of TeX's memory you used:
  11750 strings out of 480478
@@ -813,7 +911,7 @@ lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share
 /texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1
 /urw/courier/ucrb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
 fb>
-Output written on tp4.pdf (18 pages, 613432 bytes).
+Output written on tp4.pdf (18 pages, 613442 bytes).
 PDF statistics:
  427 PDF objects out of 1000 (max. 8388607)
  382 compressed objects within 4 object streams
