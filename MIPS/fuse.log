@@ -1,0 +1,68 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/CSE401/Hazards/MIPS/PIPELINE_tb_isim_beh.exe" -prj "D:/CSE401/Hazards/MIPS/PIPELINE_tb_beh.prj" "work.PIPELINE_tb" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/THREE_ONE_MUX.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/S_EXTEND.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/REG.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/PC.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/MUX.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/MEM_WB.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/INSTR_MEM.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/INCR.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/IF_ID.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/ID_EX.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/EX_MEM.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/D_MEM.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/CONTROL.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/BOTTOM_MUX.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/AND_Gate.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/ALU_MUX.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/ALU_CONTROL.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/ALU.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/ADDER.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/WB.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/MEM.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/I_FETCH.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/I_EXECUTE.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/I_DECODE.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/FORWARDING_UNIT.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/PIPELINE.v" into library work
+Analyzing Verilog file "D:/CSE401/Hazards/MIPS/PIPELINE_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module MUX
+Compiling module PC
+Compiling module INSTR_MEM
+Compiling module INCR
+Compiling module IF_ID
+Compiling module I_FETCH
+Compiling module CONTROL
+Compiling module REG
+Compiling module S_EXTEND
+Compiling module ID_EX
+Compiling module I_DECODE
+Compiling module ADDER
+Compiling module ALU_MUX
+Compiling module ALU
+Compiling module ALU_CONTROL
+Compiling module BOTTOM_MUX
+Compiling module EX_MEM
+Compiling module THREE_ONE_MUX
+Compiling module I_EXECUTE
+Compiling module D_MEM
+Compiling module MEM_WB
+Compiling module AND_Gate
+Compiling module MEM
+Compiling module WB
+Compiling module FORWARDING_UNIT
+Compiling module PIPELINE
+Compiling module PIPELINE_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 28 Verilog Units
+Built simulation executable D:/CSE401/Hazards/MIPS/PIPELINE_tb_isim_beh.exe
+Fuse Memory Usage: 27692 KB
+Fuse CPU Usage: 889 ms

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/CSE401/Hazards/MIPS/PIPELINE_tb_isim_beh.exe" -prj "D:/CSE401/Hazards/MIPS/PIPELINE_tb_beh.prj" "work.PIPELINE_tb" "work.glbl" 
