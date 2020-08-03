@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Jul 28 18:08:53 2020
-# Process ID: 37656
+# Start of session at: Fri Jul 31 20:49:24 2020
+# Process ID: 62159
 # Current directory: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim
-# Command line: wbtcv -mode batch -source /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/MEM_WB_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv -mode batch -source /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/PIPELINE_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
-source /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/MEM_WB_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+source /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.sim/sim_1/behav/xsim/xsim.dir/PIPELINE_tb_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -16,7 +16,7 @@
 
 module I_EXECUTE(
 	input         clk, 
-   input  [1:0]  WB,
+    input  [1:0]  WB,
 	input  [2:0]  M,
 	input  [3:0]  EX,
 	input  [31:0] NPC,
@@ -40,7 +40,8 @@ module I_EXECUTE(
 	output        zero,
 	output [31:0] alu_result,
 	output [31:0] rdata2out,
-	output [4:0]  five_bit_muxout);
+	output [4:0]  five_bit_muxout
+	);
 	
 	// Wires.				  
 	wire [31:0] add_out_wire;

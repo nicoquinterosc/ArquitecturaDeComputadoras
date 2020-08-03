@@ -26,6 +26,9 @@ module PIPELINE_tb;
 		clk = 0;		
 		// Wait for initialization
 		#100;
+		$monitor("Hola", pipeline.IF_ID_IR);
+//		$monitor("mux %d", pipeline.FETCH.mux.a);
+		$monitor("pc: %d", pipeline.FETCH.pc.npc);
 		// Perform 24 cycles.
 		//#480;
 		//$finish;

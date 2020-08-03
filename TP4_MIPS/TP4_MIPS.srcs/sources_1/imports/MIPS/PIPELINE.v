@@ -16,7 +16,7 @@
 
 module PIPELINE(input clk);
 	// I_FETCH output wires.
-	wire [31:0] IF_ID_IR;                      
+	wire [31:0] IF_ID_IR;                     
 	wire [31:0] IF_ID_NPC;                     
 
 	// I_DECODE output wires.

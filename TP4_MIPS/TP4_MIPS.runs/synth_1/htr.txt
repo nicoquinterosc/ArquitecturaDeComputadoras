@@ -6,4 +6,4 @@
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log I_FETCH.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source I_FETCH.tcl
+vivado -log PIPELINE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PIPELINE.tcl

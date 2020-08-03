@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7a35tcpg236-1
@@ -46,6 +45,21 @@ read_verilog -library xil_defaultlib {
   /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/CONTROL.v
   /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/ID_EX.v
   /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/I_DECODE.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/BOTTOM_MUX.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_CONTROL.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/EX_MEM.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/THREE_ONE_MUX.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_MUX.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/ADDER.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/I_EXECUTE.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM_WB.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/AND_Gate.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/D_MEM.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/WB.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/FORWARDING_UNIT.v
+  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.srcs/sources_1/imports/MIPS/PIPELINE.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -58,12 +72,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top I_FETCH -part xc7a35tcpg236-1
+synth_design -top PIPELINE -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef I_FETCH.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file I_FETCH_utilization_synth.rpt -pb I_FETCH_utilization_synth.pb"
+write_checkpoint -force -noxdef PIPELINE.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file PIPELINE_utilization_synth.rpt -pb PIPELINE_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

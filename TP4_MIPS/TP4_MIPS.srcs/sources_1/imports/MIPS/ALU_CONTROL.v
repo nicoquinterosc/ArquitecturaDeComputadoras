@@ -15,9 +15,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module ALU_CONTROL(input [5:0] funct, input [1:0] alu_op, output reg [2:0] select);
-	always @ * 
-	begin
-		case (alu_op) 
+    always @ * 
+    begin
+        case (alu_op) 
 			2'b00: 
 				begin
 					select <= 3'b010;            // LW / SW

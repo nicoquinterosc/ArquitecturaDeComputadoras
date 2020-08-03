@@ -22,10 +22,10 @@ module REG(input clk, regwrite, input [4:0] rs, rt, rd, input [31:0] writedata,
 	// Initialize memory.
 	initial begin
 		GP_REG[0] <= 32'h00000000; // $zero register
-		GP_REG[1] <= 32'h00000000;
-		GP_REG[2] <= 32'h00000000;
-		GP_REG[3] <= 32'h00000000;
-		GP_REG[4] <= 32'h00000000;
+		GP_REG[1] <= 32'h00000001;
+		GP_REG[2] <= 32'h00000002;
+		GP_REG[3] <= 32'h00000003;
+		GP_REG[4] <= 32'h00000004;
 	end
 		
 	// Get the values at the specified addresses
@@ -36,7 +36,7 @@ module REG(input clk, regwrite, input [4:0] rs, rt, rd, input [31:0] writedata,
 	end
 		
 	// Write the values at the specified addresses
-	always @ (posedge clk && regwrite)
+	always @ (posedge clk && regwrite)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 	begin
 		GP_REG[rd] <= writedata;
 	end

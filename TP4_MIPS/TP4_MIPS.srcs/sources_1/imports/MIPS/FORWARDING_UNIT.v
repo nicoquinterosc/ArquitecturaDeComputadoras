@@ -27,7 +27,6 @@ module FORWARDING_UNIT(
 	// Outputs to the EX stage.
 	output reg [1:0] forward_a_sel,
 	output reg [1:0] forward_b_sel);
-
 	
 	always @ * begin
 		forward_a_sel <= 2'b00;

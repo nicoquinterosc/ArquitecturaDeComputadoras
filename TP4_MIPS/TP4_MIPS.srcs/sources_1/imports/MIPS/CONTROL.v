@@ -14,7 +14,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module CONTROL(input [5:0] opcode, output reg [1:0] WB, output reg [2:0] M, 
+                    module CONTROL(input [5:0] opcode, output reg [1:0] WB, output reg [2:0] M, 
 	output reg [3:0] EX);
 	
 	always @ *

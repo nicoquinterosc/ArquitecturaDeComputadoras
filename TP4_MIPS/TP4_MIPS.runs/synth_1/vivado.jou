@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Jul 28 17:04:57 2020
-# Process ID: 21535
+# Start of session at: Sun Aug  2 00:47:40 2020
+# Process ID: 7482
 # Current directory: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.runs/synth_1
-# Command line: vivado -log I_FETCH.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source I_FETCH.tcl
-# Log file: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.runs/synth_1/I_FETCH.vds
+# Command line: vivado -log PIPELINE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PIPELINE.tcl
+# Log file: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.runs/synth_1/PIPELINE.vds
 # Journal file: /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source I_FETCH.tcl -notrace
+source PIPELINE.tcl -notrace
