@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 ////////////////////////////////////////////////////////////////////////////////
-// Company:       California State University San Bernardino
-// Engineer:		Bogdan Kravtsov
+// Company:       Universidad Nacional de Cordoba
+// Engineer:		Gerardo Collante
 //
 // Create Date:   14:31:53 10/03/2016
 // Module Name:   IF_ID

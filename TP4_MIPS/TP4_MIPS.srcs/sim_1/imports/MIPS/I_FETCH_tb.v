@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 ////////////////////////////////////////////////////////////////////////////////
-// Company:       California State University San Bernardino
-// Engineer:		Bogdan Kravtsov
+// Company:       Universidad Nacional de Cordoba
+// Engineer:		Gerardo Collante
 //
 // Create Date:   13:58:06 10/03/2016
 // Module Name:   I_FETCH_tb

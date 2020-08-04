@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 
 ////////////////////////////////////////////////////////////////////////////////
-// Company:       California State University San Bernardino
-// Engineer:		Bogdan Kravtsov
-//                Tyler Clayton
+// Company:       Universidad Nacional de Cordoba
+// Engineer:		Gerardo Collante
+//                Nicolas Quinteros Castilla
 //
 // Create Date:   15:17:23 10/24/2016
 // Module Name:   THREE_ONE_MUX
@@ -17,8 +17,9 @@
 module THREE_ONE_MUX(input [31:0] a, b, c, input [1:0] sel, output reg [31:0] y);
 	always @ *
 		case (sel)
-			00: y <= c;
-			01: y <= b;
-			10: y <= a;
+			00: y = c;
+			01: y = b;
+			10: y = a;
+			default: y = 0;
 		endcase
 endmodule

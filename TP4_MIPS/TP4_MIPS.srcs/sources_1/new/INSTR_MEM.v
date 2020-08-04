@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 
 ////////////////////////////////////////////////////////////////////////////////
-// Company:       California State University San Bernardino
-// Engineer:		Bogdan Kravtsov
-//                Tyler Clayton
+// Company:       Universidad Nacional de Cordoba
+// Engineer:		Gerardo Collante
+//                Nicolas Quinteros Castilla
 //
 // Create Date:   14:20:02 10/03/2016
 // Module Name:   INSTR_MEM
@@ -70,6 +70,6 @@ module INSTR_MEM(input clk, input [31:0] addr, output reg [31:0] data);
    // Assign the contents at the requested memory address to data.
 	always @ *
 	begin
-		data <= MEM[addr];
+		data = MEM[addr];
 	end
 endmodule

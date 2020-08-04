@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 
 ////////////////////////////////////////////////////////////////////////////////
-// Company:       California State University San Bernardino
-// Engineer:		Bogdan Kravtsov
-//                Tyler Clayton
+// Company:       Universidad Nacional de Cordoba
+// Engineer:		Gerardo Collante
+//                Nicolas Quinteros Castilla
 //
 // Create Date:   11:28:25 10/17/2016
 // Module Name:   REG
@@ -31,8 +31,8 @@ module REG(input clk, regwrite, input [4:0] rs, rt, rd, input [31:0] writedata,
 	// Get the values at the specified addresses
 	always @ *
 	begin
-		A <= GP_REG[rs];
-		B <= GP_REG[rt];
+		A = GP_REG[rs];
+		B = GP_REG[rt];
 	end
 		
 	// Write the values at the specified addresses

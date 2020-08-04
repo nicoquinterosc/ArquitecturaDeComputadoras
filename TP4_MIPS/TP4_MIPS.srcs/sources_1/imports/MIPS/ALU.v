@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 
 ////////////////////////////////////////////////////////////////////////////////
-// Company:       California State University San Bernardino
-// Engineer:		Bogdan Kravtsov
-//                Tyler Clayton
+// Company:       Universidad Nacional de Cordoba
+// Engineer:		Gerardo Collante
+//                Nicolas Quinteros Castilla
 //
 // Create Date:   15:24:23 10/24/2016
 // Module Name:   ALU
@@ -21,17 +21,17 @@ module ALU(input [31:0] A, B, input [2:0] control, output reg zero,
 	begin
 		case (control)
 			3'b010:
-				result <= A + B;
+				result = A + B;
 			3'b110:
-				result <= A - B;
+				result = A - B;
 			3'b000:
-				result <= A & B;
+				result = A & B;
 			3'b001:
-				result <= A | B;
+				result = A | B;
 			3'b111:
-				result <= (A < B) ? 1 : 0;	
+				result = (A < B) ? 1 : 0;	
 			3'b011:
-				result <= 32'bxxxx_xxxx_xxxx_xxxx_xxxx_xxxx_xxxx_xxxx;
+				result = 32'bxxxx_xxxx_xxxx_xxxx_xxxx_xxxx_xxxx_xxxx;
 		endcase
 		zero <= result ? 0 : 1;
 	end

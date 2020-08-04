@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 
 ////////////////////////////////////////////////////////////////////////////////
-// Company:       California State University San Bernardino
-// Engineer:		Bogdan Kravtsov
-//                Tyler Clayton
+// Company:       Universidad Nacional de Cordoba
+// Engineer:		Gerardo Collante
+//                Nicolas Quinteros Castilla
 //
 // Create Date:   14:30:00 10/31/2016
 // Module Name:   D_MEM
@@ -32,7 +32,7 @@ module D_MEM(input clk, MemWrite, MemRead, input [31:0] Address, Write_data,
 	// Get data from the specified address.
 	always @ *//(MemRead)
 		begin
-			Read_data <= MEM[Address];
+			Read_data = MEM[Address];
 		end
 	
 	// Write data to the specified address.

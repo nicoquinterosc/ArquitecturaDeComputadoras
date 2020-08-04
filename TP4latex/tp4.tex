@@ -480,19 +480,19 @@ Esto significa \textit{e.g.} que cuando una instrucción intenta usar un registr
 
 \texttt{if (MEM/WB.RegWrite \&\& (MEM/WB.RegisterRd !=  0)}
 
-\texttt{\&& not(EX/MEM.RegWrite \&& (EX/MEM.RegisterRd != 0)}
+\texttt{\&\& not(EX/MEM.RegWrite \&\& (EX/MEM.RegisterRd != 0)}
 
-\texttt{\&& (EX/MEM.RegisterRd != ID/EX.RegisterRs))}
+\texttt{\&\& (EX/MEM.RegisterRd != ID/EX.RegisterRs))}
 
-\texttt{\&& (MEM/WB.RegisterRd = ID/EX.RegisterRs)) ForwardA = 01}
+\texttt{\&\& (MEM/WB.RegisterRd = ID/EX.RegisterRs)) ForwardA = 01}
 
-\texttt{if (MEM/WB.RegWrite \&& (MEM/WB.RegisterRd !=  0)}
+\texttt{if (MEM/WB.RegWrite \&\& (MEM/WB.RegisterRd !=  0)}
 
-\texttt{\&& not(EX/MEM.RegWrite \&& (EX/MEM.RegisterRd !=  0)}
+\texttt{\&\& not(EX/MEM.RegWrite \&\& (EX/MEM.RegisterRd !=  0)}
 
-\texttt{\&& (EX/MEM.RegisterRd !=  ID/EX.RegisterRt))}
+\texttt{\&\& (EX/MEM.RegisterRd !=  ID/EX.RegisterRt))}
 
-\texttt{\&&  (MEM/WB.RegisterRd = ID/EX.RegisterRt)) ForwardB = 01}
+\texttt{\&\&  (MEM/WB.RegisterRd = ID/EX.RegisterRt)) ForwardB = 01}
 
 \bigskip
 

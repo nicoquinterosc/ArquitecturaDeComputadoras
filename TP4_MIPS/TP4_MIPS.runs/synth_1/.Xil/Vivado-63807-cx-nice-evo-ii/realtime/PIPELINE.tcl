@@ -16,7 +16,7 @@ set rt::rc [catch {
     set rt::cmdEcho 0
     rt::set_parameter writeXmsg true
     rt::set_parameter enableParallelHelperSpawn true
-    set ::env(RT_TMP) "./.Xil/Vivado-7482-cx-nice-evo-ii/realtime/tmp"
+    set ::env(RT_TMP) "./.Xil/Vivado-63807-cx-nice-evo-ii/realtime/tmp"
     if { [ info exists ::env(RT_TMP) ] } {
       file delete -force $::env(RT_TMP)
       file mkdir $::env(RT_TMP)
@@ -77,7 +77,7 @@ set rt::rc [catch {
     rt::set_parameter merge_flipflops true
 # MODE: 
     rt::set_parameter webTalkPath {/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.cache/wt}
-    rt::set_parameter enableSplitFlowPath "./.Xil/Vivado-7482-cx-nice-evo-ii/"
+    rt::set_parameter enableSplitFlowPath "./.Xil/Vivado-63807-cx-nice-evo-ii/"
     set ok_to_delete_rt_tmp true 
     if { [rt::get_parameter parallelDebug] } { 
        set ok_to_delete_rt_tmp false 

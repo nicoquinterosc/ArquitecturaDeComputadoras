@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.21)  3 AUG 2020 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.21)  3 AUG 2020 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,113 +732,15 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 475--476
 []\T1/pcr/m/n/10 and (EX/MEM.RegisterRd = ID/EX.RegisterRt)) ForwardB = 10 
  []
 
-! Misplaced alignment tab character &.
-<argument> \&&
-               not(EX/MEM.RegWrite \&& (EX/MEM.RegisterRd != 0)
-l.483 ...EM.RegWrite \&& (EX/MEM.RegisterRd != 0)}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
 
-! Misplaced alignment tab character &.
-<argument> \&& not(EX/MEM.RegWrite \&&
-                                       (EX/MEM.RegisterRd != 0)
-l.483 ...EM.RegWrite \&& (EX/MEM.RegisterRd != 0)}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+Overfull \hbox (6.0pt too wide) in paragraph at lines 487--488
+[]\T1/pcr/m/n/10 && (MEM/WB.RegisterRd = ID/EX.RegisterRs)) ForwardA = 01 
+ []
 
-! Misplaced alignment tab character &.
-<argument> \&&
-               (EX/MEM.RegisterRd != ID/EX.RegisterRs))
-l.485 ...(EX/MEM.RegisterRd != ID/EX.RegisterRs))}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
 
-! Misplaced alignment tab character &.
-<argument> \&&
-               (MEM/WB.RegisterRd = ID/EX.RegisterRs)) ForwardA = 01
-l.487 ...terRd = ID/EX.RegisterRs)) ForwardA = 01}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> if (MEM/WB.RegWrite \&&
-                                   (MEM/WB.RegisterRd != 0)
-l.489 ...B.RegWrite \&& (MEM/WB.RegisterRd !=  0)}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> \&&
-               not(EX/MEM.RegWrite \&& (EX/MEM.RegisterRd != 0)
-l.491 ...M.RegWrite \&& (EX/MEM.RegisterRd !=  0)}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> \&& not(EX/MEM.RegWrite \&&
-                                       (EX/MEM.RegisterRd != 0)
-l.491 ...M.RegWrite \&& (EX/MEM.RegisterRd !=  0)}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> \&&
-               (EX/MEM.RegisterRd != ID/EX.RegisterRt))
-l.493 ...EX/MEM.RegisterRd !=  ID/EX.RegisterRt))}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> \&&
-               (MEM/WB.RegisterRd = ID/EX.RegisterRt)) ForwardB = 01
-l.495 ...terRd = ID/EX.RegisterRt)) ForwardB = 01}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+Overfull \hbox (6.0pt too wide) in paragraph at lines 495--496
+[]\T1/pcr/m/n/10 && (MEM/WB.RegisterRd = ID/EX.RegisterRt)) ForwardB = 01 
+ []
 
 
 Overfull \hbox (15.88983pt too wide) in paragraph at lines 499--500
@@ -911,7 +813,7 @@ lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share
 /texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1
 /urw/courier/ucrb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
 fb>
-Output written on tp4.pdf (18 pages, 613442 bytes).
+Output written on tp4.pdf (18 pages, 613437 bytes).
 PDF statistics:
  427 PDF objects out of 1000 (max. 8388607)
  382 compressed objects within 4 object streams
