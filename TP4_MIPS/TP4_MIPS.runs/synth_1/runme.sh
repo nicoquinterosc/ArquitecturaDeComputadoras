@@ -7,9 +7,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/tools/Xilinx/SDK/2019.1/bin:/tools/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/tools/Xilinx/Vivado/2019.1/bin
+  PATH=/home/nicoq/Xilinx/SDK/2019.1/bin:/home/nicoq/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/nicoq/Xilinx/Vivado/2019.1/bin
 else
-  PATH=/tools/Xilinx/SDK/2019.1/bin:/tools/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/tools/Xilinx/Vivado/2019.1/bin:$PATH
+  PATH=/home/nicoq/Xilinx/SDK/2019.1/bin:/home/nicoq/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/nicoq/Xilinx/Vivado/2019.1/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.runs/synth_1'
+HD_PWD='/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP4_MIPS/TP4_MIPS.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
