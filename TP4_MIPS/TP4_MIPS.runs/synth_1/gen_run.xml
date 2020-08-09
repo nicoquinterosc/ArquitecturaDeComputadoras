@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1596499407">
-  <File Type="VDS-TIMING-PB" Name="PIPELINE_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="PIPELINE_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="PIPELINE.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="PIPELINE_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="PIPELINE_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="PIPELINE_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="PIPELINE.vds"/>
-  <File Type="REPORTS-TCL" Name="PIPELINE_reports.tcl"/>
   <File Type="PA-TCL" Name="PIPELINE.tcl"/>
+  <File Type="REPORTS-TCL" Name="PIPELINE_reports.tcl"/>
+  <File Type="RDS-RDS" Name="PIPELINE.vds"/>
+  <File Type="RDS-DCP" Name="PIPELINE.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/MUX.v">
