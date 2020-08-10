@@ -1,0 +1,593 @@
+
+*** Running vivado
+    with args -log PIPELINE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PIPELINE.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source PIPELINE.tcl -notrace
+Command: synth_design -top PIPELINE -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13233 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1465.020 ; gain = 103.434 ; free physical = 220 ; free virtual = 2318
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PIPELINE' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/PIPELINE.v:20]
+INFO: [Synth 8-6157] synthesizing module 'I_FETCH' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/I_FETCH.v:16]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/MUX.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (1#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/MUX.v:16]
+INFO: [Synth 8-6157] synthesizing module 'PC' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/PC.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/PC.v:16]
+INFO: [Synth 8-6157] synthesizing module 'INSTR_MEM' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/INSTR_MEM.v:17]
+INFO: [Synth 8-3876] $readmem data file 'memfile.mem' is read successfully [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/INSTR_MEM.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'INSTR_MEM' (3#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/INSTR_MEM.v:17]
+INFO: [Synth 8-6157] synthesizing module 'INCR' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/INCR.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'INCR' (4#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/INCR.v:16]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/IF_ID.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (5#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/IF_ID.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'I_FETCH' (6#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/I_FETCH.v:16]
+INFO: [Synth 8-6157] synthesizing module 'I_DECODE' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_DECODE.v:17]
+INFO: [Synth 8-6157] synthesizing module 'CONTROL' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/CONTROL.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'CONTROL' (7#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/CONTROL.v:17]
+INFO: [Synth 8-6157] synthesizing module 'REG' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/REG.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'REG' (8#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/REG.v:17]
+INFO: [Synth 8-6157] synthesizing module 'S_EXTEND' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/S_EXTEND.v:17]
+	Parameter IN_SIZE bound to: 16 - type: integer 
+	Parameter OUT_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'S_EXTEND' (9#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/S_EXTEND.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ID_EX.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (10#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ID_EX.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'I_DECODE' (11#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_DECODE.v:17]
+INFO: [Synth 8-6157] synthesizing module 'I_EXECUTE' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_EXECUTE.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ADDER' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ADDER.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'ADDER' (12#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ADDER.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ALU_MUX' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_MUX.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_MUX' (13#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_MUX.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (14#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ALU_CONTROL' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_CONTROL.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_CONTROL' (15#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_CONTROL.v:17]
+INFO: [Synth 8-6157] synthesizing module 'BOTTOM_MUX' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/BOTTOM_MUX.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'BOTTOM_MUX' (16#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/BOTTOM_MUX.v:17]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/EX_MEM.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (17#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/EX_MEM.v:17]
+INFO: [Synth 8-6157] synthesizing module 'THREE_ONE_MUX' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/THREE_ONE_MUX.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'THREE_ONE_MUX' (18#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/THREE_ONE_MUX.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'I_EXECUTE' (19#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_EXECUTE.v:17]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM.v:17]
+INFO: [Synth 8-6157] synthesizing module 'D_MEM' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/D_MEM.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'D_MEM' (20#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/D_MEM.v:17]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM_WB.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (21#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM_WB.v:17]
+INFO: [Synth 8-6157] synthesizing module 'AND_Gate' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/AND_Gate.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'AND_Gate' (22#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/AND_Gate.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (23#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM.v:17]
+INFO: [Synth 8-6157] synthesizing module 'WB' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/imports/MIPS/WB.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'WB' (24#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/imports/MIPS/WB.v:17]
+INFO: [Synth 8-6157] synthesizing module 'FORWARDING_UNIT' [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/FORWARDING_UNIT.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'FORWARDING_UNIT' (25#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/FORWARDING_UNIT.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'PIPELINE' (26#1) [/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/PIPELINE.v:20]
+WARNING: [Synth 8-3917] design PIPELINE has port fas[31] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[30] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[29] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[28] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[27] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[26] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[25] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[24] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[23] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[22] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[21] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[20] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[19] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[18] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[17] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[16] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[15] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[14] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[13] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[12] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[11] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[10] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[9] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[8] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[7] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[6] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[5] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[4] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[3] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[2] driven by constant 0
+WARNING: [Synth 8-3331] design FORWARDING_UNIT has unconnected port ex_mem_wb[0]
+WARNING: [Synth 8-3331] design FORWARDING_UNIT has unconnected port mem_wb_wb[0]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[31]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[30]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[29]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[28]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[27]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[26]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[25]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[24]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[23]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[22]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[21]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[20]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[19]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[18]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[17]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[16]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[15]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[14]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[13]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[12]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[11]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[10]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[9]
+WARNING: [Synth 8-3331] design D_MEM has unconnected port Address[8]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1518.770 ; gain = 157.184 ; free physical = 322 ; free virtual = 2363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1524.707 ; gain = 163.121 ; free physical = 318 ; free virtual = 2360
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1532.711 ; gain = 171.125 ; free physical = 316 ; free virtual = 2358
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "MEM" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "WB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "M" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "EX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "select" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1549.625 ; gain = 188.039 ; free physical = 277 ; free virtual = 2319
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 13    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module INSTR_MEM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+Module INCR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module IF_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module CONTROL 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+Module ID_EX 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+Module ADDER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module ALU_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+Module ALU_CONTROL 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      3 Bit        Muxes := 1     
+Module BOTTOM_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module EX_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module THREE_ONE_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module D_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module MEM_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+Module FORWARDING_UNIT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design PIPELINE has port fas[31] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[30] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[29] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[28] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[27] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[26] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[25] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[24] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[23] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[22] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[21] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[20] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[19] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[18] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[17] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[16] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[15] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[14] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[13] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[12] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[11] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[10] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[9] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[8] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[7] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[6] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[5] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[4] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[3] driven by constant 0
+WARNING: [Synth 8-3917] design PIPELINE has port fas[2] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'DECODE/gp_reg/A0__0' (FDR) to 'DECODE/gp_reg/A0'
+INFO: [Synth 8-3886] merging instance 'DECODE/gp_reg/A0' (FDR) to 'DECODE/gp_reg/B0'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DECODE/gp_reg/B0 )
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[6]' (FDR) to 'FETCH/if_id/instrout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[7]' (FDR) to 'FETCH/if_id/instrout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[8]' (FDR) to 'FETCH/if_id/instrout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[9]' (FDR) to 'FETCH/if_id/instrout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[10]' (FDR) to 'FETCH/if_id/instrout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[3]' (FDR) to 'FETCH/if_id/instrout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[4]' (FDR) to 'FETCH/if_id/instrout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[1]' (FDR) to 'FETCH/if_id/instrout_reg[21]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[14]' (FDR) to 'FETCH/if_id/instrout_reg[13]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[19]' (FDR) to 'FETCH/if_id/instrout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[15]' (FDR) to 'FETCH/if_id/instrout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[20]' (FDR) to 'FETCH/if_id/instrout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[11]' (FDR) to 'FETCH/if_id/instrout_reg[23]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[30]' (FDR) to 'FETCH/if_id/instrout_reg[28]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[31]' (FDR) to 'FETCH/if_id/instrout_reg[29]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[29]' (FDR) to 'FETCH/if_id/instrout_reg[27]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[28]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[27]' (FDR) to 'FETCH/if_id/instrout_reg[26]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[6]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[3]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[7]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[8]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[9]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[10]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[11]' (FDR) to 'DECODE/id_ex/instrout_2521_reg[2]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[12]' (FDR) to 'DECODE/id_ex/instrout_1511_reg[1]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[13]' (FDR) to 'DECODE/id_ex/s_extendout_reg[14]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[14]' (FDR) to 'DECODE/id_ex/instrout_1511_reg[3]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[15]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[16]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[17]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[18]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[19]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[20]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[21]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[22]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[23]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[24]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[25]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[26]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[27]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[28]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[29]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[30]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[31]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[3]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[4]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/s_extendout_reg[1]' (FDR) to 'DECODE/id_ex/instrout_2521_reg[0]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/ex_ctlout_reg[2]' (FDR) to 'DECODE/id_ex/ex_ctlout_reg[3]'
+INFO: [Synth 8-3886] merging instance 'FETCH/if_id/instrout_reg[24]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/instrout_1511_reg[3]' (FDR) to 'DECODE/id_ex/instrout_1511_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\FETCH/if_id/instrout_reg[25] )
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/instrout_1511_reg[4]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/instrout_2016_reg[4]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/instrout_1511_reg[0]' (FDR) to 'DECODE/id_ex/instrout_2521_reg[2]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/instrout_2521_reg[3]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/instrout_2521_reg[4]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/m_ctlout_reg[0]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[3]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/ex_ctlout_reg[0]' (FDR) to 'DECODE/id_ex/instrout_2016_reg[3]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/wb_ctlout_reg[1]' (FDR) to 'DECODE/id_ex/ex_ctlout_reg[3]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/m_ctlout_reg[1]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/m_ctlout_reg[2]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MEMORY/mem_wb/mem_control_wb_reg[0]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/wb_ctlout_reg[0]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'EXECUTE/ex_mem/wb_ctlout_reg[0]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'DECODE/id_ex/ex_ctlout_reg[1]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'EXECUTE/ex_mem/m_ctlout_reg[2]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'EXECUTE/ex_mem/m_ctlout_reg[1]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\FETCH/if_id/instrout_reg[25] )
+INFO: [Synth 8-3886] merging instance 'EXECUTE/ex_mem/five_bit_muxout_reg[4]' (FDR) to 'FETCH/if_id/instrout_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\FETCH/if_id/instrout_reg[25] )
+WARNING: [Synth 8-3332] Sequential element (DECODE/gp_reg/B0) is unused and will be removed from module PIPELINE.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 288 ; free virtual = 2136
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------------------+-----------+----------------------+---------------+
+|PIPELINE    | DECODE/gp_reg/GP_REG_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+--------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 280 ; free virtual = 2129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------------------+-----------+----------------------+---------------+
+|PIPELINE    | DECODE/gp_reg/GP_REG_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+--------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 276 ; free virtual = 2124
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 272 ; free virtual = 2120
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 272 ; free virtual = 2120
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 272 ; free virtual = 2120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 272 ; free virtual = 2120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 272 ; free virtual = 2120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 272 ; free virtual = 2120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    21|
+|3     |LUT1   |     3|
+|4     |LUT2   |    13|
+|5     |LUT3   |    11|
+|6     |LUT4   |    40|
+|7     |LUT5   |    91|
+|8     |LUT6   |   108|
+|9     |MUXF7  |    32|
+|10    |RAM32M |    12|
+|11    |FDRE   |   173|
+|12    |IBUF   |     2|
+|13    |OBUF   |    64|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+----------+------+
+|      |Instance   |Module    |Cells |
++------+-----------+----------+------+
+|1     |top        |          |   571|
+|2     |  DECODE   |I_DECODE  |   312|
+|3     |    gp_reg |REG       |    19|
+|4     |    id_ex  |ID_EX     |   293|
+|5     |  EXECUTE  |I_EXECUTE |    64|
+|6     |    alu    |ALU       |    20|
+|7     |    ex_mem |EX_MEM    |    44|
+|8     |  FETCH    |I_FETCH   |    28|
+|9     |    if_id  |IF_ID     |    13|
+|10    |    pc     |PC        |    15|
+|11    |  MEMORY   |MEM       |   100|
+|12    |    mem_wb |MEM_WB    |   100|
++------+-----------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 272 ; free virtual = 2120
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 87 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.055 ; gain = 361.469 ; free physical = 273 ; free virtual = 2122
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1723.062 ; gain = 361.469 ; free physical = 273 ; free virtual = 2122
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1766.910 ; gain = 0.000 ; free physical = 214 ; free virtual = 2067
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+140 Infos, 87 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1766.910 ; gain = 405.609 ; free physical = 312 ; free virtual = 2165
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1766.910 ; gain = 0.000 ; free physical = 312 ; free virtual = 2165
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.runs/synth_1/PIPELINE.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PIPELINE_utilization_synth.rpt -pb PIPELINE_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  9 23:47:16 2020...
