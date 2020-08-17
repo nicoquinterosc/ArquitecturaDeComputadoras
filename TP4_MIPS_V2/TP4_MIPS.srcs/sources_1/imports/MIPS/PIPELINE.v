@@ -17,7 +17,7 @@
 // ssign salida = | wb_data_wire
 // rst
 
-module PIPELINE(input clk, input rst, output [31:0] wd, fas);
+module PIPELINE(input clk, input rst, output [15:0] LED);
 	// I_FETCH output wires.
 	wire [31:0] IF_ID_IR;                     
 	wire [31:0] IF_ID_NPC;                     
@@ -159,6 +159,6 @@ module PIPELINE(input clk, input rst, output [31:0] wd, fas);
 		.forward_a_sel(forward_a_sel_wire), 
 		.forward_b_sel(forward_b_sel_wire));
 		
-    assign wd = wb_data_wire;
-    assign fas = forward_a_sel_wire;
+    assign LED = wb_data_wire [15:0];
+//    assign fas = forward_a_sel_wire;
 endmodule

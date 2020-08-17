@@ -18,10 +18,11 @@ module PIPELINE_tb;
 	// Inputs
 	reg clk;
 	reg rst;
-	wire [31:0] salida;
+	wire [31:0] wd;
+	wire [31:0] fas;
 
 	// Instantiate the Unit Under Test (UUT)
-	PIPELINE pipeline(.clk(clk), .rst(rst), .salida(salida));
+	PIPELINE pipeline(.clk(clk), .rst(rst), .wd(wd), .fas(fas));
 
 	initial begin
 		// Initialize Inputs

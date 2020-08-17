@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1597027596">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1597695219">
   <File Type="VDS-TIMING-PB" Name="PIPELINE_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="PIPELINE_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="PIPELINE.dcp"/>
@@ -260,7 +260,16 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/src/Basys3.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TP2/src/Basys3.xdc"/>
+        <Attr Name="ImportTime" Val="1593722641"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/src/Basys3.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
