@@ -7,6 +7,7 @@ verilog xil_defaultlib  \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/AND_Gate.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/BOTTOM_MUX.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/CONTROL.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/DEBUG_UNIT.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/D_MEM.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/EX_MEM.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/FORWARDING_UNIT.v" \
@@ -25,6 +26,7 @@ verilog xil_defaultlib  \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/REG.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/S_EXTEND.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/THREE_ONE_MUX.v" \
+"../../../../TP4_MIPS.srcs/sources_1/imports/sources_1/imports/MIPS/WB.v" \
 "../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/PIPELINE_tb.v" \
 
 # compile glbl module

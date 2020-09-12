@@ -22,40 +22,40 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.cache/wt [current_project]
-set_property parent.project_path /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.xpr [current_project]
+set_property webtalk.parent_dir /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.cache/wt [current_project]
+set_property parent.project_path /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_mem /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/mem_init_files/memfile.mem
+read_mem /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/mem_init_files/memfile.mem
 read_verilog -library xil_defaultlib {
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ADDER.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_CONTROL.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_MUX.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/AND_Gate.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/BOTTOM_MUX.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/CONTROL.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/D_MEM.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/EX_MEM.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/FORWARDING_UNIT.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ID_EX.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/IF_ID.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/INCR.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/INSTR_MEM.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_DECODE.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_EXECUTE.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/I_FETCH.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM_WB.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/MUX.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/PC.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/REG.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/S_EXTEND.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/THREE_ONE_MUX.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/imports/MIPS/WB.v
-  /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/PIPELINE.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ADDER.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_CONTROL.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_MUX.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/AND_Gate.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/BOTTOM_MUX.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/CONTROL.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/D_MEM.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/EX_MEM.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/FORWARDING_UNIT.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ID_EX.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/IF_ID.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/INCR.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/INSTR_MEM.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_DECODE.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_EXECUTE.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/I_FETCH.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM_WB.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/MUX.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/PC.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/REG.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/S_EXTEND.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/THREE_ONE_MUX.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/imports/MIPS/WB.v
+  /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/PIPELINE.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -65,8 +65,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/constrs_1/imports/src/Basys3.xdc
-set_property used_in_implementation false [get_files /home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/constrs_1/imports/src/Basys3.xdc]
+read_xdc /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/constrs_1/imports/src/Basys3.xdc
+set_property used_in_implementation false [get_files /home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/constrs_1/imports/src/Basys3.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

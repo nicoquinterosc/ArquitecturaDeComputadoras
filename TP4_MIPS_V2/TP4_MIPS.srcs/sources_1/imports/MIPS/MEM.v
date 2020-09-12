@@ -15,7 +15,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module MEM(
-	input         clk, rst,
+	input         clk, rst, enable,
 	input         m_ctlout,
 	input         zero,
 	input         MemWrite, 
@@ -34,14 +34,29 @@ module MEM(
 	wire [31:0] Read_data_wire;
 	
 	// Instantiate modules.
-	D_MEM d_mem(.clk(clk), .MemWrite(MemWrite), .MemRead(MemRead), 
-		.Address(ALU_result_in), .Write_data(Write_data), .Read_data(Read_data_wire));
+	D_MEM d_mem(.clk(clk), 
+	            .rst(rst),
+	            .enable(enable),
+	            .MemWrite(MemWrite), 
+	            .MemRead(MemRead),
+	            .Address(ALU_result_in), 
+	            .Write_data(Write_data), 
+	            .Read_data(Read_data_wire));
 		
-	MEM_WB mem_wb(.clk(clk), .rst(rst), .control_wb_in(control_wb_in), .Read_data_in(Read_data_wire), 
-		.ALU_result_in(ALU_result_in), .Write_reg_in(Write_reg_in), 
-		.mem_control_wb(mem_control_wb), .Read_data(Read_data), 
-		.mem_ALU_result(mem_ALU_result), .mem_Write_reg(mem_Write_reg));
+	MEM_WB mem_wb(.clk(clk),
+	              .rst(rst),
+	              .enable(enable),
+	              .control_wb_in(control_wb_in), 
+	              .Read_data_in(Read_data_wire), 
+		          .ALU_result_in(ALU_result_in), 
+		          .Write_reg_in(Write_reg_in),
+		          .mem_control_wb(mem_control_wb), 
+		          .Read_data(Read_data),
+		          .mem_ALU_result(mem_ALU_result), 
+		          .mem_Write_reg(mem_Write_reg));
 		
-	AND_Gate and_gate(.m_ctlout(m_ctlout), .zero(zero), .PCSrc(PCSrc));
+	AND_Gate and_gate(.m_ctlout(m_ctlout), 
+	                  .zero(zero), 
+	                  .PCSrc(PCSrc));
 
 endmodule

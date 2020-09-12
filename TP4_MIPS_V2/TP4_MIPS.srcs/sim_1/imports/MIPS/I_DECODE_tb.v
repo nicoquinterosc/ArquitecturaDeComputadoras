@@ -17,6 +17,7 @@
 module I_DECODE_tb;
 	// Inputs
 	reg        clk;
+	reg        enable;
 	reg        RegWrite;
 	reg [31:0] IF_ID_Instr;
 	reg [31:0] IF_ID_NPC;
@@ -35,15 +36,26 @@ module I_DECODE_tb;
 	wire [4:0] instrout_1511;
 
 	// Instantiate the I_DECODE module
-	I_DECODE decode(.clk(clk), .RegWrite(RegWrite), .IF_ID_Instr(IF_ID_Instr), 
-		.IF_ID_NPC(IF_ID_NPC), .MEM_WB_Writereg(MEM_WB_Writereg), 
-		.MEM_WB_Writedata(MEM_WB_Writedata), .WB(WB), .M(M), .EX(EX), 
-		.NPC(NPC), .rdata1out(rdata1out), .rdata2out(rdata2out), 
-		.IR(IR), .instrout_2016(instrout_2016), .instrout_1511(instrout_1511));
+	I_DECODE decode(.clk(clk), 
+	                .enable(enable),
+	                .RegWrite(RegWrite), 
+	                .IF_ID_Instr(IF_ID_Instr),
+	                .IF_ID_NPC(IF_ID_NPC),
+	                .MEM_WB_Writereg(MEM_WB_Writereg),
+	                .MEM_WB_Writedata(MEM_WB_Writedata), 
+	                .WB(WB), 
+	                .M(M), 
+	                .EX(EX),
+	                .NPC(NPC), 
+	                .rdata1out(rdata1out),
+	                .IR(IR), 
+	                .instrout_2016(instrout_2016), 
+	                .instrout_1511(instrout_1511));
 
 	initial begin
 		// Initialize Inputs
 		clk = 1;
+		enable = 1;
 		RegWrite = 0;
 		IF_ID_Instr = 0;
 		IF_ID_NPC = 0;

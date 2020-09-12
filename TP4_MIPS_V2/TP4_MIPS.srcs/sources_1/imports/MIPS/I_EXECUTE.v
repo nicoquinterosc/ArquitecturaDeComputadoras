@@ -15,7 +15,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module I_EXECUTE(
-	input         clk, rst,
+	input         clk, rst, enable,
     input  [1:0]  WB,
 	input  [2:0]  M,
 	input  [3:0]  EX,

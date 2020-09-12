@@ -17,6 +17,7 @@
 module ID_EX(
 	input clk,
 	input rst,
+	input enable,
 	input [1:0]       ctlwb_out, 
 	input [2:0]       ctlm_out, 
 	input [3:0]       ctlex_out, 
@@ -67,7 +68,7 @@ module ID_EX(
 			// Forwarding
 			instrout_2521 <= 5'b00000;
 			end
-        else
+        else if (enable == 1)
             begin
             wb_ctlout     <= ctlwb_out;
 			m_ctlout      <= ctlm_out;

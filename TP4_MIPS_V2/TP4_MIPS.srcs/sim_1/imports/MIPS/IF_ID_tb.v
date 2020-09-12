@@ -16,6 +16,7 @@
 module IF_ID_tb;
 	// Declare inputs.
 	reg clk;
+	reg enable;
 	reg [31:0] npc;
 	reg [31:0] instr;
 
@@ -24,14 +25,19 @@ module IF_ID_tb;
 	wire [31:0] npcout;
 
 	// Instantiate the IF_ID module.
-	IF_ID ifid(.clk(clk), .npc(npc), .instr(instr), .instrout(instrout), 
-		.npcout(npcout));
+	IF_ID ifid(.clk(clk), 
+	           .npc(npc), 
+	           .enable(enable),
+	           .instr(instr), 
+	           .instrout(instrout), 
+		       .npcout(npcout));
 
 	initial begin
 		// Initialize inputs.
 		clk = 0;
 		npc = 0;
 		instr = 0;
+		enable = 0;
 	
 		// Test values.
 		npc   = 32'h44444440;

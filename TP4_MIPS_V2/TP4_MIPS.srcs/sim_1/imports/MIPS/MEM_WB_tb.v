@@ -18,6 +18,8 @@
 module MEM_WB_tb;
 	// Inputs
 	reg clk;
+	reg rst;
+	reg enable;
 	reg [1:0] control_wb_in;
 	reg [31:0] Read_data_in;
 	reg [31:0] ALU_result_in;
@@ -32,6 +34,8 @@ module MEM_WB_tb;
 	// Instantiate the Unit Under Test (UUT)
 	MEM_WB mem_wb (
 		.clk(clk), 
+		.rst(rst),
+		.enable(enable),
 		.control_wb_in(control_wb_in), 
 		.Read_data_in(Read_data_in), 
 		.ALU_result_in(ALU_result_in), 
@@ -42,16 +46,21 @@ module MEM_WB_tb;
 		.mem_Write_reg(mem_Write_reg)
 	);
 
+    initial begin
+        #20 enable = 0;
+    end 
+
 	initial begin
 		// Initialize Inputs
 		clk = 0;
+		enable = 1;
 		control_wb_in = 0;
 		Read_data_in = 0;
 		ALU_result_in = 0;
 		Write_reg_in = 0;
 
 		// Wait 100 ns for global reset to finish
-		#100;
+		#20;
         
 		// Test
 		control_wb_in = 1;
@@ -60,6 +69,12 @@ module MEM_WB_tb;
 		Write_reg_in = 3;
 		
 		#20;
+		
+		control_wb_in = 0;
+		Read_data_in = 32'hFFFFAAD1;
+		ALU_result_in = 32'hFFADAD10;
+		Write_reg_in = 2;
+		
 		$finish;
 	end
 	
@@ -69,7 +84,7 @@ module MEM_WB_tb;
 			"OUTPUTS: mem_control_wb = %b\tRead_data = %h\tmem_ALU_result = %h\tmem_Write_reg = %b",
 			mem_control_wb, Read_data, mem_ALU_result, mem_Write_reg);
 		forever begin
-			#10 clk = ~clk;
+			#5 clk = ~clk;
 		end
 	end	
 endmodule

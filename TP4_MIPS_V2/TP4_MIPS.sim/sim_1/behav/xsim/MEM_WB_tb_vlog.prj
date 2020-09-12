@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/MEM_WB.v" \
+"../../../../TP4_MIPS.srcs/sim_1/imports/MIPS/MEM_WB_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

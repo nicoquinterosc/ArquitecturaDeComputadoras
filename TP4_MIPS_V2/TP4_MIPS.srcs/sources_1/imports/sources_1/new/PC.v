@@ -13,7 +13,11 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module PC(input clk, rst, input [31:0] npc, output reg [31:0] PC);
+module PC(input clk,
+          rst, 
+          enable,
+          input [31:0] npc, 
+          output reg [31:0] PC);
 	// Set PC initially to 0.
 	initial begin
 		PC <= 0;
@@ -25,6 +29,9 @@ module PC(input clk, rst, input [31:0] npc, output reg [31:0] PC);
 	   PC <= {32{1'b0}};
     else
 	begin
-	   PC <= npc;
+	if (enable==1)
+	   begin
+	       PC <= npc;
+	   end
 	end
 endmodule

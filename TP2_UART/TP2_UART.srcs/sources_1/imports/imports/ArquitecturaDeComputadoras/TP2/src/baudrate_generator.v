@@ -7,7 +7,6 @@ module baudrate_generator
     )
    (
     output o_tick,
-
     input  i_clk, i_rst
     );
 

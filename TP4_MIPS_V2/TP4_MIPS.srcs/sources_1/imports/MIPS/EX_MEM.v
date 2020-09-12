@@ -14,8 +14,8 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module EX_MEM(input        clk, rst,
-              input [1:0]  ctlwb_out, 
+module EX_MEM(input        clk, rst, enable,
+              input [1:0]  ctlwb_out,
               input [2:0]  ctlm_out,
               input [31:0] adder_out,
               input        aluzero,
@@ -53,7 +53,7 @@ module EX_MEM(input        clk, rst,
             rdata2out <= 0;
             five_bit_muxout  <= 0;	
         end
-        else
+        else if (enable == 1)
 		begin
 			wb_ctlout <= ctlwb_out;
 			m_ctlout <= ctlm_out;

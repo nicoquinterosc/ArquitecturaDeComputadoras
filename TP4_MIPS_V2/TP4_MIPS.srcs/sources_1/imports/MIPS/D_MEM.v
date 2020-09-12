@@ -14,8 +14,16 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module D_MEM(input clk, MemWrite, MemRead, input [31:0] Address, Write_data, 
-	output reg [31:0] Read_data);
+// HACER RESET
+
+module D_MEM(input clk,
+             rst,
+             enable,
+             MemWrite,
+             MemRead,
+             input [31:0] Address,
+             Write_data,
+             output reg [31:0] Read_data);
 	
 	reg [31:0] MEM [128:0];
 	
@@ -32,13 +40,19 @@ module D_MEM(input clk, MemWrite, MemRead, input [31:0] Address, Write_data,
 	// Get data from the specified address.
 //	always @ *//(MemRead)
 	always @ (posedge clk && MemRead)
-		begin
-			Read_data = MEM[Address];
+        begin
+            if (enable==1)
+            begin
+                Read_data = MEM[Address];
+            end
 		end
 	
 	// Write data to the specified address.
-	always @ (posedge clk && MemWrite)
-		begin
-			MEM[Address] <= Write_data;
+    always @ (posedge clk && MemWrite)
+        begin
+            if (enable==1)
+            begin
+                MEM[Address] <= Write_data;
+			end
 		end
 endmodule

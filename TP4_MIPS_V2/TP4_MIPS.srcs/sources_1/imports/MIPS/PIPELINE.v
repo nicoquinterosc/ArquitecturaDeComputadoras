@@ -17,11 +17,18 @@
 // ssign salida = | wb_data_wire
 // rst
 
-module PIPELINE(input clk, input rst, output [15:0] LED);
+module PIPELINE(input clk,
+                input rst,
+                input enable_wr,
+                input btn,
+                input on,
+                input [31:0] addr_bus,
+                input [31:0] instr_bus,
+                output [15:0] LED);
 	// I_FETCH output wires.
-	wire [31:0] IF_ID_IR;                     
-	wire [31:0] IF_ID_NPC;                     
-
+	wire [31:0] IF_ID_IR;
+	wire [31:0] IF_ID_NPC;
+	
 	// I_DECODE output wires.
 	wire [1:0]  ID_EX_WB_wire;
 	wire [2:0]  ID_EX_M_wire;
@@ -58,21 +65,35 @@ module PIPELINE(input clk, input rst, output [15:0] LED);
 	wire [1:0]  forward_a_sel_wire;
 	wire [1:0]  forward_b_sel_wire;
 	
+	// Debug Unit wires
+	wire enable_wire;
 	
 	I_FETCH FETCH(
-		// Inputs
-		.clk(clk),
-		.rst(rst),
-		.PCSrc(PCSrc_wire),
-		.EX_MEM_NPC(EX_MEM_add_result_wire), 
-		// Outputs
-		.IF_ID_IR(IF_ID_IR),
-		.IF_ID_NPC(IF_ID_NPC));
+	   .clk(clk),
+	   .rst(rst),
+	   .enable(enable_wire),
+	   .PCSrc(PCSrc_wire), 
+	   .enable_wr(enable_wr),
+	   .EX_MEM_NPC(EX_MEM_add_result_wire),
+	   .addr_wire(addr_bus),
+	   .instr_wire(instr_bus),
+	   .IF_ID_IR(IF_ID_IR),
+	   .IF_ID_NPC(IF_ID_NPC));
+//	I_FETCH FETCH(
+//		// Inputs
+//		.clk(clk),
+//		.rst(rst),
+//		.PCSrc(PCSrc_wire),
+//		.EX_MEM_NPC(EX_MEM_add_result_wire), 
+//		// Outputs
+//		.IF_ID_IR(IF_ID_IR),
+//		.IF_ID_NPC(IF_ID_NPC));
     
 	I_DECODE DECODE(
 		// Inputs
 		.clk(clk),
         .rst(rst), 
+        .enable(enable_wire),
 		.RegWrite(mem_control_wb_wire[1]), 
 		.IF_ID_Instr(IF_ID_IR), 
 		.IF_ID_NPC(IF_ID_NPC), 
@@ -95,6 +116,7 @@ module PIPELINE(input clk, input rst, output [15:0] LED);
 		// Inputs
 		.clk(clk), 
 		.rst(rst),
+		.enable(enable_wire),
 		.WB(ID_EX_WB_wire), 
 		.M(ID_EX_M_wire), 
 		.EX(ID_EX_EX_wire), 
@@ -121,8 +143,9 @@ module PIPELINE(input clk, input rst, output [15:0] LED);
 		
 	MEM MEMORY(
 		// Inputs
-		.clk(clk), 
+		.clk(clk),
 		.rst(rst),
+		.enable(enable_wire),
 		.m_ctlout(EX_MEM_m_ctlout_wire[2]), 
 		.zero(EX_MEM_zero_wire), 
 		.MemWrite(EX_MEM_m_ctlout_wire[0]), 
@@ -131,10 +154,10 @@ module PIPELINE(input clk, input rst, output [15:0] LED);
 		.control_wb_in(EX_MEM_wb_ctlout_wire), 
 		.ALU_result_in(EX_MEM_alu_result_wire), 
 		.Write_reg_in(EX_MEM_five_bit_muxout_wire),
-		// Outputs		
-		.PCSrc(PCSrc_wire), 
+		// Outputs
+		.PCSrc(PCSrc_wire),
 		.mem_control_wb(mem_control_wb_wire), 
-		.Read_data(Read_data_wire), 
+		.Read_data(Read_data_wire),
 		.mem_ALU_result(mem_ALU_result_wire), 
 		.mem_Write_reg(mem_Write_reg_wire));
 	
@@ -158,7 +181,13 @@ module PIPELINE(input clk, input rst, output [15:0] LED);
 		// Outputs
 		.forward_a_sel(forward_a_sel_wire), 
 		.forward_b_sel(forward_b_sel_wire));
-		
+	
+	DEBUG_UNIT DU(
+	   .clk(clk),
+	   .btn(btn),
+	   .on(on),
+	   .enable(enable_wire));
+	   
     assign LED = wb_data_wire [15:0];
 //    assign fas = forward_a_sel_wire;
 endmodule

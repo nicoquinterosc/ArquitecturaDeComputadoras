@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Mon Aug 17 17:14:51 2020
+| Date         : Wed Sep  9 17:14:45 2020
 | Host         : cx-nice-evo-ii running 64-bit Manjaro Linux
 | Command      : report_utilization -file PIPELINE_utilization_synth.rpt -pb PIPELINE_utilization_synth.pb
 | Design       : PIPELINE

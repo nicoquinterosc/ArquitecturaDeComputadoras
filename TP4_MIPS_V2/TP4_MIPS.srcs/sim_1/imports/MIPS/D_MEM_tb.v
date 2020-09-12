@@ -18,6 +18,7 @@
 module D_MEM_tb;
 	// Inputs
 	reg clk;
+	reg enable;
 	reg MemWrite;
 	reg MemRead;
 	reg [31:0] Address;
@@ -28,7 +29,8 @@ module D_MEM_tb;
 
 	// Instantiate the Unit Under Test (UUT)
 	D_MEM mem (
-		.clk(clk), 
+		.clk(clk),
+		.enable(enable),
 		.MemWrite(MemWrite), 
 		.MemRead(MemRead), 
 		.Address(Address), 
@@ -39,6 +41,7 @@ module D_MEM_tb;
 	initial begin
 		// Initialize Inputs
 		clk = 0;
+		enable = 1;
 		MemWrite = 0;
 		MemRead = 0;
 		Address = 0;

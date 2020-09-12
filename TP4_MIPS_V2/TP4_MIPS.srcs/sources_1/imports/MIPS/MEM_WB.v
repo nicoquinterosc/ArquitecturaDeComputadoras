@@ -15,7 +15,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module MEM_WB(
-	input clk, rst,
+	input  clk, rst, enable,
 	input  [1:0]  control_wb_in,
 	input  [31:0] Read_data_in,
 	input  [31:0] ALU_result_in,
@@ -43,7 +43,7 @@ module MEM_WB(
             mem_ALU_result <= 0;
             mem_Write_reg  <= 0;
         end
-        else
+        else if (enable==1)
 		begin
 			mem_control_wb <= control_wb_in;
 			Read_data      <= Read_data_in;

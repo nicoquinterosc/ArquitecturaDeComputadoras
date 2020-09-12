@@ -14,12 +14,19 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module INSTR_MEM(input [31:0] addr, output reg [31:0] data);
+module INSTR_MEM(input [31:0] addr,
+                 input [31:0] saveaddr,
+                 input [31:0] instr,
+                 input clk,
+                 input rst,
+                 input enable,
+                 input enable_wr,
+                 output reg [31:0] data);
    // Declare the memory block.
 	reg [31:0] MEM [128:0];
 	
 	// Initialize memory.
-	initial begin
+	//initial begin
 		/* SET 1 - Using NOPs to mitigate data hazards. 
 		MEM[0]  <= 32'b100011_00000_00001_0000_0000_0000_0001;  // LW r1 , 1(r0)
 		MEM[1]  <= 32'b100011_00000_00010_0000_0000_0000_0010;  // LW r2 , 2(r0)
@@ -28,7 +35,7 @@ module INSTR_MEM(input [31:0] addr, output reg [31:0] data);
 		MEM[4]  <= 32'b1000_0000_0000_0000_0000_0000_0000_0000; // NOP
 		MEM[5]  <= 32'b000000_00001_00010_00001_00000_100000;   // ADD r1, r1, r2
 		MEM[6]  <= 32'b1000_0000_0000_0000_0000_0000_0000_0000; // NOP
-		MEM[7]  <= 32'b1000_0000_0000_0000_0000_0000_0000_0000; // NOP
+		MEM[7]  <= 32'b1000_0000_0000_0000_0000_0000_0000_0000; // NOP:
 		MEM[8]  <= 32'b1000_0000_0000_0000_0000_0000_0000_0000; // NOP		
 		MEM[9]  <= 32'b000000_00001_00011_00001_00000_100000;   // ADD r1, r1, r3		
 		MEM[10] <= 32'b1000_0000_0000_0000_0000_0000_0000_0000; // NOP
@@ -63,13 +70,24 @@ module INSTR_MEM(input [31:0] addr, output reg [31:0] data);
 //		MEM[1]  <= 32'b001000_00001_00001_0000000000000001;   // ADD r1, r1, 1
 //		MEM[2]  <= 32'b001000_00010_00010_0000000000000010;   // ADD r2, r2, 2
 		
-		$readmemb("memfile.mem", MEM);
+		//$readmemb("memfile.mem", MEM);
 		
-	end
+	//end
 
    // Assign the contents at the requested memory address to data.
-	always @ *
+    always @ *
+    begin
+        if (enable_wr == 0)
+        begin
+            data = MEM[addr];
+        end
+	end
+	
+	always @(posedge clk)
 	begin
-		data = MEM[addr];
+	   if (enable_wr == 1 && enable ==1)
+	   begin
+	       MEM[saveaddr] <= instr;
+	   end
 	end
 endmodule

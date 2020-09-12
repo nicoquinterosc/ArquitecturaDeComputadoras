@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/gerac/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.runs/synth_1'
+HD_PWD='/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
