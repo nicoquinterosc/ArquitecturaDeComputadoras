@@ -13,7 +13,8 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module INCR(input [31:0] pcin, output [31:0] pcout);
+module INCR(input [31:0] pcin, 
+            output [31:0] pcout);
 	// Increment the input by one and assign to the output.
 	assign pcout = pcin + 1;
 endmodule

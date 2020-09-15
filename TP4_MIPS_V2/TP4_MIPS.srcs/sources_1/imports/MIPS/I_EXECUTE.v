@@ -15,7 +15,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module I_EXECUTE(
-	input         clk, rst, enable,
+	input  clk, 
+	input  rst, 
+	input  enable,
     input  [1:0]  WB,
 	input  [2:0]  M,
 	input  [3:0]  EX,
@@ -86,6 +88,7 @@ module I_EXECUTE(
 	EX_MEM ex_mem(
 		.clk(clk), 
 		.rst(rst),
+		.enable(enable),
 		.ctlwb_out(WB), 
 		.ctlm_out(M), 
 		.adder_out(add_out_wire), 

@@ -15,7 +15,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module MEM_WB(
-	input  clk, rst, enable,
+	input  clk, 
+	input  rst,
+	input  enable,
 	input  [1:0]  control_wb_in,
 	input  [31:0] Read_data_in,
 	input  [31:0] ALU_result_in,

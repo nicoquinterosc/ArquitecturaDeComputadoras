@@ -15,8 +15,12 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module I_DECODE(
-	input         clk, rst, enable, RegWrite,
-	input  [31:0] IF_ID_Instr, IF_ID_NPC, 
+	input  clk, 
+	input  rst, 
+	input  enable, 
+	input  RegWrite,
+	input  [31:0] IF_ID_Instr, 
+	input  [31:0] IF_ID_NPC, 
 	input  [4:0]  MEM_WB_Writereg,
     input  [31:0] MEM_WB_Writedata,
 	output [1:0]  WB,
@@ -28,7 +32,6 @@ module I_DECODE(
 	output [31:0] IR,
 	output [4:0]  instrout_2016,
 	output [4:0]  instrout_1511,
-	
 	// Forwarding
 	// ---------------------------
 	output [4:0]  instrout_2521
@@ -45,8 +48,10 @@ module I_DECODE(
 	
 	// Instantiate modules
 	// CONTROL
-	CONTROL ctl(.opcode(IF_ID_Instr[31:26]), .WB(CTL_WB_wire), .M(CTL_M_wire), 
-		.EX(CTL_EX_wire));	
+	CONTROL ctl(.opcode(IF_ID_Instr[31:26]),
+	            .WB(CTL_WB_wire), 
+	            .M(CTL_M_wire),
+	            .EX(CTL_EX_wire));
 	// REG
 	REG gp_reg(.clk(clk), 
 	           .enable(enable),
@@ -58,8 +63,9 @@ module I_DECODE(
 		       .A(REG_A_wire),
 		       .B(REG_B_wire));
 	// S_EXTEND	
-	S_EXTEND #(.OUT_SIZE(32), .IN_SIZE(16)) s_ex(.din(IF_ID_Instr[15:0]), 
-		.dout(EXT_OUT_wire));	
+	S_EXTEND #(.OUT_SIZE(32), 
+	           .IN_SIZE(16)) s_ex(.din(IF_ID_Instr[15:0]), 
+		       .dout(EXT_OUT_wire));
 	// ID_EX
 	ID_EX id_ex(.clk(clk), 
 	            .rst(rst), 

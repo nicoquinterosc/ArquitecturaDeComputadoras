@@ -13,31 +13,38 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module I_FETCH(input clk, 
-               PCSrc, 
-               rst, 
-               enable,
-               enable_wr,
-               input wire [31:0] EX_MEM_NPC, 
-               addr_wire, 
-               instr_wire,
-	           output wire [31:0] IF_ID_IR, IF_ID_NPC);
+module I_FETCH(
+    input clk,
+    input PCSrc,
+    input rst,
+    input enable,
+    input enable_wr,
+    input wire [31:0] EX_MEM_NPC, 
+    input wire [31:0] addr_wire, 
+    input wire [31:0] instr_wire,
+    output wire [31:0] IF_ID_IR, 
+    output wire [31:0] IF_ID_NPC);
+   
 	// Declare signal wires.
-	wire [31:0] pc_wire;
+    wire [31:0] pc_wire;
 	wire [31:0] data_wire;
 	wire [31:0] npc_wire;
 	wire [31:0] mux_npc_wire;
+	wire halt_wire;
 	
 	// Instantiate modules.
-	MUX mux(.a(EX_MEM_NPC), .b(npc_wire), .sel(PCSrc), .y(mux_npc_wire));
+	MUX mux(.a(EX_MEM_NPC),
+	        .b(npc_wire),
+	        .sel(PCSrc),
+	        .y(mux_npc_wire));
 	
 	PC pc(.clk(clk),
+	      .halt(halt_wire),
 	      .rst(rst),
 	      .enable(enable),
 	      .npc(mux_npc_wire),
 	      .PC(pc_wire));
 	
-	//INSTR_MEM mem(.addr(pc_wire), .data(data_wire));
 	INSTR_MEM mem(.addr(pc_wire),
 	              .saveaddr(addr_wire),
 	              .enable(enable),
@@ -45,9 +52,11 @@ module I_FETCH(input clk,
 	              .clk(clk),
 	              .rst(rst),
 	              .enable_wr(enable_wr),
+	              .halt(halt_wire),
 	              .data(data_wire));
 	
-	INCR incr(.pcin(pc_wire), .pcout(npc_wire));
+	INCR incr(.pcin(pc_wire), 
+	          .pcout(npc_wire));
 	
 	IF_ID if_id(.clk(clk),
 	            .rst(rst),

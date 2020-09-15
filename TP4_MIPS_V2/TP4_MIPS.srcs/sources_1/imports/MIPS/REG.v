@@ -14,14 +14,14 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module REG(input clk, 
-           regwrite, 
-           enable,
-           input [4:0] rs, 
-           rt, 
-           rd, 
-           input [31:0] writedata, 
-	       output reg [31:0] A, B);	
+module REG(input clk,
+           input regwrite,
+           input enable,
+           input [4:0] rs,
+           input [4:0] rt,
+           input [4:0] rd,
+           input [31:0] writedata,
+	       output reg [31:0] A, B);
 	// Registers
 	reg [31:0] GP_REG [31:0];
 	

@@ -14,7 +14,11 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module ALU_CONTROL(input [5:0] funct, input [1:0] alu_op, output reg [2:0] select);
+module ALU_CONTROL(
+    input [5:0] funct, 
+    input [1:0] alu_op, 
+    output reg [2:0] select);
+    
     always @ * 
     begin
         case (alu_op) 

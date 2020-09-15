@@ -14,7 +14,11 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module ALU_MUX(input [31:0] a, b, input sel, output [31:0] y);
+module ALU_MUX(
+    input [31:0] a,
+    input [31:0] b,
+    input sel,
+    output [31:0] y);
 	// If y = 1, select a; otherwise, select b.
 	assign y = sel ? a : b;
 endmodule

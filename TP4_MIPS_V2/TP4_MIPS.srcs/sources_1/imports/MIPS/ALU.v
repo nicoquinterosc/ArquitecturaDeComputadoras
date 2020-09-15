@@ -14,7 +14,11 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module ALU(input [31:0] A, B, input [2:0] control, output reg zero, 
+module ALU(
+    input [31:0] A, 
+    input [31:0] B, 
+    input [2:0] control, 
+    output reg zero, 
 	output reg [31:0] result);
 	
 	always @ *

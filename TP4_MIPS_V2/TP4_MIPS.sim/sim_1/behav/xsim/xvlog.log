@@ -1,0 +1,56 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ADDER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADDER
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ALU_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/AND_Gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND_Gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/BOTTOM_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BOTTOM_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/new/DEBUG_UNIT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEBUG_UNIT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/D_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/FORWARDING_UNIT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FORWARDING_UNIT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/INCR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INCR
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_DECODE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I_DECODE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/I_EXECUTE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I_EXECUTE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/new/I_FETCH.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I_FETCH
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/PIPELINE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIPELINE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/S_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/THREE_ONE_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module THREE_ONE_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/imports/MIPS/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sim_1/imports/MIPS/PIPELINE_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PIPELINE_tb

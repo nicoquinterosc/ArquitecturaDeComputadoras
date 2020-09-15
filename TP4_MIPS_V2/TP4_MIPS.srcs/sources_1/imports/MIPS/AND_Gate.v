@@ -15,6 +15,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-module AND_Gate(input m_ctlout, zero, output PCSrc);
+module AND_Gate(
+    input m_ctlout,
+    input zero,
+    output PCSrc);
+    
 	assign PCSrc = zero && m_ctlout;
 endmodule

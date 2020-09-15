@@ -19,33 +19,39 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module DEBUG_UNIT(input clk,
-                  input on,
-                  input btn,
-                  output reg enable);
+module DEBUG_UNIT(
+    input clk,
+    input rst,
+    input on,
+    input btn,
+    output reg enable);
 
 reg flag = 1'b0;
 
 always @*
 begin
-    if (on == 1)
+    if(rst)
+    begin
+        enable = 1'b0;
+    end
+    else if (on == 1)
     begin
         if (btn == 1'b1)
         begin
-            flag = 1'b1;
+            enable = 1'b1;
         end
-    end
-    else
-    begin
-        enable = 1'b1;
+        else
+        begin
+            enable = 1'b0;
+        end
     end
 end
 
 always @ (posedge clk)
 begin
-    if (flag == 1'b1)
-    begin 
-        enable = 1'b1;
+    if (enable == 1'b1)
+    begin
+        flag <= 1'b1;
     end
 end
 
@@ -53,11 +59,46 @@ always @ (negedge clk)
 begin
     if(on==1)
     begin
-        enable <= 1'b0;
-        if (enable == 1'b1)
+        if (flag==1'b1)
         begin
+            enable <= 1'b0;
             flag <= 1'b0;
         end
     end
 end
+
+//always @*
+//begin
+//    if (on == 1)
+//    begin
+//        if (btn == 1'b1)
+//        begin
+//            flag = 1'b1;
+//        end
+//    end
+//    else
+//    begin
+//        enable = 1'b1;
+//    end
+//end
+
+//always @ (posedge clk)
+//begin
+//    if (flag == 1'b1)
+//    begin 
+//        enable = 1'b1;
+//    end
+//end
+
+//always @ (negedge clk)
+//begin
+//    if(on==1)
+//    begin
+//        enable <= 1'b0;
+//        if (enable == 1'b1)
+//        begin
+//            flag <= 1'b0;
+//        end
+//    end
+//end
 endmodule

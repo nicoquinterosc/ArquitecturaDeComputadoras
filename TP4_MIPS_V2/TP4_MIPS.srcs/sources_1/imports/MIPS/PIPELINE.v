@@ -39,6 +39,7 @@ module PIPELINE(input clk,
 	wire [31:0] ID_EX_IR_wire;
 	wire [4:0]  ID_EX_instrout_2016_wire;
 	wire [4:0]  ID_EX_instrout_1511_wire;
+	wire        ID_EX_halt_wire;
 	// Forwarding
 	wire [4:0]  ID_EX_instrout_2521_wire;
 	
@@ -132,7 +133,7 @@ module PIPELINE(input clk,
 		.add_result(EX_MEM_add_result_wire), 
 		.zero(EX_MEM_zero_wire), 
 		.alu_result(EX_MEM_alu_result_wire), 
-		.rdata2out(EX_MEM_rdata2out_wire),   // --------- SI COMENTAMOS ESTO, SINTENTIZA, SINO NO
+		.rdata2out(EX_MEM_rdata2out_wire),
 		.five_bit_muxout(EX_MEM_five_bit_muxout_wire),
 		// Forwarding
 		.forward_a_sel(forward_a_sel_wire), 
@@ -184,6 +185,7 @@ module PIPELINE(input clk,
 	
 	DEBUG_UNIT DU(
 	   .clk(clk),
+	   .rst(rst),
 	   .btn(btn),
 	   .on(on),
 	   .enable(enable_wire));

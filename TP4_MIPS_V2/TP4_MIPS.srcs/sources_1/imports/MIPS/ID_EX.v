@@ -14,27 +14,33 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module ID_EX(
-	input clk,
-	input rst,
-	input enable,
-	input [1:0]       ctlwb_out, 
-	input [2:0]       ctlm_out, 
-	input [3:0]       ctlex_out, 
-	input [31:0]      npc, readdat1, readdat2, signext_out, 
-	input [4:0]       instr_2016, instr_1511, 
-	output reg [1:0]  wb_ctlout,
-	output reg [2:0]  m_ctlout,
-	output reg [3:0]  ex_ctlout,
-	output reg [31:0] npcout, rdata1out, rdata2out, s_extendout,
-	output reg [4:0]  instrout_2016, instrout_1511,
-	
-	// Forwarding
-	// ---------------------------
-	input      [4:0]  instr_2521,
-	output reg [4:0]  instrout_2521
-	// ---------------------------
-	);
+module ID_EX(input clk,
+        	 input rst,
+	         input enable,
+	         input [1:0]  ctlwb_out, 
+	         input [2:0]  ctlm_out, 
+	         input [3:0]  ctlex_out,
+	         input [31:0] npc, 
+	         input [31:0] readdat1, 
+	         input [31:0] readdat2, 
+	         input [31:0] signext_out, 
+	         input [4:0]  instr_2016, 
+	         input [4:0]  instr_1511, 
+	         output reg [1:0]  wb_ctlout,
+	         output reg [2:0]  m_ctlout,
+	         output reg [3:0]  ex_ctlout,
+	         output reg [31:0] npcout,
+	         output reg [31:0] rdata1out, 
+	         output reg [31:0] rdata2out,
+	         output reg [31:0] s_extendout,
+	         output reg [4:0]  instrout_2016, 
+	         output reg [4:0]  instrout_1511,
+            // Forwarding
+            // ---------------------------
+             input      [4:0]  instr_2521,
+             output reg [4:0]  instrout_2521
+            // ---------------------------
+            );
 	
 	// Initialize
 	initial

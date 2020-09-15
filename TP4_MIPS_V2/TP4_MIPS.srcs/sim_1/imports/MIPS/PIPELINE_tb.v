@@ -16,7 +16,8 @@
 
 module PIPELINE_tb;
 	// Inputs
-	parameter n_instr = 5;
+	parameter n_instr = 6;
+	parameter n_btns = 10;
 	reg clk;
 	reg rst;
 	reg btn;
@@ -38,21 +39,43 @@ PIPELINE pipeline(.clk(clk),
                   .instr_bus(instr_bus),
                   .LED(LED));
                   
-    initial begin
-        #6 on = 1;
-    end
+//    initial begin
+//        #150 btn = 1;
+//        #25 btn = 0;
+//        #40 btn = 1;
+//        #20 btn = 0;
+//        #35 btn = 1;
+//        #30 btn = 0;
+//        #15 btn = 1;
+//        #70 btn = 0;
+//        #25 btn = 1;
+//        #20 btn = 0;
+//        #25 btn = 1;
+//        #20 btn = 0;
+//        #25 btn = 1;
+//        #20 btn = 0;
+//        #25 btn = 1;
+//        #20 btn = 0;
+//        #25 btn = 1;
+//        #20 btn = 0;
+//        #25 btn = 1;
+//        #20 btn = 0;
+//        #25 btn = 1;
+//        #20 btn = 0;
+//    end
     
     initial begin
         // Initialize Inputs
         clk = 0;
-        rst = 0;
+        rst = 1;
         btn = 0;
         on = 0;
         // Wait for initialization
-        #100;
-        $monitor("Hola", pipeline.IF_ID_IR);
+        #135 rst = 0;
+        #5 on = 1;
+//        $monitor("Hola", pipeline.IF_ID_IR);
     //		$monitor("mux %d", pipeline.FETCH.mux.a);
-        $monitor("pc: %d", pipeline.FETCH.pc.npc);
+//        $monitor("pc: %d", pipeline.FETCH.pc.npc);
         // Perform 24 cycles.
         //#480;
         //$finish;
@@ -64,15 +87,10 @@ PIPELINE pipeline(.clk(clk),
 		enable_wr = 1'b1;
 		//#100;
 		
-//		rst = 1'b1;
 		forever begin
-            #1 clk = ~clk;
-			//if($time==150)
-            //begin 
-			 //    rst = 1'b1;
-			//end
+            #10 clk = ~clk;
 		end
-	end 
+	end
 	
     integer i  = 0;
 	
@@ -96,6 +114,9 @@ PIPELINE pipeline(.clk(clk),
 //            #20;  // wait for 20 clock cycle
 //        end
 //    end
+    
+    // Cargamos los datos en memoria
+
     always @(posedge clk)
     begin
         if (i<n_instr)
@@ -109,4 +130,14 @@ PIPELINE pipeline(.clk(clk),
             enable_wr = 1'b0;
         end
     end
+    
+    initial
+    begin 
+        // total number of lines in adder_data.txt = 6
+        #150 btn = 1;
+        forever begin
+            #24 btn = ~btn;
+		end
+    end
+
 endmodule

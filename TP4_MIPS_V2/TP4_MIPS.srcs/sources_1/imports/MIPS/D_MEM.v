@@ -14,16 +14,15 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-// HACER RESET
-
-module D_MEM(input clk,
-             rst,
-             enable,
-             MemWrite,
-             MemRead,
-             input [31:0] Address,
-             Write_data,
-             output reg [31:0] Read_data);
+module D_MEM(
+    input clk,
+    input rst,
+    input enable,
+    input MemWrite,
+    input MemRead,
+    input [31:0] Address,
+    input [31:0] Write_data,
+    output reg [31:0] Read_data);
 	
 	reg [31:0] MEM [128:0];
 	

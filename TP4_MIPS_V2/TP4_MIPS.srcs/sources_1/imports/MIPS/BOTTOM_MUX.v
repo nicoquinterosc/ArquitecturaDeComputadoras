@@ -14,7 +14,11 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module BOTTOM_MUX(input [4:0] a, b, input sel, output [4:0] y);
+module BOTTOM_MUX(
+    input [4:0] a,
+    input [4:0] b,
+    input sel,
+    output [4:0] y);
 	// If y = 1, select a; otherwise, select b.
 	assign y = sel ? a : b;
 endmodule

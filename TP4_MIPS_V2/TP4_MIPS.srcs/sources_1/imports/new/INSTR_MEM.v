@@ -14,16 +14,18 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module INSTR_MEM(input [31:0] addr,
-                 input [31:0] saveaddr,
-                 input [31:0] instr,
-                 input clk,
+module INSTR_MEM(input clk,
                  input rst,
                  input enable,
                  input enable_wr,
-                 output reg [31:0] data);
+                 input [31:0] addr,
+                 input [31:0] saveaddr,
+                 input [31:0] instr,
+                 output reg [31:0] data,
+                 output reg halt);
+                 
    // Declare the memory block.
-	reg [31:0] MEM [128:0];
+	reg [31:0] MEM [127:0];
 	
 	// Initialize memory.
 	//initial begin
@@ -85,9 +87,21 @@ module INSTR_MEM(input [31:0] addr,
 	
 	always @(posedge clk)
 	begin
-	   if (enable_wr == 1 && enable ==1)
+	   if (enable_wr == 1)
 	   begin
 	       MEM[saveaddr] <= instr;
+	   end
+	end
+	
+	always @(negedge clk)
+	begin
+	   if (data[31:26] == 6'b111111 ) //Check if instruction is HALT
+	   begin
+	       halt = 1'b1;
+	   end
+	   else
+	   begin
+	       halt = 1'b0;
 	   end
 	end
 endmodule

@@ -14,7 +14,13 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module THREE_ONE_MUX(input [31:0] a, b, c, input [1:0] sel, output reg [31:0] y);
+module THREE_ONE_MUX(
+    input [31:0] a,
+    input [31:0] b,
+    input [31:0] c,
+    input [1:0] sel,
+    output reg [31:0] y);
+    
 	always @ *
 		case (sel)
 			2'b00: y = c;

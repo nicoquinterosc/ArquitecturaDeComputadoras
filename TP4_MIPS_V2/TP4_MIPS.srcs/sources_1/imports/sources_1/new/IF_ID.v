@@ -13,11 +13,13 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module IF_ID(input clk, 
-             rst,
-             enable, 
-             input [31:0] npc, instr, 
-             output reg [31:0] instrout, npcout);
+module IF_ID(input clk,
+             input rst,
+             input enable,
+             input [31:0] npc,
+             input [31:0] instr,
+             output reg [31:0] instrout,
+             output reg [31:0] npcout);
 	// Initialize.
 	initial begin
 		instrout <= 0;

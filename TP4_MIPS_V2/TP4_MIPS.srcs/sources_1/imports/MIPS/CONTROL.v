@@ -14,8 +14,10 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-    module CONTROL(input [5:0] opcode, output reg [1:0] WB, output reg [2:0] M, 
-	output reg [3:0] EX);
+    module CONTROL(input [5:0] opcode,
+                   output reg [1:0] WB,
+                   output reg [2:0] M,
+                   output reg [3:0] EX);
 	
 	always @ *
 	begin
@@ -45,6 +47,12 @@
 					EX = 4'b0010;
 				end			
             6'b100000:	// NOP 
+				begin
+					WB = 2'b00;
+					M  = 3'b000;
+					EX = 4'b0000;
+				end
+            6'b111111:	// HALT 
 				begin
 					WB = 2'b00;
 					M  = 3'b000;

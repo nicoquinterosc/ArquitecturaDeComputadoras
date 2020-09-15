@@ -14,7 +14,14 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module WB(input MemtoReg, input [31:0] ReadData, ALUResult, 
+module WB(
+    input  MemtoReg, 
+    input  [31:0] ReadData, 
+    input  [31:0] ALUResult, 
 	output [31:0] WriteData);
-	MUX mux(.a(ReadData), .b(ALUResult), .sel(MemtoReg), .y(WriteData));
+	
+	MUX mux(.a(ReadData),
+	        .b(ALUResult),
+	        .sel(MemtoReg),
+	        .y(WriteData));
 endmodule

@@ -15,7 +15,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module MEM(
-	input         clk, rst, enable,
+	input         clk, 
+	input         rst, 
+	input         enable,
 	input         m_ctlout,
 	input         zero,
 	input         MemWrite, 
