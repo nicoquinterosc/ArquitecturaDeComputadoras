@@ -1,0 +1,4 @@
+addi $sp, $sp, -12
+sw $ra, 0($sp)
+sw $s1, 4($sp)
+hlt
