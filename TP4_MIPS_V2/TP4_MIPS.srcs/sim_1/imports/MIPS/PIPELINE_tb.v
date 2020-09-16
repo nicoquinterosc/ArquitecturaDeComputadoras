@@ -27,6 +27,7 @@ module PIPELINE_tb;
 	reg [31:0] instr_bus;
 	wire [15:0] LED;
 	reg [31:0] temp [n_instr-1:0];
+    integer i  = 0;
 
 	// Instantiate the Unit Under Test (UUT)
 	//PIPELINE pipeline(.clk(clk), .rst(rst), .LED(LED));
@@ -63,36 +64,36 @@ PIPELINE pipeline(.clk(clk),
 //        #25 btn = 1;
 //        #20 btn = 0;
 //    end
-    
-    initial begin
-        // Initialize Inputs
-        clk = 0;
-        rst = 1;
-        btn = 0;
-        on = 0;
-        // Wait for initialization
-        #135 rst = 0;
-        #5 on = 1;
-//        $monitor("Hola", pipeline.IF_ID_IR);
-    //		$monitor("mux %d", pipeline.FETCH.mux.a);
-//        $monitor("pc: %d", pipeline.FETCH.pc.npc);
-        // Perform 24 cycles.
-        //#480;
-        //$finish;
-    end
 	
 	initial begin
-		// Wait for initialization
+		// Loading instructions
+		// UART simulation
 		$readmemb("memfile.mem", temp);
 		enable_wr = 1'b1;
-		//#100;
 		
 		forever begin
             #10 clk = ~clk;
 		end
 	end
 	
-    integer i  = 0;
+	
+    initial
+    begin
+        clk = 0;
+        rst = 1;
+        btn = 0;
+        on = 0;
+        
+        #135 rst = 0;
+        #5 on = 1;
+        #10;
+        
+        forever begin
+            begin
+                #24 btn = ~btn;
+            end
+        end
+    end
 	
 //	initial
 //    begin 
@@ -131,13 +132,5 @@ PIPELINE pipeline(.clk(clk),
         end
     end
     
-    initial
-    begin 
-        // total number of lines in adder_data.txt = 6
-        #150 btn = 1;
-        forever begin
-            #24 btn = ~btn;
-		end
-    end
 
 endmodule

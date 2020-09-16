@@ -20,6 +20,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/Arquitectura
 INFO: [VRFC 10-311] analyzing module EX_MEM
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/FORWARDING_UNIT.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FORWARDING_UNIT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/new/HAZARD_DETECTION_UNIT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HAZARD_DETECTION_UNIT
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/MIPS/ID_EX.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ID_EX
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerac/ArqComp-bp/ArquitecturaDeComputadoras/TP4_MIPS_V2/TP4_MIPS.srcs/sources_1/imports/sources_1/new/IF_ID.v" into library xil_defaultlib

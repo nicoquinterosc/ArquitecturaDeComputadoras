@@ -56,7 +56,7 @@ module EX_MEM(
             rdata2out <= 0;
             five_bit_muxout  <= 0;	
         end
-        else if (enable == 1)
+        else if (enable)
 		begin
 			wb_ctlout <= ctlwb_out;
 			m_ctlout <= ctlm_out;

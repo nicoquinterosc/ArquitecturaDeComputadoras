@@ -34,9 +34,9 @@ begin
     begin
         enable = 1'b0;
     end
-    else if (on == 1)
+    else if (on)
     begin
-        if (btn == 1'b1)
+        if (btn)
         begin
             enable = 1'b1;
         end
@@ -49,7 +49,7 @@ end
 
 always @ (posedge clk)
 begin
-    if (enable == 1'b1)
+    if (enable)
     begin
         flag <= 1'b1;
     end
@@ -57,9 +57,9 @@ end
 
 always @ (negedge clk)
 begin
-    if(on==1)
+    if(on)
     begin
-        if (flag==1'b1)
+        if (flag)
         begin
             enable <= 1'b0;
             flag <= 1'b0;

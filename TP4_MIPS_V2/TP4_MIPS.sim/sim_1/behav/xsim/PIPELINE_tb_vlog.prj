@@ -11,6 +11,7 @@ verilog xil_defaultlib  \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/D_MEM.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/EX_MEM.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/FORWARDING_UNIT.v" \
+"../../../../TP4_MIPS.srcs/sources_1/new/HAZARD_DETECTION_UNIT.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/MIPS/ID_EX.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/sources_1/new/IF_ID.v" \
 "../../../../TP4_MIPS.srcs/sources_1/imports/sources_1/new/INCR.v" \

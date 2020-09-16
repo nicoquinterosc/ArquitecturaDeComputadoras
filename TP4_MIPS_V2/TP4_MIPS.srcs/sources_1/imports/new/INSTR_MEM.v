@@ -79,7 +79,7 @@ module INSTR_MEM(input clk,
    // Assign the contents at the requested memory address to data.
     always @ *
     begin
-        if (enable_wr == 0)
+        if (!enable_wr)
         begin
             data = MEM[addr];
         end
@@ -87,7 +87,7 @@ module INSTR_MEM(input clk,
 	
 	always @(posedge clk)
 	begin
-	   if (enable_wr == 1)
+	   if (enable_wr)
 	   begin
 	       MEM[saveaddr] <= instr;
 	   end

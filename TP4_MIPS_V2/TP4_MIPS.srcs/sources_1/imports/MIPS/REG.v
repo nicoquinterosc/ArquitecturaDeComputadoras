@@ -55,7 +55,7 @@ module REG(input clk,
 	// Write the values at the specified addresses
 	always @ (posedge clk && regwrite)
 	begin
-	   if (enable == 1)
+	   if (enable)
 	   begin
 		  GP_REG[rd] <= writedata;
        end

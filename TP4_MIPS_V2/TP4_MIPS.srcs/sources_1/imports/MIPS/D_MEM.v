@@ -24,7 +24,7 @@ module D_MEM(
     input [31:0] Write_data,
     output reg [31:0] Read_data);
 	
-	reg [31:0] MEM [128:0];
+	reg [31:0] MEM [127:0];
 	
 	initial
 		begin
@@ -40,7 +40,7 @@ module D_MEM(
 //	always @ *//(MemRead)
 	always @ (posedge clk && MemRead)
         begin
-            if (enable==1)
+            if (enable)
             begin
                 Read_data = MEM[Address];
             end
@@ -49,7 +49,7 @@ module D_MEM(
 	// Write data to the specified address.
     always @ (posedge clk && MemWrite)
         begin
-            if (enable==1)
+            if (enable)
             begin
                 MEM[Address] <= Write_data;
 			end

@@ -26,8 +26,10 @@ module PIPELINE(input clk,
                 input [31:0] instr_bus,
                 output [15:0] LED);
 	// I_FETCH output wires.
-	wire [31:0] IF_ID_IR;
-	wire [31:0] IF_ID_NPC;
+	wire [31:0] IF_ID_IR_wire;
+	wire [31:0] IF_ID_NPC_wire;
+	wire [31:0] IF_ID_rs_wire;
+	wire [31:0] IF_ID_rt_wire;
 	
 	// I_DECODE output wires.
 	wire [1:0]  ID_EX_WB_wire;
@@ -69,26 +71,25 @@ module PIPELINE(input clk,
 	// Debug Unit wires
 	wire enable_wire;
 	
+	// Hazard Detection Unit wires
+	wire stall_wire;
+	
 	I_FETCH FETCH(
+	   //Inputs
 	   .clk(clk),
 	   .rst(rst),
+	   .stall(stall_wire),
 	   .enable(enable_wire),
 	   .PCSrc(PCSrc_wire), 
 	   .enable_wr(enable_wr),
 	   .EX_MEM_NPC(EX_MEM_add_result_wire),
 	   .addr_wire(addr_bus),
 	   .instr_wire(instr_bus),
-	   .IF_ID_IR(IF_ID_IR),
-	   .IF_ID_NPC(IF_ID_NPC));
-//	I_FETCH FETCH(
-//		// Inputs
-//		.clk(clk),
-//		.rst(rst),
-//		.PCSrc(PCSrc_wire),
-//		.EX_MEM_NPC(EX_MEM_add_result_wire), 
-//		// Outputs
-//		.IF_ID_IR(IF_ID_IR),
-//		.IF_ID_NPC(IF_ID_NPC));
+	   // Outputs
+	   .IF_ID_IR(IF_ID_IR_wire),
+	   .IF_ID_NPC(IF_ID_NPC_wire),
+	   .IF_ID_rs(IF_ID_rs_wire),
+	   .IF_ID_rt(IF_ID_rt_wire));
     
 	I_DECODE DECODE(
 		// Inputs
@@ -96,8 +97,8 @@ module PIPELINE(input clk,
         .rst(rst), 
         .enable(enable_wire),
 		.RegWrite(mem_control_wb_wire[1]), 
-		.IF_ID_Instr(IF_ID_IR), 
-		.IF_ID_NPC(IF_ID_NPC), 
+		.IF_ID_Instr(IF_ID_IR_wire), 
+		.IF_ID_NPC(IF_ID_NPC_wire), 
 		.MEM_WB_Writereg(mem_Write_reg_wire), 
 		.MEM_WB_Writedata(wb_data_wire), 
 		// Outputs
@@ -173,15 +174,23 @@ module PIPELINE(input clk,
 	// Forwarding
 	FORWARDING_UNIT FU(
 		// Inputs
-		.rs(ID_EX_instrout_2521_wire), 
-		.rt(ID_EX_instrout_2016_wire), 
-		.five_bit_mux_out(EX_MEM_five_bit_muxout_wire), 
-		.ex_mem_wb(EX_MEM_wb_ctlout_wire), 
-		.mem_Write_reg(mem_Write_reg_wire), 
-		.mem_wb_wb(mem_control_wb_wire), 
+		.IdExRegisterRs(ID_EX_instrout_2521_wire), 
+		.IdExRegisterRt(ID_EX_instrout_2016_wire), 
+		.ExMemRegisterRd(EX_MEM_five_bit_muxout_wire), 
+		.ExMemRegWrite(EX_MEM_wb_ctlout_wire), 
+		.MemWbRegRd(mem_Write_reg_wire), 
+		.MemWbRegWrite(mem_control_wb_wire), 
 		// Outputs
 		.forward_a_sel(forward_a_sel_wire), 
 		.forward_b_sel(forward_b_sel_wire));
+	
+	// Hazard Detection Unit
+	HAZARD_DETECTION_UNIT HDU(
+        .IdExMemRead(ID_EX_M_wire[1]),
+        .IdExRegisterRt(ID_EX_instrout_2016_wire),
+        .IfIdRegisterRs(IF_ID_rs_wire),
+        .IfIdRegisterRt(IF_ID_rt_wire),
+        .stall(stall_wire));
 	
 	DEBUG_UNIT DU(
 	   .clk(clk),

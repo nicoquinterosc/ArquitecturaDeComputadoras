@@ -45,7 +45,7 @@ module MEM_WB(
             mem_ALU_result <= 0;
             mem_Write_reg  <= 0;
         end
-        else if (enable==1)
+        else if (enable)
 		begin
 			mem_control_wb <= control_wb_in;
 			Read_data      <= Read_data_in;

@@ -18,6 +18,8 @@ module IF_ID(input clk,
              input enable,
              input [31:0] npc,
              input [31:0] instr,
+             output reg [31:0] rs,
+             output reg [31:0] rt,
              output reg [31:0] instrout,
              output reg [31:0] npcout);
 	// Initialize.
@@ -33,9 +35,11 @@ module IF_ID(input clk,
                 npcout <= 0;
                 instrout <= 0;
 			end
-        else if (enable==1)
+        else if (enable)
         begin
             npcout <= npc;
 			instrout <= instr;
+			rs <= instr[25:21];
+			rt <= instr[20:16];
 		end
 endmodule
