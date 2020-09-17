@@ -20,16 +20,13 @@ module PC(input clk,
           input stall,
           input [31:0] npc, 
           output reg [31:0] PC);
-          
-	// Set PC initially to 0.
-	initial begin
-		PC <= 0;
-	end
 
 	// Update PC with the new PC value.
 	always @ (posedge clk)
 	if(rst)
+	begin
 	   PC <= {32{1'b0}};
+    end
     else
 	begin
 	if (enable && !stall && !halt)

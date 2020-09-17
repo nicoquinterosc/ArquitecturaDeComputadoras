@@ -78,14 +78,14 @@ PIPELINE pipeline(.clk(clk),
 	
     initial
     begin
-        clk = 0;
-        rst = 1;
+        clk = 1;
+        rst = 0;
         btn = 0;
         on = 0;
         
-        #135 rst = 0;
+        #150 rst = 1;
         #5 on = 1;
-        #10;
+        #25 rst = 0;
         
         forever begin
             begin

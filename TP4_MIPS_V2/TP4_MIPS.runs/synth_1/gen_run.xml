@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1599682385">
-  <File Type="PA-TCL" Name="PIPELINE.tcl"/>
   <File Type="RDS-DCP" Name="PIPELINE.dcp"/>
+  <File Type="PA-TCL" Name="PIPELINE.tcl"/>
   <File Type="REPORTS-TCL" Name="PIPELINE_reports.tcl"/>
   <File Type="RDS-RDS" Name="PIPELINE.vds"/>
   <File Type="RDS-UTIL-PB" Name="PIPELINE_utilization_synth.pb"/>
