@@ -16,7 +16,7 @@
 
 module PIPELINE_tb;
 	// Inputs
-	parameter n_instr = 6;
+	parameter n_instr = 8;
 	parameter n_btns = 10;
 	reg clk;
 	reg rst;
@@ -76,7 +76,6 @@ PIPELINE pipeline(.clk(clk),
 		end
 	end
 	
-	
     initial
     begin
         clk = 0;
@@ -90,7 +89,7 @@ PIPELINE pipeline(.clk(clk),
         
         forever begin
             begin
-                #24 btn = ~btn;
+                #17 btn = ~btn;
             end
         end
     end
@@ -131,6 +130,5 @@ PIPELINE pipeline(.clk(clk),
             enable_wr = 1'b0;
         end
     end
-    
 
 endmodule

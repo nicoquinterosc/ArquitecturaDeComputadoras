@@ -152,7 +152,8 @@ def instruction_AritI(line):
     rt = reg[line[2]]
     immoff = 0
     if line[0] in ['beq', 'bne']:
-        immoff = address[line[3]].zfill(16)
+        #immoff = address[line[3]].zfill(16)
+        immoff = bin(int(line[3]))[2:].zfill(16)
         binary = opcode + rs + rt + immoff
     else:
         x = int(line[3])

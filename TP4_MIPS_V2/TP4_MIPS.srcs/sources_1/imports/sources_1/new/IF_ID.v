@@ -16,6 +16,7 @@
 module IF_ID(input clk,
              input rst,
              input enable,
+             input stall,
              input [31:0] npc,
              input [31:0] instr,
              output reg [31:0] rs,
@@ -35,7 +36,7 @@ module IF_ID(input clk,
                 npcout <= 0;
                 instrout <= 0;
 			end
-        else if (enable)
+        else if (enable && !stall)
         begin
             npcout <= npc;
 			instrout <= instr;

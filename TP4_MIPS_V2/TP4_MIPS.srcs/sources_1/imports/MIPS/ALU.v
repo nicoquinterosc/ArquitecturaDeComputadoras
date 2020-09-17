@@ -24,18 +24,16 @@ module ALU(
 	always @ *
 	begin
 		case (control)
-			3'b010:
-				result = A + B;
-			3'b110:
-				result = A - B;
 			3'b000:
 				result = A & B;
 			3'b001:
 				result = A | B;
+			3'b010:
+				result = A + B;
+			3'b110:
+				result = A - B;
 			3'b111:
-				result = (A < B) ? 1 : 0;	
-			3'b011:
-				result = 32'bxxxx_xxxx_xxxx_xxxx_xxxx_xxxx_xxxx_xxxx;
+				result = (A < B) ? 1 : 0;
 			default:
 				result = 32'bxxxx_xxxx_xxxx_xxxx_xxxx_xxxx_xxxx_xxxx;
 		endcase

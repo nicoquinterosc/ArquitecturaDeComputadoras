@@ -70,6 +70,7 @@ module I_FETCH(
 	IF_ID if_id(
 	   .clk(clk),
 	   .rst(rst),
+	   .stall(stall),
 	   .enable(enable),
 	   .npc(npc_wire),
 	   .instr(data_wire),
