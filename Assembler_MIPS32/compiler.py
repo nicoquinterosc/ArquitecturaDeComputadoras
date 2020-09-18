@@ -93,8 +93,8 @@ def instruction_R(line):
         rs = '00000'
         rt = reg[line[2]]
         rd = reg[line[1]]
-        shamt = bin(line[3])[2:].zfill(5)
-        funct = fntc(line[0])
+        shamt = bin(int(line[3]))[2:].zfill(5)
+        funct = fntc[line[0]]
         binary = opcode + rs + rt + rd + shamt + funct
     elif line[0] == 'jr':
         rs = reg[line[1]]
@@ -122,15 +122,23 @@ def instruction_R(line):
 
 # Operaciones I
 def instruction_I(line, type):
+
     if type == "imm":
+
         opcode = opI_imm[line[0]]
-        rs = reg[line[2]]
         rt = reg[line[1]]
-        n = int(line[3])
+
+        if line[0] in ['lui']:
+            rs = '00000'
+            n = int(line[2])
+        else:
+            rs = reg[line[2]]
+            n = int(line[3])
+        
         if n<0:
             immoff = format(n & 0xffff, '16b')
         else:
-            immoff =  bin(int(line[3]))[2:].zfill(16)
+            immoff =  bin(n)[2:].zfill(16)
     else:
         opcode = opI_off[line[0]]
         rt = reg[line[1]]

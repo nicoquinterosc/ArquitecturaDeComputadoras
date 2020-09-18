@@ -43,6 +43,22 @@ module REG(input clk,
 		GP_REG[13] <= 32'h0000000d;
 		GP_REG[14] <= 32'h0000000e;
 		GP_REG[15] <= 32'h0000000f;
+		GP_REG[16] <= 32'h00000010;
+		GP_REG[17] <= 32'h00000011;
+		GP_REG[18] <= 32'h00000012;
+		GP_REG[19] <= 32'h00000013;
+		GP_REG[20] <= 32'h00000014;
+		GP_REG[21] <= 32'h00000015;
+		GP_REG[22] <= 32'h00000016;
+		GP_REG[23] <= 32'h00000017;
+		GP_REG[24] <= 32'h00000018;
+		GP_REG[25] <= 32'h00000019;
+		GP_REG[26] <= 32'h0000001a;
+		GP_REG[27] <= 32'h0000001b;
+		GP_REG[28] <= 32'h0000001c;
+		GP_REG[29] <= 32'h0000001d;
+		GP_REG[30] <= 32'h0000001e;
+		GP_REG[31] <= 32'h0000001f;
 	end
 		
 	// Get the values at the specified addresses
