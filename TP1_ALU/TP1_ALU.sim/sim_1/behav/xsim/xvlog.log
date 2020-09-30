@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.srcs/sources_1/imports/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nicoq/Facu/Arquitectura/ArquitecturaDeComputadoras/TP1_ALU/TP1_ALU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

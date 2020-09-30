@@ -22,10 +22,10 @@ module top
     reg reset = 0;
     
     alu alu0(
-        .a(operandoA),
-        .b(operandoB),
-        .op(OPCODE),
-        .r(led[NB_LED - 1 :8])
+        .i_data_a(operandoA),
+        .i_data_b(operandoB),
+        .i_op(OPCODE),
+        .o_result(led[NB_LED - 1 :8])
     );
    
 //    assign led[NB_LED - 1 :8] = ultimoSW[NB_SW - 1 : 0];
